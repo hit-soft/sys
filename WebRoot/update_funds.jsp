@@ -38,7 +38,7 @@ body {
     <tr>
       <td width="110">项目名称：</td>
       <td width="179"><label>
-        <input name="name" type="text" id="name" value="${name}"/>
+        <input name="name" type="text" id="name" value="${name} " disabled="true"/>
       </label></td>
     </tr>
     <tr>

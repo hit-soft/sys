@@ -51,10 +51,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td><input type=text value="${already}"></td>
     <td><input type=text value="${non}"></td>
     <td><input type=text value="${number}"></td>
+    
     <td><s:url id="editURL" action="del_funds">
 		<s:param name="name" value="%{name}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
+		
     <td><s:url id="editURL" action="upp_funds">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="source" value="%{source}"></s:param>
