@@ -15,11 +15,11 @@
 	</action>
 	
 	
-	<action name="funds" class="jump_funds" method="jump_funds">
+	<action name="funds" class="jump_" method="jump_funds">
 		<result name="1">/add_funds.jsp</result>
 		<result name="2">/query_funds.jsp</result>
 	</action>
-	<action name="add_funds" class="add_funds" method="add_funds">
+	<action name="add_funds" class="add" method="add_funds">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -27,25 +27,25 @@
 		<result name="1">/show_funds.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_funds" class="del_funds" method="del_funds">
+	<action name="del_funds" class="del" method="del_funds">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_funds" class="upp_funds" method="upp_funds">
+	<action name="upp_funds" class="upp" method="upp">
 		<result name="1">/update_funds.jsp</result>
 	</action>
-	<action name="update_funds" class="update_funds" method="update_funds">
+	<action name="update_funds" class="update" method="update_funds">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
 	
 	
 	
-	<action name="accept" class="jump_accept" method="jump_accept">
+	<action name="accept" class="jump_" method="jump_accept">
 		<result name="1">/add_accept.jsp</result>
 		<result name="2">/query_accept.jsp</result>
 	</action>
-	<action name="add_accept" class="add_accept" method="add_accept">
+	<action name="add_accept" class="add" method="add_accept">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -53,14 +53,14 @@
 		<result name="1">/show_accept.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_accept" class="del_accept" method="del_accept">
+	<action name="del_accept" class="del" method="del_accept">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_accept" class="upp_accept" method="upp_accept">
+	<action name="upp_accept" class="upp" method="upp">
 		<result name="1">/update_accept.jsp</result>
 	</action>
-	<action name="update_accept" class="update_accept" method="update_accept">
+	<action name="update_accept" class="update" method="update_accept">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -68,11 +68,11 @@
 	
 	
 	
-	<action name="software" class="jump_software" method="jump_software">
+	<action name="software" class="jump_" method="jump_software">
 		<result name="1">/add_software.jsp</result>
 		<result name="2">/query_software.jsp</result>
 	</action>
-	<action name="add_software" class="add_software" method="add_software">
+	<action name="add_software" class="add" method="add_software">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -80,14 +80,14 @@
 		<result name="1">/show_software.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_software" class="del_software" method="del_software">
+	<action name="del_software" class="del" method="del_software">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_software" class="upp_software" method="upp_software">
+	<action name="upp_software" class="upp" method="upp">
 		<result name="1">/update_software.jsp</result>
 	</action>
-	<action name="update_software" class="update_software" method="update_software">
+	<action name="update_software" class="update" method="update_software">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -97,11 +97,11 @@
 	
 	
 	
-	<action name="patent" class="jump_patent" method="jump_patent">
+	<action name="patent" class="jump_" method="jump_patent">
 		<result name="1">/add_patent.jsp</result>
 		<result name="2">/query_patent.jsp</result>
 	</action>
-	<action name="add_patent" class="add_patent" method="add_patent">
+	<action name="add_patent" class="add" method="add_patent">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -109,14 +109,14 @@
 		<result name="1">/show_patent.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_patent" class="del_patent" method="del_patent">
+	<action name="del_patent" class="del" method="del_patent">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_patent" class="upp_patent" method="upp_patent">
+	<action name="upp_patent" class="upp" method="upp">
 		<result name="1">/update_patent.jsp</result>
 	</action>
-	<action name="update_patent" class="update_patent" method="update_patent">
+	<action name="update_patent" class="update" method="update_patent">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -124,11 +124,11 @@
 	
 	
 	
-	<action name="priz" class="jump_priz" method="jump_priz">
+	<action name="priz" class="jump_" method="jump_priz">
 		<result name="1">/add_priz.jsp</result>
 		<result name="2">/query_priz.jsp</result>
 	</action>
-	<action name="add_priz" class="add_priz" method="add_priz">
+	<action name="add_priz" class="add" method="add_priz">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -136,14 +136,14 @@
 		<result name="1">/show_priz.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_priz" class="del_priz" method="del_priz">
+	<action name="del_priz" class="del" method="del_priz">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_priz" class="upp_priz" method="upp_priz">
+	<action name="upp_priz" class="upp" method="upp">
 		<result name="1">/update_priz.jsp</result>
 	</action>
-	<action name="update_priz" class="update_priz" method="update_priz">
+	<action name="update_priz" class="update" method="update_priz">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -151,11 +151,11 @@
 	
 	
 	
-	<action name="publ" class="jump_publ" method="jump_publ">
+	<action name="publ" class="jump_" method="jump_publ">
 		<result name="1">/add_publ.jsp</result>
 		<result name="2">/query_publ.jsp</result>
 	</action>
-	<action name="add_publ" class="add_publ" method="add_publ">
+	<action name="add_publ" class="add" method="add_publ">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -163,25 +163,25 @@
 		<result name="1">/show_publ.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_publ" class="del_publ" method="del_publ">
+	<action name="del_publ" class="del" method="del_publ">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_publ" class="upp_publ" method="upp_publ">
+	<action name="upp_publ" class="upp" method="upp">
 		<result name="1">/update_publ.jsp</result>
 	</action>
-	<action name="update_publ" class="update_publ" method="update_publ">
+	<action name="update_publ" class="update" method="update_publ">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
 	
 	
 	
-	<action name="team" class="jump_team" method="jump_team">
+	<action name="team" class="jump_" method="jump_team">
 		<result name="1">/add_team.jsp</result>
 		<result name="2">/query_team.jsp</result>
 	</action>
-	<action name="add_team" class="add_team" method="add_team">
+	<action name="add_team" class="add" method="add_team">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -189,24 +189,24 @@
 		<result name="1">/show_team.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_team" class="del_team" method="del_team">
+	<action name="del_team" class="del" method="del_team">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_team" class="upp_team" method="upp_team">
+	<action name="upp_team" class="upp" method="upp">
 		<result name="1">/update_team.jsp</result>
 	</action>
-	<action name="update_team" class="update_team" method="update_team">
+	<action name="update_team" class="update" method="update_team">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
 	
 	
-	<action name="study" class="jump_study" method="jump_study">
+	<action name="study" class="jump_" method="jump_study">
 		<result name="1">/add_study.jsp</result>
 		<result name="2">/query_study.jsp</result>
 	</action>
-	<action name="add_study" class="add_study" method="add_study">
+	<action name="add_study" class="add" method="add_study">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -214,25 +214,25 @@
 		<result name="1">/show_study.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_study" class="del_study" method="del_study">
+	<action name="del_study" class="del" method="del_study">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_study" class="upp_study" method="upp_study">
+	<action name="upp_study" class="upp" method="upp">
 		<result name="1">/update_study.jsp</result>
 	</action>
-	<action name="update_study" class="update_study" method="update_study">
+	<action name="update_study" class="update" method="update_study">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
 	
 	
 	
-	<action name="coope" class="jump_coope" method="jump_coope">
+	<action name="coope" class="jump_" method="jump_coope">
 		<result name="1">/add_coope.jsp</result>
 		<result name="2">/query_coope.jsp</result>
 	</action>
-	<action name="add_coope" class="add_coope" method="add_coope">
+	<action name="add_coope" class="add" method="add_coope">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -240,14 +240,14 @@
 		<result name="1">/show_coope.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="del_coope" class="del_coope" method="del_coope">
+	<action name="del_coope" class="del" method="del_coope">
 		<result name="0">/fail.jsp</result>
 		<result name="1">/index.jsp</result>
 	</action>
-	<action name="upp_coope" class="upp_coope" method="upp_coope">
+	<action name="upp_coope" class="upp" method="upp">
 		<result name="1">/update_coope.jsp</result>
 	</action>
-	<action name="update_coope" class="update_coope" method="update_coope">
+	<action name="update_coope" class="update" method="update_coope">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
