@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <tr>
       <td width="110">进修学习单位：</td>
       <td width="179"><label>
-        <input name="org" type="text" id="org" value="${org}" disabled="true"/>
+        <input name="org" type="text" id="org" value="${org}" readonly/>
       </label></td>
     </tr>
     <tr>

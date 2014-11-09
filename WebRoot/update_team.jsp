@@ -39,7 +39,7 @@ body {
     <tr>
       <td width="110">学术团体名称：</td>
       <td width="179"><label>
-        <input name="name" type="text" id="name" value="${name}" disabled="true"/>
+        <input name="name" type="text" id="name" value="${name}" readonly/>
       </label></td>
     </tr>
     <tr>

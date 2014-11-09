@@ -39,7 +39,7 @@ body {
     <tr>
       <td width="110">类别：</td>
       <td width="179"><label>
-        <input name="type" type="text" id="type" value="${type}"/>
+        <input name="type" type="text" id="type" value="${type}" readonly/>
       </label></td>
     </tr>
     <tr>

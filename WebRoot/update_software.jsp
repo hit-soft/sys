@@ -45,7 +45,7 @@ body {
     <tr>
       <td>著作权登记号：</td>
       <td><label>
-        <input name="number" type="text" id="number" value="${number}" disabled="true"/>
+        <input name="number" type="text" id="number" value="${number}" readonly/>
       </label></td>
     </tr>
     <tr>
