@@ -15,11 +15,11 @@ public class query_accept {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
+	private double contract;
 	private String type;
 	private String time;
 	private String org;
-	private String number;
+	private double number;
 	private String card;
 	private String remark;
 	public List<accept> getL() {
@@ -58,10 +58,10 @@ public class query_accept {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
 	public String getType() {
@@ -82,10 +82,10 @@ public class query_accept {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getCard() {
@@ -144,7 +144,7 @@ public class query_accept {
 			flag=1;
 		}
 	
-		if(contract!=null&&!contract.equals("")){
+		if(contract!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" contract "+" like "+"'%"+contract+"%'";
@@ -168,7 +168,7 @@ public class query_accept {
 			sql+=" org "+" like "+"'%"+org+"%'";
 			flag=1;
 		}
-		if(number!=null&&!number.equals("")){
+		if(number!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" number "+" like "+"'%"+number+"%'";
@@ -199,11 +199,11 @@ public class query_accept {
 					use.setLeader(rs.getString(3));
 					use.setStart(rs.getString(4));
 					use.setEnd(rs.getString(5));
-					use.setContract(rs.getString(6));
+					use.setContract(rs.getInt(6));
 					use.setType(rs.getString(7));
 					use.setTime(rs.getString(8));
 					use.setOrg(rs.getString(9));
-					use.setNumber(rs.getString(10));
+					use.setNumber(rs.getInt(10));
 					use.setCard(rs.getString(11));
 					use.setRemark(rs.getString(12));
 					fla=1;

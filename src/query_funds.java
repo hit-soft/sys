@@ -15,9 +15,9 @@ public class query_funds {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
-	private String already;
-	private String non;
+	private double contract;
+	private double already;
+	private double non;
 	private String number;
 	public List<funds> getL() {
 		return l;
@@ -55,22 +55,22 @@ public class query_funds {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
-	public String getAlready() {
+	public double getAlready() {
 		return already;
 	}
-	public void setAlready(String already) {
+	public void setAlready(double already) {
 		this.already = already;
 	}
-	public String getNon() {
+	public double getNon() {
 		return non;
 	}
-	public void setNon(String non) {
+	public void setNon(double non) {
 		this.non = non;
 	}
 	public String getNumber() {
@@ -123,19 +123,19 @@ public class query_funds {
 			flag=1;
 		}
 	
-		if(contract!=null&&!contract.equals("")){
+		if(contract!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" contract "+" like "+"'%"+contract+"%'";
 			flag=1;
 		}
-		if(already!=null&&!already.equals("")){
+		if(already!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" already "+" like "+"'%"+already+"%'";
 			flag=1;
 		}
-		if(non!=null&&!non.equals("")){
+		if(non!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" non "+" like "+"'%"+non+"%'";
@@ -160,9 +160,9 @@ public class query_funds {
 					use.setLeader(rs.getString(3));
 					use.setStart(rs.getString(4));
 					use.setEnd(rs.getString(5));
-					use.setContract(rs.getString(6));
-					use.setAlready(rs.getString(7));
-					use.setNon(rs.getString(8));
+					use.setContract(rs.getDouble(6));
+					use.setAlready(rs.getDouble(7));
+					use.setNon(rs.getDouble(8));
 					use.setNumber(rs.getString(9));
 					fla=1;
 					l.add(use);

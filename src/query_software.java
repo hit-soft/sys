@@ -11,7 +11,7 @@ import java.util.List;
 public class query_software {
 	private List<software> l = new ArrayList();
 	private String name;
-	private String number;
+	private double number;
 	private String owner;
 	private String org;
 	private String time;
@@ -28,10 +28,10 @@ public class query_software {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getOwner() {
@@ -61,9 +61,6 @@ public class query_software {
 	int flag=0;
 	public String query_software(){
 		System.out.println("真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真");
-		System.out.println("真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真");
-		System.out.println("真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真");
-		System.out.println("真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真真");
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from software where";
@@ -73,7 +70,7 @@ public class query_software {
 			sql+=" name "+" like "+"'%"+name+"%'";
 			flag=1;
 		}
-		if(number!=null&&!number.equals("")){
+		if(number!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" number "+" like "+"'%"+number+"%'";
@@ -122,7 +119,7 @@ public class query_software {
 				while(rs.next()){
 					software use=new software();
 					use.setName(rs.getString(1));
-					use.setNumber(rs.getString(2));
+					use.setNumber(rs.getDouble(2));
 					use.setOwner(rs.getString(3));
 					use.setOrg(rs.getString(4));
 					use.setTime(rs.getString(5));

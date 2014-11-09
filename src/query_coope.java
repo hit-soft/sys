@@ -13,7 +13,7 @@ public class query_coope {
 	public String type;
 	public String out_pe;
 	public String in_pe;
-	public String num;
+	public int num;
 	public String start;
 	public String end;
 	public String out_pl;
@@ -44,10 +44,10 @@ public class query_coope {
 	public void setIn_pe(String in_pe) {
 		this.in_pe = in_pe;
 	}
-	public String getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getStart() {
@@ -110,7 +110,7 @@ public class query_coope {
 			sql+=" in_pe "+" like "+"'%"+in_pe+"%'";
 			flag=1;
 		}
-		if(num!=null&&!num.equals("")){
+		if(num!=0){
 			if(flag==1)
 				sql+=" AND ";
 			sql+=" num "+" like "+"'%"+num+"%'";
@@ -165,7 +165,7 @@ public class query_coope {
 					use.setType(rs.getString(1));
 					use.setOut_pe(rs.getString(2));
 					use.setIn_pe(rs.getString(3));
-					use.setNum(rs.getString(4));
+					use.setNum(rs.getInt(4));
 					use.setStart(rs.getString(5));
 					use.setEnd(rs.getString(6));
 					use.setOut_pl(rs.getString(7));

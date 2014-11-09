@@ -1,6 +1,6 @@
 public class software {
 	private String name;
-	private String number;
+	private double number;
 	private String owner;
 	private String org;
 	private String time;
@@ -11,10 +11,10 @@ public class software {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getOwner() {

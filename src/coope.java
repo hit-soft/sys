@@ -2,7 +2,7 @@ public class coope {
 	public String type;
 	public String out_pe;
 	public String in_pe;
-	public String num;
+	public int num;
 	public String start;
 	public String end;
 	public String out_pl;
@@ -27,10 +27,10 @@ public class coope {
 	public void setIn_pe(String in_pe) {
 		this.in_pe = in_pe;
 	}
-	public String getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getStart() {

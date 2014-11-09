@@ -5,11 +5,11 @@ public class accept {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
+	private double contract;
 	private String type;
 	private String time;
 	private String org;
-	private String number;
+	private double number;
 	private String card;
 	private String remark;
 	public String getName() {
@@ -42,10 +42,10 @@ public class accept {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
 	public String getType() {
@@ -66,10 +66,10 @@ public class accept {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getCard() {

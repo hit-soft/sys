@@ -5,9 +5,9 @@ public class funds {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
-	private String already;
-	private String non;
+	private double contract;
+	private double already;
+	private double non;
 	private String number;
 	public String getName() {
 		return name;
@@ -39,22 +39,22 @@ public class funds {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
-	public String getAlready() {
+	public double getAlready() {
 		return already;
 	}
-	public void setAlready(String already) {
+	public void setAlready(double already) {
 		this.already = already;
 	}
-	public String getNon() {
+	public double getNon() {
 		return non;
 	}
-	public void setNon(String non) {
+	public void setNon(double non) {
 		this.non = non;
 	}
 	public String getNumber() {
