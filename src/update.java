@@ -9,21 +9,21 @@ public class update {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
+	private double contract;
 	private String type;
 	private String time;
 	private String org;
-	private String number;
+	private double number;
 	private String card;
 	private String remark;
 	public String out_pe;
 	public String in_pe;
-	public String num;
+	public int num;
 	public String out_pl;
 	public String in_pl;
 	public String goal;
-	private String already;
-	private String non;
+	private double already;
+	private double non;
 	private String owner;
 	private String person;
 	private String level;
@@ -60,10 +60,10 @@ public class update {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
 	public String getType() {
@@ -84,10 +84,10 @@ public class update {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getCard() {
@@ -114,10 +114,10 @@ public class update {
 	public void setIn_pe(String in_pe) {
 		this.in_pe = in_pe;
 	}
-	public String getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getOut_pl() {
@@ -138,16 +138,16 @@ public class update {
 	public void setGoal(String goal) {
 		this.goal = goal;
 	}
-	public String getAlready() {
+	public double getAlready() {
 		return already;
 	}
-	public void setAlready(String already) {
+	public void setAlready(double already) {
 		this.already = already;
 	}
-	public String getNon() {
+	public double getNon() {
 		return non;
 	}
-	public void setNon(String non) {
+	public void setNon(double non) {
 		this.non = non;
 	}
 	public String getOwner() {
@@ -192,7 +192,7 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update accept set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+//			String sql1="update accept set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update accept set source="+"'"+source+"'"+ "where name="+"'"+name+"'";
 			String sql3="update accept set leader="+"'"+leader+"'"+ "where name="+"'"+name+"'";
 			String sql4="update accept set start="+"'"+start+"'"+ "where name="+"'"+name+"'";
@@ -204,8 +204,8 @@ public class update {
 			String sql10="update accept set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
 			String sql11="update accept set card="+"'"+card+"'"+ "where name="+"'"+name+"'";
 			String sql12="update accept set remark="+"'"+remark+"'"+ "where name="+"'"+name+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -240,7 +240,7 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update coope set type="+"'"+type+"'"+ "where type="+"'"+type+"'";
+//			String sql1="update coope set type="+"'"+type+"'"+ "where type="+"'"+type+"'";
 			String sql2="update coope set out_pe="+"'"+out_pe+"'"+ "where type="+"'"+type+"'";
 			String sql3="update coope set in_pe="+"'"+in_pe+"'"+ "where type="+"'"+type+"'";
 			String sql4="update coope set num="+"'"+num+"'"+ "where type="+"'"+type+"'";
@@ -250,8 +250,8 @@ public class update {
 			String sql8="update coope set in_pl="+"'"+in_pl+"'"+ "where type="+"'"+type+"'";
 			String sql9="update coope set goal="+"'"+goal+"'"+ "where type="+"'"+type+"'";
 			String sql10="update coope set name="+"'"+name+"'"+ "where type="+"'"+type+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -285,7 +285,7 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update funds set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+//			String sql1="update funds set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update funds set source="+"'"+source+"'"+ "where name="+"'"+name+"'";
 			String sql3="update funds set leader="+"'"+leader+"'"+ "where name="+"'"+name+"'";
 			String sql4="update funds set start="+"'"+start+"'"+ "where name="+"'"+name+"'";
@@ -294,8 +294,8 @@ public class update {
 			String sql7="update funds set already="+"'"+already+"'"+ "where name="+"'"+name+"'";
 			String sql8="update funds set non="+"'"+non+"'"+ "where name="+"'"+name+"'";
 			String sql9="update funds set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -326,16 +326,16 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="update patent set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
-			String sql1="update patent set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
-			String sql2="update patent set owner="+"'"+owner+"'"+ "where name="+"'"+name+"'";
-			String sql3="update patent set org="+"'"+org+"'"+ "where name="+"'"+name+"'";
-			String sql4="update patent set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
-			String sql5="update patent set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
+			String sql="update patent set number="+"'"+number+"'"+ "where number="+"'"+number+"'";
+//			String sql1="update patent set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
+			String sql2="update patent set owner="+"'"+owner+"'"+ "where number="+"'"+number+"'";
+			String sql3="update patent set org="+"'"+org+"'"+ "where number="+"'"+number+"'";
+			String sql4="update patent set time="+"'"+time+"'"+ "where number="+"'"+number+"'";
+			String sql5="update patent set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -358,13 +358,13 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update priz set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+//			String sql1="update priz set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update priz set type="+"'"+type+"'"+ "where name="+"'"+name+"'";
 			String sql3="update priz set level="+"'"+level+"'"+ "where name="+"'"+name+"'";
 			String sql4="update priz set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
 			String sql5="update priz set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -387,12 +387,12 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update publ set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+//			String sql1="update publ set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update publ set press="+"'"+press+"'"+ "where name="+"'"+name+"'";
 			String sql3="update publ set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
 			String sql4="update publ set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -413,11 +413,11 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update software set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
-			String sql2="update software set owner="+"'"+owner+"'"+ "where name="+"'"+name+"'";
-			String sql3="update software set org="+"'"+org+"'"+ "where name="+"'"+name+"'";
-			String sql4="update software set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
-			String sql5="update software set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
+			String sql1="update software set name="+"'"+name+"'"+ "where number="+"'"+number+"'";
+			String sql2="update software set owner="+"'"+owner+"'"+ "where number="+"'"+number+"'";
+			String sql3="update software set org="+"'"+org+"'"+ "where number="+"'"+number+"'";
+			String sql4="update software set time="+"'"+time+"'"+ "where number="+"'"+number+"'";
+			String sql5="update software set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
 			System.out.println(sql1);
 			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -442,13 +442,13 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update study set org="+"'"+org+"'"+ "where org="+"'"+org+"'";
+//			String sql1="update study set org="+"'"+org+"'"+ "where org="+"'"+org+"'";
 			String sql2="update study set substance="+"'"+substance+"'"+ "where org="+"'"+org+"'";
 			String sql3="update study set start="+"'"+start+"'"+ "where org="+"'"+org+"'";
 			String sql4="update study set end="+"'"+end+"'"+ "where org="+"'"+org+"'";
 			String sql5="update study set person="+"'"+person+"'"+ "where org="+"'"+org+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -471,13 +471,13 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql1="update team set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+//			String sql1="update team set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update team set post="+"'"+post+"'"+ "where name="+"'"+name+"'";
 			String sql3="update team set start="+"'"+start+"'"+ "where name="+"'"+name+"'";
 			String sql4="update team set end="+"'"+end+"'"+ "where name="+"'"+name+"'";
 			String sql5="update team set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
-			System.out.println(sql1);
-			stmt.execute(sql1);
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);

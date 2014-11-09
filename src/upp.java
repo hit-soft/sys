@@ -5,21 +5,21 @@ public class upp {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
+	private double contract;
 	private String type;
 	private String time;
 	private String org;
-	private String number;
+	private double number;
 	private String card;
 	private String remark;
 	public String out_pe;
 	public String in_pe;
-	public String num;
+	public int num;
 	public String out_pl;
 	public String in_pl;
 	public String goal;
-	private String already;
-	private String non;
+	private double already;
+	private double non;
 	private String owner;
 	private String person;
 	private String level;
@@ -56,10 +56,10 @@ public class upp {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
 	public String getType() {
@@ -80,10 +80,10 @@ public class upp {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getCard() {
@@ -110,10 +110,10 @@ public class upp {
 	public void setIn_pe(String in_pe) {
 		this.in_pe = in_pe;
 	}
-	public String getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getOut_pl() {
@@ -134,16 +134,16 @@ public class upp {
 	public void setGoal(String goal) {
 		this.goal = goal;
 	}
-	public String getAlready() {
+	public double getAlready() {
 		return already;
 	}
-	public void setAlready(String already) {
+	public void setAlready(double already) {
 		this.already = already;
 	}
-	public String getNon() {
+	public double getNon() {
 		return non;
 	}
-	public void setNon(String non) {
+	public void setNon(double non) {
 		this.non = non;
 	}
 	public String getOwner() {

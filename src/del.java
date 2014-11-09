@@ -9,21 +9,21 @@ public class del {
 	private String leader;
 	private String start;
 	private String end;
-	private String contract;
+	private double contract;
 	private String type;
 	private String time;
 	private String org;
-	private String number;
+	private double number;
 	private String card;
 	private String remark;
 	public String out_pe;
 	public String in_pe;
-	public String num;
+	public int num;
 	public String out_pl;
 	public String in_pl;
 	public String goal;
-	private String already;
-	private String non;
+	private double already;
+	private double non;
 	private String owner;
 	private String person;
 	private String level;
@@ -60,10 +60,10 @@ public class del {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	public String getContract() {
+	public double getContract() {
 		return contract;
 	}
-	public void setContract(String contract) {
+	public void setContract(double contract) {
 		this.contract = contract;
 	}
 	public String getType() {
@@ -84,10 +84,10 @@ public class del {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public String getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public String getCard() {
@@ -114,10 +114,10 @@ public class del {
 	public void setIn_pe(String in_pe) {
 		this.in_pe = in_pe;
 	}
-	public String getNum() {
+	public int getNum() {
 		return num;
 	}
-	public void setNum(String num) {
+	public void setNum(int num) {
 		this.num = num;
 	}
 	public String getOut_pl() {
@@ -138,23 +138,17 @@ public class del {
 	public void setGoal(String goal) {
 		this.goal = goal;
 	}
-	public String getAlready() {
+	public double getAlready() {
 		return already;
 	}
-	public void setAlready(String already) {
+	public void setAlready(double already) {
 		this.already = already;
 	}
-	public String getNon() {
+	public double getNon() {
 		return non;
 	}
-	public void setNon(String non) {
+	public void setNon(double non) {
 		this.non = non;
-	}
-	public int getFlag() {
-		return flag;
-	}
-	public void setFlag(int flag) {
-		this.flag = flag;
 	}
 	public String getOwner() {
 		return owner;
@@ -191,6 +185,12 @@ public class del {
 	}
 	public void setPost(String post) {
 		this.post = post;
+	}
+	public int getFlag() {
+		return flag;
+	}
+	public void setFlag(int flag) {
+		this.flag = flag;
 	}
 	int flag=0;
 	public String del_accept(){
@@ -231,7 +231,7 @@ public class del {
 				flag=1;
 			}
 		
-			if(contract!=null&&!contract.equals("")){
+			if(contract!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" contract "+" like "+"'%"+contract+"%'";
@@ -255,7 +255,7 @@ public class del {
 				sql+=" org "+" like "+"'%"+org+"%'";
 				flag=1;
 			}
-			if(number!=null&&!number.equals("")){
+			if(number!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" number "+" like "+"'%"+number+"%'";
@@ -307,7 +307,7 @@ public class del {
 				sql+=" in_pe "+" like "+"'%"+in_pe+"%'";
 				flag=1;
 			}
-			if(num!=null&&!num.equals("")){
+			if(num!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" num "+" like "+"'%"+num+"%'";
@@ -402,28 +402,28 @@ public class del {
 				flag=1;
 			}
 		
-			if(contract!=null&&!contract.equals("")){
+			if(contract!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" contract "+" like "+"'%"+contract+"%'";
 				flag=1;
 			}
 			System.out.println(sql);
-			if(already!=null&&!already.equals("")){
+			if(already!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" already "+" like "+"'%"+already+"%'";
 				flag=1;
 			}
 			System.out.println(sql);
-			if(non!=null&&!non.equals("")){
+			if(non!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" non "+" like "+"'%"+non+"%'";
 				flag=1;
 			}
 			System.out.println(sql);
-			if(number!=null&&!number.equals("")){
+			if(number!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" number "+" like "+"'%"+number+"%'";
@@ -452,7 +452,7 @@ public class del {
 				sql+=" name "+" like "+"'%"+name+"%'";
 				flag=1;
 			}
-			if(number!=null&&!number.equals("")){
+			if(number!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" number "+" like "+"'%"+number+"%'";
@@ -602,7 +602,7 @@ public class del {
 				sql+=" name "+" like "+"'%"+name+"%'";
 				flag=1;
 			}
-			if(number!=null&&!number.equals("")){
+			if(number!=0){
 				if(flag==1)
 					sql+=" AND ";
 				sql+=" number "+" like "+"'%"+number+"%'";
