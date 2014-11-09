@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   <p align="center">&nbsp;</p>
 <table border="1" align="center">
-  <tr>
+  /*<tr>
      <td width="91">类别</td>
     <td width="91">出访人员名单</td>
     <td width="91">来访人员名单</td>
@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td width="91">报告名称</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
-  </tr>
+  </tr>*/
   <s:iterator value="l"> <!-- l 为action 中 list -->
   <tr>
     <td><input type=text value="${type}"></td>
