@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -35,19 +35,19 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询科研经费信息</h1>
+<h1 align="center">查息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_funds">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">项目名称：</td>
+      <td width="110">称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
     </tr>
     <tr>
-      <td>项目来源：</td>
+      <td>项</td>
       <td><label>
         <input name="source" type="text" id="source" />
       </label></td>
