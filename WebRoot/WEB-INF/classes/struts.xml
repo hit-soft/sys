@@ -2,20 +2,19 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
-	<action name="index" class="jump" method="jump">
-		<result name="1">/funds.jsp</result>
-		<result name="2">/accept.jsp</result>
-		<result name="3">/software.jsp</result>
-		<result name="4">/patent.jsp</result>
-		<result name="5">/priz.jsp</result>
-		<result name="6">/publ.jsp</result>
-		<result name="7">/team.jsp</result>
-		<result name="8">/study.jsp</result>
-		<result name="9">/coope.jsp</result>
+	
+	
+	<action name="action1" class="jump_" method="change">
+		<result name="1">/index_jump.jsp</result>
+	</action>
+	
+	<action name="action2" class="jump_" method="change">
+		<result name="1">/index_jump2.jsp</result>
 	</action>
 	
 	
-	<action name="funds" class="jump_" method="jump_funds">
+	
+	<action name="funds" class="jump_" method="jump_">
 		<result name="1">/add_funds.jsp</result>
 		<result name="2">/query_funds.jsp</result>
 	</action>
@@ -41,7 +40,7 @@
 	
 	
 	
-	<action name="accept" class="jump_" method="jump_accept">
+	<action name="accept" class="jump_" method="jump_">
 		<result name="1">/add_accept.jsp</result>
 		<result name="2">/query_accept.jsp</result>
 	</action>
@@ -68,7 +67,7 @@
 	
 	
 	
-	<action name="software" class="jump_" method="jump_software">
+	<action name="software" class="jump_" method="jump_">
 		<result name="1">/add_software.jsp</result>
 		<result name="2">/query_software.jsp</result>
 	</action>
@@ -97,7 +96,7 @@
 	
 	
 	
-	<action name="patent" class="jump_" method="jump_patent">
+	<action name="patent" class="jump_" method="jump_">
 		<result name="1">/add_patent.jsp</result>
 		<result name="2">/query_patent.jsp</result>
 	</action>
@@ -124,7 +123,7 @@
 	
 	
 	
-	<action name="priz" class="jump_" method="jump_priz">
+	<action name="priz" class="jump_" method="jump_">
 		<result name="1">/add_priz.jsp</result>
 		<result name="2">/query_priz.jsp</result>
 	</action>
@@ -151,7 +150,7 @@
 	
 	
 	
-	<action name="publ" class="jump_" method="jump_publ">
+	<action name="publ" class="jump_" method="jump_">
 		<result name="1">/add_publ.jsp</result>
 		<result name="2">/query_publ.jsp</result>
 	</action>
@@ -177,7 +176,7 @@
 	
 	
 	
-	<action name="team" class="jump_" method="jump_team">
+	<action name="team" class="jump_" method="jump_">
 		<result name="1">/add_team.jsp</result>
 		<result name="2">/query_team.jsp</result>
 	</action>
@@ -202,7 +201,7 @@
 	</action>
 	
 	
-	<action name="study" class="jump_" method="jump_study">
+	<action name="study" class="jump_" method="jump_">
 		<result name="1">/add_study.jsp</result>
 		<result name="2">/query_study.jsp</result>
 	</action>
@@ -228,7 +227,7 @@
 	
 	
 	
-	<action name="coope" class="jump_" method="jump_coope">
+	<action name="coope" class="jump_" method="jump_">
 		<result name="1">/add_coope.jsp</result>
 		<result name="2">/query_coope.jsp</result>
 	</action>

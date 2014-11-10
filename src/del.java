@@ -186,13 +186,6 @@ public class del {
 	public void setPost(String post) {
 		this.post = post;
 	}
-	public int getFlag() {
-		return flag;
-	}
-	public void setFlag(int flag) {
-		this.flag = flag;
-	}
-	int flag=0;
 	public String del_accept(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -200,78 +193,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from accept where";
 			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
-			if(source!=null&&!source.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" source "+" like "+"'%"+source+"%'";
-				flag=1;
-			}
-			if(leader!=null&&!leader.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" leader "+" like "+"'%"+leader+"%'";
-				flag=1;
-			}
-			if(start!=null&&!start.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" start "+" like "+"'%"+start+"%'";
-				flag=1;
-			}
-				
-			if(end!=null&&!end.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" end "+" like "+"'%"+end+"%'";
-				flag=1;
-			}
-		
-			if(contract!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" contract "+" like "+"'%"+contract+"%'";
-				flag=1;
-			}
-			if(type!=null&&!type.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" type "+" like "+"'%"+type+"%'";
-				flag=1;
-			}
-			if(time!=null&&!time.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" time "+" like "+"'%"+time+"%'";
-				flag=1;
-			}
-			if(org!=null&&!org.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" org "+" like "+"'%"+org+"%'";
-				flag=1;
-			}
-			if(number!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" number "+" like "+"'%"+number+"%'";
-				flag=1;
-			}
-			if(card!=null&&!card.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" card "+" like "+"'%"+card+"%'";
-				flag=1;
-			}
-			if(remark!=null&&!remark.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" remark "+" like "+"'%"+remark+"%'";
-				flag=1;
+				sql+=" name "+" like "+"'"+name+"'";
 			}
 			stmt.execute(sql);
 			return "1";
@@ -290,66 +212,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from coope where";
 			if(type!=null&&!type.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" type "+" like "+"'%"+type+"%'";
-				flag=1;
-			}
-			if(out_pe!=null&&!out_pe.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" out_pe "+" like "+"'%"+out_pe+"%'";
-				flag=1;
-			}
-			if(in_pe!=null&&!in_pe.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" in_pe "+" like "+"'%"+in_pe+"%'";
-				flag=1;
-			}
-			if(num!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" num "+" like "+"'%"+num+"%'";
-				flag=1;
-			}
-			if(start!=null&&!start.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" start "+" like "+"'%"+start+"%'";
-				flag=1;
-			}
-				
-			if(end!=null&&!end.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" end "+" like "+"'%"+end+"%'";
-				flag=1;
-			}
-		
-			if(out_pl!=null&&!out_pl.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" out_pl "+" like "+"'%"+out_pl+"%'";
-				flag=1;
-			}
-			if(in_pl!=null&&!in_pl.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" in_pl "+" like "+"'%"+in_pl+"%'";
-				flag=1;
-			}
-			if(goal!=null&&!goal.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" goal "+" like "+"'%"+goal+"%'";
-				flag=1;
-			}
-			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
+				sql+=" type "+" like "+"'"+type+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -369,65 +232,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from funds where";
 			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
-			if(source!=null&&!source.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" source "+" like "+"'%"+source+"%'";
-				flag=1;
-			}
-
-			if(leader!=null&&!leader.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" leader "+" like "+"'%"+leader+"%'";
-				flag=1;
-			}
-				
-			if(start!=null&&!start.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" start "+" like "+"'%"+start+"%'";
-				flag=1;
-			}
-				
-			if(end!=null&&!end.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" end "+" like "+"'%"+end+"%'";
-				flag=1;
-			}
-		
-			if(contract!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" contract "+" like "+"'%"+contract+"%'";
-				flag=1;
-			}
-			System.out.println(sql);
-			if(already!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" already "+" like "+"'%"+already+"%'";
-				flag=1;
-			}
-			System.out.println(sql);
-			if(non!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" non "+" like "+"'%"+non+"%'";
-				flag=1;
-			}
-			System.out.println(sql);
-			if(number!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" number "+" like "+"'%"+number+"%'";
-				flag=1;
+				sql+=" name "+" like "+"'"+name+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -446,45 +251,8 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from patent where";
-			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
 			if(number!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" number "+" like "+"'%"+number+"%'";
-				flag=1;
-			}
-
-			if(owner!=null&&!owner.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" owner "+" like "+"'%"+owner+"%'";
-				flag=1;
-			}
-				
-			if(org!=null&&!org.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" org "+" like "+"'%"+org+"%'";
-				flag=1;
-			}
-				
-			if(time!=null&&!time.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" time "+" like "+"'%"+time+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" number "+" like "+"'"+number+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -504,37 +272,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from priz where";
 			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
-			if(type!=null&&!type.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" type "+" like "+"'%"+type+"%'";
-				flag=1;
-			}
-
-			if(level!=null&&!level.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" level "+" like "+"'%"+level+"%'";
-				flag=1;
-			}
-				
-			if(time!=null&&!time.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" time "+" like "+"'%"+time+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" name "+" like "+"'"+name+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -554,30 +292,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from publ where";
 			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
-			if(press!=null&&!press.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" press "+" like "+"'%"+press+"%'";
-				flag=1;
-			}
-				
-			if(time!=null&&!time.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" time "+" like "+"'%"+time+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" name "+" like "+"'"+name+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -596,45 +311,8 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from software where";
-			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
 			if(number!=0){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" number "+" like "+"'%"+number+"%'";
-				flag=1;
-			}
-
-			if(owner!=null&&!owner.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" owner "+" like "+"'%"+owner+"%'";
-				flag=1;
-			}
-				
-			if(org!=null&&!org.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" org "+" like "+"'%"+org+"%'";
-				flag=1;
-			}
-				
-			if(time!=null&&!time.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" time "+" like "+"'%"+time+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" number "+" like "+"'"+number+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -654,37 +332,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from study where";
 			if(org!=null&&!org.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" org "+" like "+"'%"+org+"%'";
-				flag=1;
-			}
-			if(substance!=null&&!substance.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" substance "+" like "+"'%"+substance+"%'";
-				flag=1;
-			}
-
-			if(start!=null&&!start.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" start "+" like "+"'%"+start+"%'";
-				flag=1;
-			}
-				
-			if(end!=null&&!end.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" end "+" like "+"'%"+end+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" org "+" like "+"'"+org+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -704,37 +352,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from team where";
 			if(name!=null&&!name.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" name "+" like "+"'%"+name+"%'";
-				flag=1;
-			}
-			if(post!=null&&!post.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" post "+" like "+"'%"+post+"%'";
-				flag=1;
-			}
-
-			if(start!=null&&!start.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" start "+" like "+"'%"+start+"%'";
-				flag=1;
-			}
-				
-			if(end!=null&&!end.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" end "+" like "+"'%"+end+"%'";
-				flag=1;
-			}
-		
-			if(person!=null&&!person.equals("")){
-				if(flag==1)
-					sql+=" AND ";
-				sql+=" person "+" like "+"'%"+person+"%'";
-				flag=1;
+				sql+=" name "+" like "+"'"+name+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
