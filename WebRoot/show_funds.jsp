@@ -24,7 +24,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
-  
+  <style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+-->
+</style></head>
  <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
@@ -36,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td width="91">合同额</td>
     <td width="91">已到款</td>
     <td width="91">未到款</td>
-    <td width="91">项目号</td>
+    <td width="91">课题合同号</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>

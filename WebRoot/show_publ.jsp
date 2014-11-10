@@ -38,12 +38,10 @@ body {
 <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td width="91">著作权名称</td>
-    <td width="91">著作权登记号</td>
-    <td width="91">著作权人</td>
-    <td width="91">授予单位</td>
-    <td width="91">授予时间</td>
-    <td width="91">人员名单</td>
+    <td width="91">专著名称</td>
+    <td width="91">出版社名称</td>
+    <td width="91">出版时间</td>
+    <td width="91">著者名单</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>

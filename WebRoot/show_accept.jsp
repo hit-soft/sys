@@ -24,7 +24,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
-  
+  <style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+-->
+</style></head>
   <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>

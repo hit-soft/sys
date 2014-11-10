@@ -49,7 +49,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>获奖登记：</td>
+      <td>获奖等级：</td>
       <td><label>
         <input name="level" type="text" id="level" value="${level}"/>
       </label></td>

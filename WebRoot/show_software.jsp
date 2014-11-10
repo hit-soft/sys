@@ -56,7 +56,7 @@ body {
     <td><input type=text value="${time}"></td>
     <td><input type=text value="${person}"></td>
     <td><s:url id="editURL" action="del_software">
-		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="number" value="%{number}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_software">

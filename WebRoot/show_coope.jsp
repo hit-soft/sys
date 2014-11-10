@@ -24,12 +24,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
+  <style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+-->
+</style></head>
   <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
      <td width="91">类别</td>
     <td width="91">出访人员名单</td>
     <td width="91">来访人员名单</td>
+   	<td width="91">人数</td> 
     <td width="91">开始时间</td>
     <td width="91">结束时间</td>
     <td width="91">出访地</td>
@@ -44,6 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td><input type=text value="${type}"></td>
     <td><input type=text value="${out_pe}"></td>
     <td><input type=text value="${in_pe}"></td>
+    <td><input type=text value="${num}"></td>
     <td><input type=text value="${start}"></td>
     <td><input type=text value="${end}"></td>
     <td><input type=text value="${out_pl}"></td>

@@ -39,7 +39,7 @@ body {
 <form id="form1" name="form1" method="post" action="add_publ">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">专著：</td>
+      <td width="110">专著名称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>

@@ -251,9 +251,7 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from patent where";
-			if(number!=0){
-				sql+=" number "+" like "+"'"+number+"'";
-			}
+				sql+=" number "+" like "+"'"+(int)number+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -311,9 +309,7 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from software where";
-			if(number!=0){
-				sql+=" number "+" like "+"'"+number+"'";
-			}
+			sql+=" number "+" like "+"'"+(int)number+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";

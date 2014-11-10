@@ -89,7 +89,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>项目号：</td>
+      <td>课题合同号：</td>
       <td><label>
         <input name="number" type="text" id="number" />
       </label></td>

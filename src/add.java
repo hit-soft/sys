@@ -215,8 +215,8 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into coope(type,out_pe,in_pe,start,end,out_pl,in_pl,goal,name) " +
-					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+")";
+			String sql="insert into coope(type,out_pe,in_pe,num,start,end,out_pl,in_pl,goal,name) " +
+					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+num+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -343,6 +343,27 @@ public class add {
 			Statement stmt=conn.createStatement();
 			String sql="insert into team(name,post,start,end,person) " +
 					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			return "1";
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				return "0";
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	public String add_publ(){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into publ(name,press,time,person) " +
+					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";

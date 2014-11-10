@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <a href="index.jsp">
-	操作失败，返回系统首页
+	没有您需要查询的信息，请返回系统首页
 	</a>
 	<br>
   </body>

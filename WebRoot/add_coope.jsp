@@ -58,6 +58,12 @@ body {
       </label></td>
     </tr>
     <tr>
+      <td>人数：</td>
+      <td><label>
+        <input name="num" type="text" id="num" />
+      </label></td>
+    </tr>
+    <tr>
       <td>开始时间：</td>
       <td><label>
         <input name="start" type="text" id="start" />

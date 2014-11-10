@@ -30,7 +30,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到科研成果管理系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="center">通过该页面您可以选择您需要的服务</p>

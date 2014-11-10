@@ -22,6 +22,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
   </head>
+  <style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+-->
+</style></head>
   <body>
 <h1 align="center">更新国内外进修信息</h1>
 <hr />
