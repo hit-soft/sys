@@ -47,7 +47,7 @@ body {
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
-  <s:iterator value="l"> <!-- l 为action 中 list -->
+  <s:iterator value="l2"> <!-- l 为action 中 list -->
   <tr>
     <td><input type=text value="${type}"></td>
     <td><input type=text value="${out_pe}"></td>

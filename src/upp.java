@@ -9,7 +9,7 @@ public class upp {
 	private String type;
 	private String time;
 	private String org;
-	private double number;
+	private int number;
 	private String card;
 	private String remark;
 	public String out_pe;
@@ -80,10 +80,10 @@ public class upp {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public double getNumber() {
+	public int getNumber() {
 		return number;
 	}
-	public void setNumber(double number) {
+	public void setNumber(int number) {
 		this.number = number;
 	}
 	public String getCard() {
@@ -183,6 +183,7 @@ public class upp {
 		this.post = post;
 	}
 	public String upp(){
+		System.out.println("num = "+getNum());
 		return "1";
 	}
 }
