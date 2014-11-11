@@ -13,7 +13,7 @@ public class del {
 	private String type;
 	private String time;
 	private String org;
-	private double number;
+	private int number;
 	private String card;
 	private String remark;
 	public String out_pe;
@@ -84,14 +84,14 @@ public class del {
 	public void setOrg(String org) {
 		this.org = org;
 	}
-	public double getNumber() {
-		return number;
-	}
-	public void setNumber(double number) {
-		this.number = number;
-	}
 	public String getCard() {
 		return card;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	public void setCard(String card) {
 		this.card = card;
@@ -251,7 +251,7 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from patent where";
-				sql+=" number "+" like "+"'"+(int)number+"'";
+				sql+=" number "+" like "+"'"+number+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -309,7 +309,7 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from software where";
-			sql+=" number "+" like "+"'"+(int)number+"'";
+			sql+=" number "+" like "+"'"+number+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";

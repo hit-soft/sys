@@ -69,7 +69,7 @@ body {
     <tr>
       <td>合同额：</td>
       <td><label>
-        <input name="contract" type="text" id="contract" value="${constract}"/>
+        <input name="contract" type="text" id="contract" value="${contract}"/>
       </label></td>
     </tr>
     <tr>

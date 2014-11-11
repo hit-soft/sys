@@ -49,7 +49,7 @@ body {
     <td width="51" nowrap="nowrap">操作1</td>
     <td width="121" nowrap="nowrap">操作2</td>
   </tr>
-  <s:iterator value="l"> <!-- l 为action 中 list -->
+  <s:iterator value="l1"> <!-- l 为action 中 list -->
   <tr>
     <td><input type=text value="${name}"></td>
     <td><input type=text value="${source}"></td>

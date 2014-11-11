@@ -57,7 +57,7 @@ body {
     <tr>
       <td>人数：</td>
       <td><label>
-        <input name="num" type="text" id="num" />
+        <input name="num" type="text" id="num" value="${num}"/>
       </label></td>
     </tr>
     <tr>

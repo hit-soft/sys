@@ -8,7 +8,7 @@ public class funds {
 	private double contract;
 	private double already;
 	private double non;
-	private String number;
+	private int number;
 	public String getName() {
 		return name;
 	}
@@ -57,10 +57,10 @@ public class funds {
 	public void setNon(double non) {
 		this.non = non;
 	}
-	public String getNumber() {
+	public int getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(int number) {
 		this.number = number;
 	}
 }
