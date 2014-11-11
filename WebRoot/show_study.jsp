@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -38,8 +38,8 @@ body {
 <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td>进修学习单位</td>
-    <td>进修学习内容</td>
+    <td>进jhfakgnjkdfgblfdja习单位</td>
+    <td>进修dhjbashj</td>
     <td>开始时间</td>
     <td>结束时间</td>
     <td>人员姓名</td>
