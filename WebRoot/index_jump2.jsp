@@ -38,63 +38,60 @@ body {
 <p align="center">&nbsp;</p>
 <p align="right">请选择您所需要的服务：</p>
 
-<td><s:url id="editURL" action="funds">
-		<s:param name="fuck" value="2"></s:param>
+<td><s:url id="editURL" action="query_funds">
+		
 		</s:url>
 		<s:a href="%{editURL}">科研经费到款情况</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="accept">
-		<s:param name="fuck" value="2"></s:param>
+<td><s:url id="editURL" action="query_accept">
 		</s:url>
 		<s:a href="%{editURL}">科研项目验收情况</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="software">
-		<s:param name="fuck" value="2"></s:param>
+<td><s:url id="editURL" action="query_software">
 		</s:url>
 		<s:a href="%{editURL}">软件著作权管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="patent">
-		<s:param name="fuck" value="2"></s:param>
+<td><s:url id="editURL" action="query_patent">
 		</s:url>
 		<s:a href="%{editURL}">专利管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="priz">
+<td><s:url id="editURL" action="query_priz">
 		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">获奖情况管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="publ">
+<td><s:url id="editURL" action="query_publ">
 		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">出版专著管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="team">
+<td><s:url id="editURL" action="query_team">
 		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">学术团体管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="study">
+<td><s:url id="editURL" action="query_study">
 		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">国内外进修及学习情况管理</s:a></td>
 <br>
 
 
-<td><s:url id="editURL" action="coope">
+<td><s:url id="editURL" action="query_coope">
 		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">国际合作情况管理</s:a></td>

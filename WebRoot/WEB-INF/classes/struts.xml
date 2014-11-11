@@ -22,7 +22,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_funds" class="query_funds" method="query_funds">
+	<action name="query_funds" class="query_" method="query_funds">
 		<result name="1">/show_funds.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -48,7 +48,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_accept" class="query_accept" method="query_accept">
+	<action name="query_accept" class="query_" method="query_accept">
 		<result name="1">/show_accept.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -75,7 +75,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_software" class="query_software" method="query_software">
+	<action name="query_software" class="query_" method="query_software">
 		<result name="1">/show_software.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -104,7 +104,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_patent" class="query_patent" method="query_patent">
+	<action name="query_patent" class="query_" method="query_patent">
 		<result name="1">/show_patent.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -131,7 +131,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_priz" class="query_priz" method="query_priz">
+	<action name="query_priz" class="query_" method="query_priz">
 		<result name="1">/show_priz.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -158,7 +158,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_publ" class="query_publ" method="query_publ">
+	<action name="query_publ" class="query_" method="query_publ">
 		<result name="1">/show_publ.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -184,7 +184,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_team" class="query_team" method="query_team">
+	<action name="query_team" class="query_" method="query_team">
 		<result name="1">/show_team.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -209,7 +209,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_study" class="query_study" method="query_study">
+	<action name="query_study" class="query_" method="query_study">
 		<result name="1">/show_study.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -235,7 +235,7 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	<action name="query_coope" class="query_coope" method="query_coope">
+	<action name="query_coope" class="query_" method="query_coope">
 		<result name="1">/show_coope.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
