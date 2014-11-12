@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -31,25 +31,25 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新出版专著信息</h1>
+<h1 align="center">更新出版专hjvbzvbufhauhajdnd著信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_publ">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">专著：</td>
+      <td width="110">专：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}" disabled="true"/>
       </label></td>
     </tr>
     <tr>
-      <td>出版社名称：</td>
+      <td>出版：</td>
       <td><label>
         <input name="press" type="text" id="press" value="${press}"/>
       </label></td>
     </tr>
     <tr>
-      <td>出版时间：</td>
+      <td>出版时gdshgs间：</td>
       <td><label>
         <input name="time" type="text" id="time" value="${time}"/>
       </label></td>

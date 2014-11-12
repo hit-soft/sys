@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+  <head>/*dhjshjafbjhfbaabfhfahfj*/
     <base href="<%=basePath%>">
     
     <title>Book Management System starting page</title>
@@ -23,19 +23,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
   </head>
   <body>
-<h1 align="center">更新国内外进修信息</h1>
+<h1 align="center">更新国内息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_study">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">进修学习单位：</td>
+      <td width="110">进修位：</td>
       <td width="179"><label>
         <input name="org" type="text" id="org" value="${org}" disabled="true"/>
       </label></td>
     </tr>
     <tr>
-      <td>进修学习内容：</td>
+      <td>进容：</td>
       <td><label>
         <input name="substance" type="text" id="substance" value="${substance}"/>
       </label></td>
