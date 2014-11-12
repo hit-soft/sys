@@ -55,8 +55,10 @@ body {
     <td><input type=text value="${org}"></td>
     <td><input type=text value="${time}"></td>
     <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
     <td><s:url id="editURL" action="del_software">
 		<s:param name="number" value="%{number}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_software">
@@ -66,6 +68,7 @@ body {
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="time" value="%{time}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

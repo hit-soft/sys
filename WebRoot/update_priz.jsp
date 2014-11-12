@@ -51,7 +51,16 @@ body {
     <tr>
       <td>获奖等级：</td>
       <td><label>
-        <input name="level" type="text" id="level" value="${level}"/>
+       <div align="right">
+    <select name="level" id="level">
+      <option value="国家级一等奖">国家级一等奖</option>
+      <option value="国家级二等奖">国家级二等奖</option>
+      <option value="省部级一等奖">省部级一等奖</option>
+      <option value="省部级二等奖">省部级二等奖</option>
+      <option value="国际专项奖">国际专项奖</option>
+      <option value="国内专项奖">国内专项奖</option>
+    </select>
+  </div>
       </label></td>
     </tr>
     <tr>
@@ -63,7 +72,13 @@ body {
     <tr>
       <td>获奖人员名单：</td>
       <td><label>
-        <input name="person" type="text" id="person" value="${person}"/>
+        <input name="person" type="text" id="person" value="${person}" readonly/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>排名顺序：</td>
+      <td><label>
+        <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
     <tr>

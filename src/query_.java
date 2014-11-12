@@ -232,6 +232,7 @@ public class query_ {
 					use.setLevel(rs.getString(3));
 					use.setTime(rs.getString(4));
 					use.setPerson(rs.getString(5));
+					use.setPer_level(rs.getInt(6));
 					fla=1;
 					l5.add(use);
 		}
@@ -295,6 +296,7 @@ public class query_ {
 					use.setOrg(rs.getString(4));
 					use.setTime(rs.getString(5));
 					use.setPerson(rs.getString(6));
+					use.setPer_level(rs.getInt(7));
 					fla=1;
 					l7.add(use);
 		}
@@ -359,6 +361,8 @@ public class query_ {
 					use.setStart(rs.getString(3));
 					use.setEnd(rs.getString(4));
 					use.setPerson(rs.getString(5));
+					System.out.println("person:"+rs.getString(5));
+					use.setType(rs.getString(6));
 					fla=1;
 					l9.add(use);
 		}

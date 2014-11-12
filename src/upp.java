@@ -26,6 +26,7 @@ public class upp {
 	private String press;
 	private String substance;
 	private String post;
+	private int per_level;
 	public String getName() {
 		return name;
 	}
@@ -181,6 +182,12 @@ public class upp {
 	}
 	public void setPost(String post) {
 		this.post = post;
+	}
+	public int getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(int per_level) {
+		this.per_level = per_level;
 	}
 	public String upp(){
 		System.out.println("num = "+getNum());

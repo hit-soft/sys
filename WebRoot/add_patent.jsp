@@ -70,7 +70,25 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>人员名单：</td>
+      <td>人员1：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员2：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员3：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员4：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

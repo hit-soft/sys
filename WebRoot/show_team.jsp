@@ -43,6 +43,7 @@ body {
     <td>任职开始时间</td>
     <td>任职结束时间</td>
     <td>兼职人员姓名</td>
+    <td>职务类型</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -53,6 +54,7 @@ body {
     <td><input type=text value="${start}"></td>
     <td><input type=text value="${end}"></td>
     <td><input type=text value="${person}"></td>
+    <td><input type=text value="${type}"></td>
     <td><s:url id="editURL" action="del_team">
 		<s:param name="name" value="%{name}"></s:param>
 		</s:url>
@@ -63,6 +65,7 @@ body {
 		<s:param name="start" value="%{start}"></s:param>
 		<s:param name="end" value="%{end}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="type" value="%{type}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

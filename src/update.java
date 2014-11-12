@@ -1,4 +1,5 @@
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -30,6 +31,7 @@ public class update {
 	private String press;
 	private String substance;
 	private String post;
+	private int per_level;
 	public String getName() {
 		return name;
 	}
@@ -185,6 +187,12 @@ public class update {
 	}
 	public void setPost(String post) {
 		this.post = post;
+	}
+	public int getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(int per_level) {
+		this.per_level = per_level;
 	}
 	public String update_accept(){
 		System.out.println("here");
@@ -362,7 +370,8 @@ public class update {
 			String sql2="update priz set type="+"'"+type+"'"+ "where name="+"'"+name+"'";
 			String sql3="update priz set level="+"'"+level+"'"+ "where name="+"'"+name+"'";
 			String sql4="update priz set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
-			String sql5="update priz set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
+			String sql5="update priz set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+"person="+"'"+person+"'";
+//			String sql5="update priz set person="+"'"+person+"'"+ "where name="+"'"+name+"'"+" and "+"person "+"="+"'"+person+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -417,7 +426,8 @@ public class update {
 			String sql2="update software set owner="+"'"+owner+"'"+ "where number="+"'"+number+"'";
 			String sql3="update software set org="+"'"+org+"'"+ "where number="+"'"+number+"'";
 			String sql4="update software set time="+"'"+time+"'"+ "where number="+"'"+number+"'";
-			String sql5="update software set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
+			//String sql5="update software set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
+			String sql5="update software set per_level="+"'"+per_level+"'"+ "where number="+"'"+number+"'"+" and "+"person="+"'"+person+"'";
 			System.out.println(sql1);
 			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -472,20 +482,68 @@ public class update {
 		try {
 			Statement stmt=conn.createStatement();
 //			String sql1="update team set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
-			String sql2="update team set post="+"'"+post+"'"+ "where name="+"'"+name+"'";
-			String sql3="update team set start="+"'"+start+"'"+ "where name="+"'"+name+"'";
-			String sql4="update team set end="+"'"+end+"'"+ "where name="+"'"+name+"'";
-			String sql5="update team set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
+//			String sql2="update team set post="+"'"+post+"'"+ "where name="+"'"+name+"'"+"and"+"post="+"'"+post+"'";
+			String sql3="update team set start="+"'"+start+"'"+ "where name="+"'"+name+"'"+"and"+" post="+"'"+post+"'";
+			String sql4="update team set end="+"'"+end+"'"+ "where name="+"'"+name+"'"+"and"+" post="+"'"+post+"'";
+			String sql5="update team set person="+"'"+person+"'"+ "where name="+"'"+name+"'"+"and"+" post="+"'"+post+"'";
+			String sql6="update team set type="+"'"+type+"'"+ "where name="+"'"+name+"'"+"and"+" post="+"'"+post+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
-			System.out.println(sql2);
-			stmt.execute(sql2);
+//			System.out.println(sql2);
+//			stmt.execute(sql2);
 			System.out.println(sql3);
 			stmt.execute(sql3);
 			System.out.println(sql4);
 			stmt.execute(sql4);
 			System.out.println(sql5);
 			stmt.execute(sql5);
+			System.out.println(sql6);
+			stmt.execute(sql6);
+
+			String sql="select * from team_per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person);
+			if(person.equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into team_per(per) " +
+						"values("+"'"+person+"'"+")";
+				System.out.println(sql);
+				stmt.execute(sql);
+			}
+			
+			
+			sql="select * from per ";
+			rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person);
+			if(person.equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			
+			
+			
+			
+			
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

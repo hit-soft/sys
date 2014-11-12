@@ -270,7 +270,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from priz where";
 			if(name!=null&&!name.equals("")){
-				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" name= "+"'"+name+"'"+"and"+" person= "+"'"+person+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -309,7 +309,8 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from software where";
-			sql+=" number "+" like "+"'"+number+"'";
+			sql+=" number= "+"'"+number+"'"+"and";
+			sql+=" person= "+"'"+person+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -348,7 +349,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from team where";
 			if(name!=null&&!name.equals("")){
-				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" name= "+"'"+name+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);

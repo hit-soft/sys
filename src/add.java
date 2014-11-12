@@ -1,4 +1,5 @@
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -25,7 +26,7 @@ public class add {
 	private double already;
 	private double non;
 	private String owner;
-	private String person;
+	private String [] person;
 	private String level;
 	private String press;
 	private String substance;
@@ -156,10 +157,10 @@ public class add {
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}
-	public String getPerson() {
+	public String[] getPerson() {
 		return person;
 	}
-	public void setPerson(String person) {
+	public void setPerson(String[] person) {
 		this.person = person;
 	}
 	public String getLevel() {
@@ -250,15 +251,67 @@ public class add {
 			util.closeConnection(conn);
 		}
 	}
+	public String add_software(){
+		int flag=1;
+		for(int i=0;i<4;i++){
+			if(person[i]!=null&&!person[i].equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into software(name,number,owner,org,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			sql="insert into software_per(number,person) " +
+					"values("+"'"+number+"'"+","+"'"+person[i]+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person[i].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+			}
+			
+		}
+		if(flag==1) return "1";
+		else 		return "0";
+	}	
 	public String add_patent(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="insert into patent(name,number,owner,org,time,person) " +
-					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person+"'"+")";
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[0]+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -272,47 +325,55 @@ public class add {
 		}
 	}
 	public String add_priz(){
-		get_conn util=new get_conn();
-		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
-		System.out.println("conn="+conn);
+		int flag=1;
+		for(int i=0;i<10;i++){
+			if(person[i]!=null&&!person[i].equals("")){
+			get_conn util=new get_conn();
+			Connection conn=util.getConnection();
+			System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into priz(name,type,level,time,person) " +
-					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person+"'"+")";
+			String sql="insert into priz(name,type,level,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
-			return "1";
+			
+			sql="insert into priz_per(name,person) " +
+					"values("+"'"+name+"'"+","+"'"+person[i]+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person[i].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
 			}
 			catch(SQLException e){
 				e.printStackTrace();
-				return "0";
+				flag=0;
 			}
 		finally{
 			util.closeConnection(conn);
 		}
-	}
-	public String add_software(){
-		get_conn util=new get_conn();
-		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
-		System.out.println("conn="+conn);
-		try {
-			Statement stmt=conn.createStatement();
-			String sql="insert into software(name,number,owner,org,time,person) " +
-					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person+"'"+")";
-			System.out.println(sql);
-			stmt.execute(sql);
-			return "1";
-			}
-			catch(SQLException e){
-				e.printStackTrace();
-				return "0";
-			}
-		finally{
-			util.closeConnection(conn);
 		}
+		}
+		if(flag==1) return "1";
+		else 		return "0";
 	}
+	
 	public String add_study(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -337,14 +398,61 @@ public class add {
 	public String add_team(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into team(name,post,start,end,person) " +
-					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person+"'"+")";
+			String sql="insert into team(name,post,start,end,person,type) " +
+					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+type+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
+			
+			
+			
+			
+			
+			
+			sql="select * from team_per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person[0]);
+			if(person[0].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into team_per(per) " +
+						"values("+"'"+person[0]+"'"+")";
+				System.out.println(sql);
+				stmt.execute(sql);
+			}
+			
+			
+			sql="select * from per ";
+			rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person[0]);
+			if(person[0].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person[0]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			
+			
+			
 			return "1";
 			}
 			catch(SQLException e){
