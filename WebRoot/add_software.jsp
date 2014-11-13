@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -6,7 +6,7 @@ response.setCharacterEncoding("UTF-8");
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
+/*shjsdfbashfbajk,*/
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -33,13 +33,13 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">软件著作权查询界面</h1>
+<h1 align="center">软件著查询界面</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_software">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">著作权名称：</td>
+      <td width="110">著作权adsgafgdf名称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
@@ -80,7 +80,7 @@ body {
         <input type="submit" name="Submit" value="提交" />
       </label>
         <label>
-        <input type="reset" name="Submit2" value="重置" />
+        <input type="reset" name="Submit2" value="重置cdsfdvdfv" />
         </label></td>
     </tr>
   </table>

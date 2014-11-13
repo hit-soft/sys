@@ -34,13 +34,13 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询学术团体信息</h1>
+<h1 align="center">查询学术团体信ggafgfgsf息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_team">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">学术团体名称：</td>
+      <td width="110">学术团体svaggfagf名称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
