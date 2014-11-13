@@ -61,6 +61,12 @@ body {
       </label></td>
     </tr>
     <tr>
+      <td>排名顺序：</td>
+      <td><label>
+        <input name="per_level" type="text" id="per_level" value="${per_level}"/>
+      </label></td>
+    </tr>
+    <tr>
       <td>&nbsp;</td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />

@@ -32,6 +32,7 @@ public class update {
 	private String substance;
 	private String post;
 	private int per_level;
+	private String invi_by;
 	public String getName() {
 		return name;
 	}
@@ -194,6 +195,12 @@ public class update {
 	public void setPer_level(int per_level) {
 		this.per_level = per_level;
 	}
+	public String getInvi_by() {
+		return invi_by;
+	}
+	public void setInvi_by(String invi_by) {
+		this.invi_by = invi_by;
+	}
 	public String update_accept(){
 		System.out.println("here");
 		get_conn util=new get_conn();
@@ -248,18 +255,18 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-//			String sql1="update coope set type="+"'"+type+"'"+ "where type="+"'"+type+"'";
-			String sql2="update coope set out_pe="+"'"+out_pe+"'"+ "where type="+"'"+type+"'";
-			String sql3="update coope set in_pe="+"'"+in_pe+"'"+ "where type="+"'"+type+"'";
-			String sql4="update coope set num="+"'"+num+"'"+ "where type="+"'"+type+"'";
-			String sql5="update coope set start="+"'"+start+"'"+ "where type="+"'"+type+"'";
-			String sql6="update coope set end="+"'"+end+"'"+ "where type="+"'"+type+"'";
-			String sql7="update coope set out_pl="+"'"+out_pl+"'"+ "where type="+"'"+type+"'";
-			String sql8="update coope set in_pl="+"'"+in_pl+"'"+ "where type="+"'"+type+"'";
-			String sql9="update coope set goal="+"'"+goal+"'"+ "where type="+"'"+type+"'";
-			String sql10="update coope set name="+"'"+name+"'"+ "where type="+"'"+type+"'";
-//			System.out.println(sql1);
-//			stmt.execute(sql1);
+			String sql1="update coope set type="+"'"+type+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql2="update coope set out_pe="+"'"+out_pe+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql3="update coope set in_pe="+"'"+in_pe+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql4="update coope set num="+"'"+num+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql5="update coope set start="+"'"+start+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql6="update coope set end="+"'"+end+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql7="update coope set out_pl="+"'"+out_pl+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql8="update coope set in_pl="+"'"+in_pl+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			String sql9="update coope set goal="+"'"+goal+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+//			String sql10="update coope set name="+"'"+name+"'"+ "where name="+"'"+name+"'"+" and "+"invi_by ="+"'"+invi_by+"'";
+			System.out.println(sql1);
+			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -276,8 +283,8 @@ public class update {
 			stmt.execute(sql8);
 			System.out.println(sql9);
 			stmt.execute(sql9);
-			System.out.println(sql10);
-			stmt.execute(sql10);
+//			System.out.println(sql10);
+//			stmt.execute(sql10);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -334,16 +341,17 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="update patent set number="+"'"+number+"'"+ "where number="+"'"+number+"'";
+			String sql1="update patent set name="+"'"+name+"'"+ "where number="+"'"+number+"'";
 //			String sql1="update patent set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
 			String sql2="update patent set owner="+"'"+owner+"'"+ "where number="+"'"+number+"'";
 			String sql3="update patent set org="+"'"+org+"'"+ "where number="+"'"+number+"'";
 			String sql4="update patent set time="+"'"+time+"'"+ "where number="+"'"+number+"'";
-			String sql5="update patent set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
-			System.out.println(sql);
-			stmt.execute(sql);
-//			System.out.println(sql1);
-//			stmt.execute(sql1);
+			String sql5="update patent set per_level="+"'"+per_level+"'"+ "where number="+"'"+number+"'"+" and "+"person="+"'"+person+"'";
+//			String sql5="update patent set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
+//			System.out.println(sql);
+//			stmt.execute(sql);
+			System.out.println(sql1);
+			stmt.execute(sql1);
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);
@@ -399,7 +407,7 @@ public class update {
 //			String sql1="update publ set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
 			String sql2="update publ set press="+"'"+press+"'"+ "where name="+"'"+name+"'";
 			String sql3="update publ set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
-			String sql4="update publ set person="+"'"+person+"'"+ "where name="+"'"+name+"'";
+			String sql4="update publ set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+"person="+"'"+person+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -453,10 +461,10 @@ public class update {
 		try {
 			Statement stmt=conn.createStatement();
 //			String sql1="update study set org="+"'"+org+"'"+ "where org="+"'"+org+"'";
-			String sql2="update study set substance="+"'"+substance+"'"+ "where org="+"'"+org+"'";
-			String sql3="update study set start="+"'"+start+"'"+ "where org="+"'"+org+"'";
-			String sql4="update study set end="+"'"+end+"'"+ "where org="+"'"+org+"'";
-			String sql5="update study set person="+"'"+person+"'"+ "where org="+"'"+org+"'";
+			String sql2="update study set substance="+"'"+substance+"'"+ "where org="+"'"+org+"'"+" and "+"person="+"'"+person+"'";
+			String sql3="update study set start="+"'"+start+"'"+ "where org="+"'"+org+"'"+" and "+"person="+"'"+person+"'";
+			String sql4="update study set end="+"'"+end+"'"+ "where org="+"'"+org+"'"+" and "+"person="+"'"+person+"'";
+//			String sql5="update study set person="+"'"+person+"'"+ "where org="+"'"+org+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -465,8 +473,8 @@ public class update {
 			stmt.execute(sql3);
 			System.out.println(sql4);
 			stmt.execute(sql4);
-			System.out.println(sql5);
-			stmt.execute(sql5);
+//			System.out.println(sql5);
+//			stmt.execute(sql5);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

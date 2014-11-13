@@ -44,6 +44,7 @@ body {
     <td width="91">来访地</td>
     <td width="91">访问目的</td>
     <td width="91">报告名称</td>
+    <td width="91">邀请人</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -59,8 +60,10 @@ body {
     <td><input type=text value="${in_pl}"></td>
     <td><input type=text value="${goal}"></td>
     <td><input type=text value="${name}"></td>
+    <td><input type=text value="${invi_by}"></td>
     <td><s:url id="editURL" action="del_coope">
-		<s:param name="type" value="%{type}"></s:param>
+		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="invi_by" value="%{invi_by}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_coope">
@@ -74,6 +77,7 @@ body {
 		<s:param name="in_pl" value="%{in_pl}"></s:param>
 		<s:param name="goal" value="%{goal}"></s:param>
 		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="invi_by" value="%{invi_by}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

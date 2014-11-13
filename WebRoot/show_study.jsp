@@ -55,6 +55,7 @@ body {
     <td><input type=text value="${person}"></td>
     <td><s:url id="editURL" action="del_study">
 		<s:param name="org" value="%{org}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_study">

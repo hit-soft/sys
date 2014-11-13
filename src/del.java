@@ -30,6 +30,7 @@ public class del {
 	private String press;
 	private String substance;
 	private String post;
+	private String invi_by;
 	public String getName() {
 		return name;
 	}
@@ -186,6 +187,12 @@ public class del {
 	public void setPost(String post) {
 		this.post = post;
 	}
+	public String getInvi_by() {
+		return invi_by;
+	}
+	public void setInvi_by(String invi_by) {
+		this.invi_by = invi_by;
+	}
 	public String del_accept(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -211,9 +218,10 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from coope where";
-			if(type!=null&&!type.equals("")){
-				sql+=" type "+" like "+"'"+type+"'";
-			}
+			System.out.println("name:"+name);
+			System.out.println("invi_by:"+invi_by);
+				sql+=" name= "+"'"+name+"'";
+				sql+=" and "+" invi_by= "+"'"+invi_by+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -251,7 +259,7 @@ public class del {
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="delete from patent where";
-				sql+=" number "+" like "+"'"+number+"'";
+				sql+=" number= "+"'"+number+"'"+" and "+" person= "+"'"+person+"'";
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -291,6 +299,7 @@ public class del {
 			String sql="delete from publ where";
 			if(name!=null&&!name.equals("")){
 				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" and "+" person= "+"'"+person+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -330,6 +339,7 @@ public class del {
 			String sql="delete from study where";
 			if(org!=null&&!org.equals("")){
 				sql+=" org "+" like "+"'"+org+"'";
+				sql+=" and "+" person "+" like "+"'"+person+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);

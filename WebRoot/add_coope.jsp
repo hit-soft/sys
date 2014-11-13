@@ -100,6 +100,13 @@ body {
       </label></td>
     </tr>
     <tr>
+    <tr>
+      <td>邀请人：</td>
+      <td><label>
+        <input name="invi_by" type="text" id="invi_by" />
+      </label></td>
+    </tr>
+    <tr>
       <td>&nbsp;</td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
