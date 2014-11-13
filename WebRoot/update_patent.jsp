@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -49,13 +49,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>专利权人：</td>
+      <td>专利：</td>
       <td><label>
         <input name="owner" type="text" id="owner" value="${owner}"/>
       </label></td>
     </tr>
     <tr>
-      <td>授予单位：</td>
+      <td>授位：</td>
       <td><label>
         <input name="org" type="text" id="org" value="${org}"/>
       </label></td>

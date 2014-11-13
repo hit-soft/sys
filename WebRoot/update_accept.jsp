@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新科研经费信息</h1>
+<h1 align="center">更新科研经bbndb,samafa,费信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_accept">	
@@ -43,13 +43,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>项目来源：</td>
+      <td>项源：</td>
       <td><label>
         <input name="source" type="text" id="source" value="${source}"/>
       </label></td>
     </tr>
     <tr>
-      <td>项目负责人：</td>
+      <td>项责人：</td>
       <td><label>
         <input name="leader" type="text" id="leader" value="${leader}"/>
       </label></td>
