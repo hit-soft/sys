@@ -131,17 +131,17 @@ public class query_ {
 					use.setIn_pl(rs.getString(8));
 					use.setGoal(rs.getString(9));
 					use.setName(rs.getString(10));
+					use.setInvi_by(rs.getString(11));
 					fla=1;
 					l2.add(use);
 		}
-				if(fla==0){System.out.println("h1");
-					return "0";}
-				else{System.out.println("h2");
-					return "1";}
+				if(fla==0)
+					return "0";
+				else
+					return "1";
 		}
 		catch(SQLException e){
 			e.printStackTrace();
-			System.out.println("h3");
 			return "0";
 		}finally{
 			util.closeConnection(conn);
@@ -201,6 +201,7 @@ public class query_ {
 					use.setOrg(rs.getString(4));
 					use.setTime(rs.getString(5));
 					use.setPerson(rs.getString(6));
+					use.setPer_level(rs.getInt(7));
 					fla=1;
 					l4.add(use);
 		}
@@ -232,6 +233,7 @@ public class query_ {
 					use.setLevel(rs.getString(3));
 					use.setTime(rs.getString(4));
 					use.setPerson(rs.getString(5));
+					use.setPer_level(rs.getInt(6));
 					fla=1;
 					l5.add(use);
 		}
@@ -263,6 +265,7 @@ public class query_ {
 					use.setPress(rs.getString(2));
 					use.setTime(rs.getString(3));
 					use.setPerson(rs.getString(4));
+					use.setPer_level(rs.getInt(5));
 					fla=1;
 					l6.add(use);
 		}
@@ -295,6 +298,7 @@ public class query_ {
 					use.setOrg(rs.getString(4));
 					use.setTime(rs.getString(5));
 					use.setPerson(rs.getString(6));
+					use.setPer_level(rs.getInt(7));
 					fla=1;
 					l7.add(use);
 		}
@@ -359,6 +363,8 @@ public class query_ {
 					use.setStart(rs.getString(3));
 					use.setEnd(rs.getString(4));
 					use.setPerson(rs.getString(5));
+					System.out.println("person:"+rs.getString(5));
+					use.setType(rs.getString(6));
 					fla=1;
 					l9.add(use);
 		}

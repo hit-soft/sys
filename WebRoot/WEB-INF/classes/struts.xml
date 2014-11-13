@@ -16,7 +16,6 @@
 	
 	<action name="funds" class="jump_" method="jump_">
 		<result name="1">/add_funds.jsp</result>
-		<result name="2">/query_funds.jsp</result>
 	</action>
 	<action name="add_funds" class="add" method="add_funds">
 		<result name="1">/index.jsp</result>
@@ -42,7 +41,6 @@
 	
 	<action name="accept" class="jump_" method="jump_">
 		<result name="1">/add_accept.jsp</result>
-		<result name="2">/query_accept.jsp</result>
 	</action>
 	<action name="add_accept" class="add" method="add_accept">
 		<result name="1">/index.jsp</result>
@@ -69,7 +67,6 @@
 	
 	<action name="software" class="jump_" method="jump_">
 		<result name="1">/add_software.jsp</result>
-		<result name="2">/query_software.jsp</result>
 	</action>
 	<action name="add_software" class="add" method="add_software">
 		<result name="1">/index.jsp</result>
@@ -98,7 +95,6 @@
 	
 	<action name="patent" class="jump_" method="jump_">
 		<result name="1">/add_patent.jsp</result>
-		<result name="2">/query_patent.jsp</result>
 	</action>
 	<action name="add_patent" class="add" method="add_patent">
 		<result name="1">/index.jsp</result>
@@ -125,7 +121,6 @@
 	
 	<action name="priz" class="jump_" method="jump_">
 		<result name="1">/add_priz.jsp</result>
-		<result name="2">/query_priz.jsp</result>
 	</action>
 	<action name="add_priz" class="add" method="add_priz">
 		<result name="1">/index.jsp</result>
@@ -152,7 +147,6 @@
 	
 	<action name="publ" class="jump_" method="jump_">
 		<result name="1">/add_publ.jsp</result>
-		<result name="2">/query_publ.jsp</result>
 	</action>
 	<action name="add_publ" class="add" method="add_publ">
 		<result name="1">/index.jsp</result>
@@ -178,7 +172,6 @@
 	
 	<action name="team" class="jump_" method="jump_">
 		<result name="1">/add_team.jsp</result>
-		<result name="2">/query_team.jsp</result>
 	</action>
 	<action name="add_team" class="add" method="add_team">
 		<result name="1">/index.jsp</result>
@@ -203,7 +196,6 @@
 	
 	<action name="study" class="jump_" method="jump_">
 		<result name="1">/add_study.jsp</result>
-		<result name="2">/query_study.jsp</result>
 	</action>
 	<action name="add_study" class="add" method="add_study">
 		<result name="1">/index.jsp</result>
@@ -229,7 +221,6 @@
 	
 	<action name="coope" class="jump_" method="jump_">
 		<result name="1">/add_coope.jsp</result>
-		<result name="2">/query_coope.jsp</result>
 	</action>
 	<action name="add_coope" class="add" method="add_coope">
 		<result name="1">/index.jsp</result>

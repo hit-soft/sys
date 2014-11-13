@@ -52,6 +52,22 @@ body {
       </label></td>
     </tr>
     <tr>
+    <td>职务类型：</td>
+      <td><label>
+  <div align="right">  
+    <select name="type" id="type">
+      <option value="国际学术组织理事以上职务">国际学术组织理事以上职务</option>
+      <option value="全国一级学会常务理事以上职务或专委会主任">全国一级学会常务理事以上职务或专委会主任</option>
+      <option value="全国一级学会理事或专委会副主任">全国一级学会理事或专委会副主任</option>
+      <option value="省学会常务理事以上职务或专委会主任">省学会常务理事以上职务或专委会主任</option>
+      <option value="省学会理事或专委会副主任">省学会理事或专委会副主任</option>
+      <option value="国家863主题专家组专家">国家863主题专家组专家</option>
+      <option value="其他国家专家">其他国家专家</option>
+    </select>
+  </div>
+      </label></td>
+    </tr>
+    <tr>
       <td>任职开始时间：</td>
       <td><label>
         <input name="start" type="text" id="start" />

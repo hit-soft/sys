@@ -3,6 +3,7 @@ public class publ {
 	private String press;
 	private String time;
 	private String person;
+	private int per_level;
 	public String getName() {
 		return name;
 	}
@@ -26,5 +27,11 @@ public class publ {
 	}
 	public void setPerson(String person) {
 		this.person = person;
+	}
+	public int getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(int per_level) {
+		this.per_level = per_level;
 	}
 }

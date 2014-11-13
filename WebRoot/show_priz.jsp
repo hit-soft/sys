@@ -42,7 +42,8 @@ body {
     <td width="91">获奖类型</td>
     <td width="91">获奖等级</td>
     <td width="91">获奖时间</td>
-    <td width="91">获奖人员名单</td>
+    <td width="91">获奖人员</td>
+    <td width="91">排名顺序</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -53,8 +54,10 @@ body {
     <td><input type=text value="${level}"></td>
     <td><input type=text value="${time}"></td>
     <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
     <td><s:url id="editURL" action="del_priz">
 		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_priz">
@@ -63,6 +66,7 @@ body {
 		<s:param name="level" value="%{level}"></s:param>
 		<s:param name="time" value="%{time}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

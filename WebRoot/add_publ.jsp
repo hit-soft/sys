@@ -57,7 +57,31 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>著者名单：</td>
+      <td>著者1：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>著者2：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>著者3：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>著者4：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>著者5：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

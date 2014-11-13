@@ -54,7 +54,16 @@ body {
     <tr>
       <td>获奖等级：</td>
       <td><label>
-        <input name="level" type="text" id="level" />
+  <div align="right">
+    <select name="level" id="level">
+      <option value="国家级一等奖">国家级一等奖</option>
+      <option value="国家级二等奖">国家级二等奖</option>
+      <option value="省部级一等奖">省部级一等奖</option>
+      <option value="省部级二等奖">省部级二等奖</option>
+      <option value="国际专项奖">国际专项奖</option>
+      <option value="国内专项奖">国内专项奖</option>
+    </select>
+  </div>
       </label></td>
     </tr>
     <tr>
@@ -64,7 +73,61 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员名单：</td>
+      <td>获奖人员1：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员2(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员3(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员4(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员5(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员6(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员7(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员8(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员9(无则不填)：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>获奖人员10(无则不填)：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

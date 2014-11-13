@@ -39,7 +39,7 @@ body {
     <tr>
       <td width="110">类别：</td>
       <td width="179"><label>
-        <input name="type" type="text" id="type" value="${type}" readonly/>
+        <input name="type" type="text" id="type" value="${type}"/>
       </label></td>
     </tr>
     <tr>
@@ -93,7 +93,13 @@ body {
     <tr>
       <td>报告名称：</td>
       <td><label>
-        <input name="name" type="text" id="name" value="${name}"/>
+        <input name="name" type="text" id="name" value="${name}" readonly/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>邀请人：</td>
+      <td><label>
+        <input name="invi_by" type="text" id="invi_by" value="${invi_by}" readonly/>
       </label></td>
     </tr>
     <tr>
