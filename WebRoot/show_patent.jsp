@@ -45,6 +45,7 @@ body {
     <td width="91">授予单位</td>
     <td width="91">授予时间</td>
     <td width="91">人员名单</td>
+    <td width="91">排名顺序</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -56,8 +57,10 @@ body {
     <td><input type=text value="${org}"></td>
     <td><input type=text value="${time}"></td>
     <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
     <td><s:url id="editURL" action="del_patent">
 		<s:param name="number" value="%{number}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_patent">
@@ -67,6 +70,7 @@ body {
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="time" value="%{time}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

@@ -67,9 +67,15 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>人员名单：</td>
+      <td>人员：</td>
       <td><label>
-        <input name="person" type="text" id="person" value="${person}"/>
+        <input name="person" type="text" id="person" value="${person}" readonly/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>排名顺序：</td>
+      <td><label>
+        <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
     <tr>

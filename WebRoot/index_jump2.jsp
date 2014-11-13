@@ -64,35 +64,30 @@ body {
 
 
 <td><s:url id="editURL" action="query_priz">
-		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">获奖情况管理</s:a></td>
 <br>
 
 
 <td><s:url id="editURL" action="query_publ">
-		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">出版专著管理</s:a></td>
 <br>
 
 
 <td><s:url id="editURL" action="query_team">
-		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">学术团体管理</s:a></td>
 <br>
 
 
 <td><s:url id="editURL" action="query_study">
-		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">国内外进修及学习情况管理</s:a></td>
 <br>
 
 
 <td><s:url id="editURL" action="query_coope">
-		<s:param name="fuck" value="2"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">国际合作情况管理</s:a></td>
 <br>

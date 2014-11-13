@@ -4,6 +4,7 @@ public class team {
 	private String start;
 	private String end;
 	private String person;
+	private String type;
 	public String getName() {
 		return name;
 	}
@@ -33,5 +34,11 @@ public class team {
 	}
 	public void setPerson(String person) {
 		this.person = person;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 }

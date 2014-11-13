@@ -41,7 +41,8 @@ body {
     <td width="91">专著名称</td>
     <td width="91">出版社名称</td>
     <td width="91">出版时间</td>
-    <td width="91">著者名单</td>
+    <td width="91">著者</td>
+    <td width="91">著者排名顺序</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -51,10 +52,9 @@ body {
     <td><input type=text value="${press}"></td>
     <td><input type=text value="${time}"></td>
     <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
     <td><s:url id="editURL" action="del_publ">
 		<s:param name="name" value="%{name}"></s:param>
-		<s:param name="press" value="%{press}"></s:param>
-		<s:param name="time" value="%{time}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
@@ -63,6 +63,7 @@ body {
 		<s:param name="press" value="%{press}"></s:param>
 		<s:param name="time" value="%{time}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

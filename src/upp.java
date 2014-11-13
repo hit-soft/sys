@@ -26,6 +26,8 @@ public class upp {
 	private String press;
 	private String substance;
 	private String post;
+	private int per_level;
+	private String invi_by;
 	public String getName() {
 		return name;
 	}
@@ -182,8 +184,20 @@ public class upp {
 	public void setPost(String post) {
 		this.post = post;
 	}
+	public int getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(int per_level) {
+		this.per_level = per_level;
+	}
+	public String getInvi_by() {
+		return invi_by;
+	}
+	public void setInvi_by(String invi_by) {
+		this.invi_by = invi_by;
+	}
 	public String upp(){
-		System.out.println("num = "+getNum());
+//		System.out.println("num = "+getNum());
 		return "1";
 	}
 }

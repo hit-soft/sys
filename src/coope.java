@@ -9,6 +9,7 @@ public class coope {
 	public String in_pl;
 	public String goal;
 	public String name;
+	public String invi_by;
 	public String getType() {
 		return type;
 	}
@@ -68,5 +69,11 @@ public class coope {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getInvi_by() {
+		return invi_by;
+	}
+	public void setInvi_by(String invi_by) {
+		this.invi_by = invi_by;
 	}
 }
