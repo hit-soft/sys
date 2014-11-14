@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -30,19 +30,19 @@ body {
 </style></head>
   
   <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到询系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="center">通过该页面您可以查询获奖情况信息同时也可以向系统中添加一个获奖情况信息</p>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="right">请选择您所需要的服务：</p>
+<p align="right">请选择您的服务：</p>
 <form id="form1" name="form1" method="post" action="priz">
   <label>
   <div align="right">
     <select name="priz" id="priz">
       <option value="1">添加获奖情况信息</option>
-      <option value="2">查询获奖情况信息</option>
+      <option value="2">查询获信息</option>
       </select>
   </div>
   </label>

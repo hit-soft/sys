@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -30,11 +30,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 body {
 	background-color: #CCCCCC;
 }
--->
+-->/*dhgdjafakhfjbafkajfbafabhfabf*/
 </style></head>
 
 <body>
-<h1 align="center">添加国际合作情况信息</h1>
+<h1 align="center">添加国际合息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_coope">	

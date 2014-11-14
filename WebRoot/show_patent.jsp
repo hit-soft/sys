@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+  <head>/*ahjhjsbdbsabadbah*/
     <base href="<%=basePath%>">
     
     <title>My JSP 'show_by_author.jsp' starting page</title>

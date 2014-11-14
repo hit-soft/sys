@@ -34,7 +34,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">添加专利信息</h1>
+<h1 align="center">添加专利bdkdbhaskfbjba信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_patent">	
