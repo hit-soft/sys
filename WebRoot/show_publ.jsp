@@ -40,8 +40,8 @@ body {
   <tr>
     <td width="91">著作权名称</td>
     <td width="91">著作权登记号</td>/*hsnssanndndncdn*/
-    <td width="91">著作权人</td>
-    <td width="91">授予单位</td>
+    <td width="91">著作权daggfhgg人</td>
+    <td width="91">授sggyahuauhf予单位</td>
     <td width="91">授予时间</td>
     <td width="91">人员名单</td>
     <td width="51">操作1</td>

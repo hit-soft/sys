@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>/*ahjhjsbdbsabadbah*/
-    <base href="<%=basePath%>">
+    <base href="<%=basePath%>">/*dshhkghhasdh*/
     
     <title>My JSP 'show_by_author.jsp' starting page</title>
     
@@ -39,12 +39,12 @@ body {
 <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td width="91">专利名称</td>
+    <td width="91">专dfgfdgfgdf名称</td>
     <td width="91">专利编号</td>
-    <td width="91">专人</td>
-    <td width="91">授予位</td>
-    <td width="91">授予时间</td>
-    <td width="91">人员名单</td>
+    <td width="91">专cxcxvfdadgafgfdg</td>
+    <td width="91">授予ggfzvzx位</td>
+    <td width="91">授予czvvfzbz时间</td>
+    <td width="91">人cccffg员名单</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
