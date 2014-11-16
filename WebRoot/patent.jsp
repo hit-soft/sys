@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -30,10 +30,10 @@ body {
 </style></head>
   
   <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到图书查vzxcvzx询系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可以查询专利同时也可以向系统中添加一个专利</p>
+<p align="center">通过该页面您可以查询ccvzfb专利同时也可以向系统中添加一个专利</p>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="right">请选择您所需要的服务：</p>
