@@ -43,6 +43,9 @@ body {
     <td width="91">已到款</td>
     <td width="91">未到款</td>
     <td width="91">课题合同号</td>
+    <td width="91">人员</td>
+    <td width="91">排名顺序</td>
+    <td width="91">项目类型</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -57,9 +60,13 @@ body {
     <td><input type=text value="${already}"></td>
     <td><input type=text value="${non}"></td>
     <td><input type=text value="${number}"></td>
+    <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
+    <td><input type=text value="${type}"></td>
     
     <td><s:url id="editURL" action="del_funds">
 		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
 		
@@ -73,9 +80,17 @@ body {
 		<s:param name="already" value="%{already}"></s:param>
 		<s:param name="non" value="%{non}"></s:param>
 		<s:param name="number" value="%{number}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
+		<s:param name="type" value="%{type}"></s:param>
+		
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>
   </s:iterator>
 </table>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>

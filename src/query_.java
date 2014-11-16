@@ -93,6 +93,8 @@ public class query_ {
 					use.setOrg(rs.getString(9));
 					use.setNumber(rs.getInt(10));
 					use.setCard(rs.getString(11));
+					use.setPerson(rs.getString(13));
+					use.setPer_level(rs.getString(14));
 					use.setRemark(rs.getString(12));
 					fla=1;
 					l1.add(use);
@@ -167,6 +169,9 @@ public class query_ {
 					use.setAlready(rs.getDouble(7));
 					use.setNon(rs.getDouble(8));
 					use.setNumber(rs.getInt(9));
+					use.setPerson(rs.getString(10));
+					use.setPer_level(rs.getString(11));
+					use.setType(rs.getString(12));
 					fla=1;
 					l3.add(use);
 		}

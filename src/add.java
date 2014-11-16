@@ -194,28 +194,61 @@ public class add {
 	public void setInvi_by(String invi_by) {
 		this.invi_by = invi_by;
 	}
-	public String add_accept(){
+	
+	public String add_software(){
+		int flag=1;
+		for(int i=0;i<5;i++){
+			if(person[i]!=null&&!person[i].equals("")){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into accept(name,source,leader,start,end,contract,type,time,org,number,card,remark) " +
-					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+leader+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+
-					","+"'"+type+"'"+","+"'"+time+"'"+","+"'"+org+"'"+","+"'"+number+"'"+","+"'"+card+"'"+","+"'"+remark+"'"+")";
+			String sql="insert into software(name,number,owner,org,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+person[0]+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
-			return "1";
+			
+			
+			
+			sql="insert into software_per(number,person) " +
+					"values("+"'"+number+"'"+","+"'"+person[i]+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person[i].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
 			}
 			catch(SQLException e){
 				e.printStackTrace();
-				return "0";
+				flag=0;
 			}
 		finally{
 			util.closeConnection(conn);
 		}
-	}
+			}
+			
+			
+		}
+		if(flag==1) return "1";
+		else 		return "0";
+	}	
 	public String add_coope(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -266,26 +299,26 @@ public class add {
 			util.closeConnection(conn);
 		}
 	}
-	public String add_software(){
+	public String add_accept(){
 		int flag=1;
-		for(int i=0;i<4;i++){
+		for(int i=0;i<6;i++){
 			if(person[i]!=null&&!person[i].equals("")){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into software(name,number,owner,org,time,person,per_level) " +
-					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+			String sql="insert into accept(name,source,leader,start,end,contract,type,time,org,number,card,remark,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+
+					","+"'"+type+"'"+","+"'"+time+"'"+","+"'"+org+"'"+","+"'"+number+"'"+","+"'"+card+"'"+","+"'"+remark+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
 			
-			
-			
-			sql="insert into software_per(number,person) " +
-					"values("+"'"+number+"'"+","+"'"+person[i]+"'"+")";
+			sql="insert into accept_per(name,person) " +
+					"values("+"'"+name+"'"+","+"'"+person[i]+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
+			
 			
 			sql="select * from per ";
 			ResultSet rs=stmt.executeQuery(sql);
@@ -304,7 +337,54 @@ public class add {
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	}
+		if(flag==1) return "1";
+		else 		return "0";
+	}
+	public String add_funds(){
+		int flag=1;
+		for(int i=0;i<6;i++){
+			if(person[i]!=null&&!person[i].equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number,person,per_level,type) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
 			
+			sql="insert into funds_per(name,person) " +
+					"values("+"'"+name+"'"+","+"'"+person[i]+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person[i].equals(rs.getString(1))){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
 			}
 			catch(SQLException e){
 				e.printStackTrace();
@@ -314,31 +394,9 @@ public class add {
 			util.closeConnection(conn);
 		}
 			}
-			
 		}
 		if(flag==1) return "1";
 		else 		return "0";
-	}	
-	public String add_funds(){
-		get_conn util=new get_conn();
-		Connection conn=util.getConnection();
-		System.out.println("conn=�ݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲݲ�cccccccccccccccccccccccc");
-		System.out.println("conn="+conn);
-		try {
-			Statement stmt=conn.createStatement();
-			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number) " +
-					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+leader+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+")";
-			System.out.println(sql);
-			stmt.execute(sql);
-			return "1";
-			}
-			catch(SQLException e){
-				e.printStackTrace();
-				return "0";
-			}
-		finally{
-			util.closeConnection(conn);
-		}
 	}
 	public String add_patent(){
 		int flag=1;

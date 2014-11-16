@@ -219,6 +219,7 @@ public class update {
 			String sql10="update accept set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
 			String sql11="update accept set card="+"'"+card+"'"+ "where name="+"'"+name+"'";
 			String sql12="update accept set remark="+"'"+remark+"'"+ "where name="+"'"+name+"'";
+			String sql13="update accept set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+" person= "+"'"+person+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -238,8 +239,13 @@ public class update {
 			System.out.println(sql9);
 			stmt.execute(sql9);
 			stmt.execute(sql10);
+			System.out.println(sql10);
 			stmt.execute(sql11);
-			stmt.execute(sql12);	
+			System.out.println(sql11);
+			stmt.execute(sql12);
+			System.out.println(sql12);
+			System.out.println(sql13);
+			stmt.execute(sql13);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -309,6 +315,8 @@ public class update {
 			String sql7="update funds set already="+"'"+already+"'"+ "where name="+"'"+name+"'";
 			String sql8="update funds set non="+"'"+non+"'"+ "where name="+"'"+name+"'";
 			String sql9="update funds set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
+			String sql10="update funds set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+"person="+"'"+person+"'";
+			String sql11="update funds set type="+"'"+type+"'"+ " where name="+"'"+name+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -327,6 +335,10 @@ public class update {
 			stmt.execute(sql8);
 			System.out.println(sql9);
 			stmt.execute(sql9);
+			System.out.println(sql10);
+			stmt.execute(sql10);
+			System.out.println(sql11);
+			stmt.execute(sql11);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

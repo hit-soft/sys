@@ -93,4 +93,8 @@ body {
 </form>
 <h2 align="center">	请详细正确的填写您要更新的软件著作权信息，以避免造成不必要的错误。</h2>
 </body>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>

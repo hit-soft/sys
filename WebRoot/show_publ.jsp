@@ -71,5 +71,9 @@ body {
 </table>
 <p>&nbsp; </p>
 </body>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>
 

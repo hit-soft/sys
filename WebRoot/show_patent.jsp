@@ -77,5 +77,9 @@ body {
   </s:iterator>
 </table>
 </body>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>
 

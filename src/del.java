@@ -200,7 +200,8 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from accept where";
 			if(name!=null&&!name.equals("")){
-				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" name= "+"'"+name+"'";
+				sql+=" and "+" person= "+"'"+person+"'";
 			}
 			stmt.execute(sql);
 			return "1";
@@ -240,7 +241,8 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from funds where";
 			if(name!=null&&!name.equals("")){
-				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" name= "+"'"+name+"'";
+				sql+=" and "+" person= "+"'"+person+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -298,7 +300,7 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from publ where";
 			if(name!=null&&!name.equals("")){
-				sql+=" name "+" like "+"'"+name+"'";
+				sql+=" name= "+"'"+name+"'";
 				sql+=" and "+" person= "+"'"+person+"'";
 			}
 			System.out.println(sql);
@@ -338,8 +340,8 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from study where";
 			if(org!=null&&!org.equals("")){
-				sql+=" org "+" like "+"'"+org+"'";
-				sql+=" and "+" person "+" like "+"'"+person+"'";
+				sql+=" org= "+"'"+org+"'";
+				sql+=" and "+" person= "+"'"+person+"'";
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
