@@ -44,6 +44,7 @@ body {
     <td width="91">授予单位</td>
     <td width="91">授予时间</td>
     <td width="91">人员名单</td>
+    <td width="91">排名顺序</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -76,5 +77,9 @@ body {
 </table>
 <p>&nbsp; </p>
 </body>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>
 

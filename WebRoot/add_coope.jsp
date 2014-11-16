@@ -45,12 +45,7 @@ body {
         <input name="type" type="text" id="type" />
       </label></td>
     </tr>
-    <tr>
-      <td>出访人员名单：</td>
-      <td><label>
-        <input name="out_pe" type="text" id="out_pe" />
-      </label></td>
-    </tr>
+
     <tr>
       <td>来访人员名单：</td>
       <td><label>
@@ -75,12 +70,7 @@ body {
         <input name="end" type="text" id="end" />
       </label></td>
     </tr>
-    <tr>
-      <td>出访地：</td>
-      <td><label>
-        <input name="out_pl" type="text" id="out_pl" />
-      </label></td>
-    </tr>
+
     <tr>
       <td>来访地：</td>
       <td><label>
@@ -106,6 +96,10 @@ body {
         <input name="invi_by" type="text" id="invi_by" />
       </label></td>
     </tr>
+    <br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
     <tr>
       <td>&nbsp;</td>
       <td><label>

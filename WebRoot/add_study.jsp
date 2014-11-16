@@ -69,6 +69,10 @@ body {
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
+    <br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
     <tr>
       <td>&nbsp;</td>
       <td><label>

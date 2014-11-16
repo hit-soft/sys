@@ -83,7 +83,7 @@ body {
 <td><s:url id="editURL" action="team">
 		<s:param name="fuck" value="1"></s:param>
 		</s:url>
-		<s:a href="%{editURL}">学术团体管理</s:a></td>
+		<s:a href="%{editURL}">学术团体兼职情况管理</s:a></td>
 <br>
 
 
@@ -99,7 +99,10 @@ body {
 		</s:url>
 		<s:a href="%{editURL}">国际合作情况管理</s:a></td>
 <br>
-
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 
 <p align="center">&nbsp;</p>
 </body>
