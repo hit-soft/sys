@@ -45,6 +45,8 @@ body {
     <td width="47" nowrap="nowrap">验收单位</td>
     <td width="78" nowrap="nowrap">课题合同号</td>
     <td width="29" nowrap="nowrap">经费卡号</td>
+    <td width="19" nowrap="nowrap">人员</td>
+    <td width="19" nowrap="nowrap">排名顺序</td>
     <td width="19" nowrap="nowrap">备注</td>
     <td width="51" nowrap="nowrap">操作1</td>
     <td width="121" nowrap="nowrap">操作2</td>
@@ -62,9 +64,12 @@ body {
     <td><input type=text value="${org}"></td>
     <td><input type=text value="${number}"></td>
     <td><input type=text value="${card}"></td>
+    <td><input type=text value="${person}"></td>
+    <td><input type=text value="${per_level}"></td>
  	<td><input type=text value="${remark}"></td>
     <td><s:url id="editURL" action="del_accept">
 		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_accept">
@@ -79,10 +84,18 @@ body {
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="number" value="%{number}"></s:param>
 		<s:param name="card" value="%{card}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
 		<s:param name="remark" value="%{remark}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>
+  
   </s:iterator>
+  
 </table>
+<br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
 </html>

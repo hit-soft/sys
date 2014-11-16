@@ -54,7 +54,7 @@ body {
     <tr>
       <td>项目负责人：</td>
       <td><label>
-        <input name="leader" type="text" id="leader" />
+        <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
@@ -76,7 +76,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>已到款：</td>
+      <td>当年已到款：</td>
       <td><label>
         <input name="already" type="text" id="already" />
       </label></td>
@@ -93,6 +93,62 @@ body {
         <input name="number" type="text" id="number" />
       </label></td>
     </tr>
+    <tr>
+      <td>人员1：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员2：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员3：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员4：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>人员5：</td>
+      <td><label>
+        <input name="person" type="text" id="person" />
+      </label></td>
+    </tr>
+	
+	<tr>
+      <td>项目类型：</td>
+      <td>
+      <label>
+		<div align="right">
+		<select name="type" id="type">
+		<option value="国家973项目">国家973项目</option>
+		<option value="国家科技重大专项">国家科技重大专项</option>
+		<option value="国家自然科学基金	重大/重点">国家自然科学基金	重大/重点</option>
+		<option value="国家自然科学基金	面上">国家自然科学基金	面上</option>
+		<option value="863项目、国家科技支撑项目	重大/重点">863项目、国家科技支撑项目	重大/重点</option>
+		<option value="863项目、国家科技支撑项目	863面上">863项目、国家科技支撑项目	863面上</option>
+		<option value="部委重大/重点项目">部委重大/重点项目</option>
+		<option value="国防类及其它部委项目">国防类及其它部委项目</option>
+		<option value="国际合作项目">国际合作项目</option>
+		<option value="其它科研项目">其它科研项目</option>
+		</select>
+		</div>
+      </label>
+      </td>
+    </tr>
+    <br>
+    <a href="index.jsp">
+	返回系统首页
+	</a>
     <tr>
       <td>&nbsp;</td>
       <td><label>

@@ -11,6 +11,8 @@ public class accept {
 	private String org;
 	private int number;
 	private String card;
+	private String person;
+	private String per_level;
 	private String remark;
 	public String getName() {
 		return name;
@@ -83,5 +85,17 @@ public class accept {
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+	public String getPerson() {
+		return person;
+	}
+	public void setPerson(String person) {
+		this.person = person;
+	}
+	public String getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(String per_level) {
+		this.per_level = per_level;
 	}
 }

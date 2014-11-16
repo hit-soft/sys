@@ -9,6 +9,9 @@ public class funds {
 	private double already;
 	private double non;
 	private int number;
+	private String person;
+	private String per_level;
+	private String type;
 	public String getName() {
 		return name;
 	}
@@ -62,5 +65,23 @@ public class funds {
 	}
 	public void setNumber(int number) {
 		this.number = number;
+	}
+	public String getPerson() {
+		return person;
+	}
+	public void setPerson(String person) {
+		this.person = person;
+	}
+	public String getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(String per_level) {
+		this.per_level = per_level;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 }
