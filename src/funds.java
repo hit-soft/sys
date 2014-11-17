@@ -10,7 +10,7 @@ public class funds {
 	private double non;
 	private int number;
 	private String person;
-	private String per_level;
+	private int per_level;
 	private String type;
 	public String getName() {
 		return name;
@@ -72,10 +72,10 @@ public class funds {
 	public void setPerson(String person) {
 		this.person = person;
 	}
-	public String getPer_level() {
+	public int getPer_level() {
 		return per_level;
 	}
-	public void setPer_level(String per_level) {
+	public void setPer_level(int per_level) {
 		this.per_level = per_level;
 	}
 	public String getType() {

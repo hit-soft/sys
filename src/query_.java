@@ -71,6 +71,13 @@ public class query_ {
 	public void setL9(List<team> l9) {
 		this.l9 = l9;
 	}
+	private List<per> l10 = new ArrayList();
+	public List<per> getL10() {
+		return l10;
+	}
+	public void setL10(List<per> l10) {
+		this.l10 = l10;
+	}
 	public String query_accept(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -94,7 +101,7 @@ public class query_ {
 					use.setNumber(rs.getInt(10));
 					use.setCard(rs.getString(11));
 					use.setPerson(rs.getString(13));
-					use.setPer_level(rs.getString(14));
+					use.setPer_level(rs.getInt(14));
 					use.setRemark(rs.getString(12));
 					fla=1;
 					l1.add(use);
@@ -170,7 +177,7 @@ public class query_ {
 					use.setNon(rs.getDouble(8));
 					use.setNumber(rs.getInt(9));
 					use.setPerson(rs.getString(10));
-					use.setPer_level(rs.getString(11));
+					use.setPer_level(rs.getInt(11));
 					use.setType(rs.getString(12));
 					fla=1;
 					l3.add(use);
@@ -207,6 +214,7 @@ public class query_ {
 					use.setTime(rs.getString(5));
 					use.setPerson(rs.getString(6));
 					use.setPer_level(rs.getInt(7));
+					use.setType(rs.getString(8));
 					fla=1;
 					l4.add(use);
 		}
@@ -271,6 +279,7 @@ public class query_ {
 					use.setTime(rs.getString(3));
 					use.setPerson(rs.getString(4));
 					use.setPer_level(rs.getInt(5));
+					use.setType(rs.getString(6));
 					fla=1;
 					l6.add(use);
 		}
@@ -368,7 +377,6 @@ public class query_ {
 					use.setStart(rs.getString(3));
 					use.setEnd(rs.getString(4));
 					use.setPerson(rs.getString(5));
-					System.out.println("person:"+rs.getString(5));
 					use.setType(rs.getString(6));
 					fla=1;
 					l9.add(use);
@@ -384,6 +392,32 @@ public class query_ {
 		}finally{
 			util.closeConnection(conn);
 		}
-
+	}
+	public String query_author(){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		String sql="select * from per";
+			try{
+				Statement stmt=conn.createStatement();
+				ResultSet rs=stmt.executeQuery(sql);
+				System.out.println(sql);
+				int fla=0;
+				while(rs.next()){
+					per use=new per();
+					use.setPer(rs.getString(1));
+					fla=1;
+					l10.add(use);
+		}
+				if(fla==0){System.out.println("0");
+					return "0";}
+				else{System.out.println("1");
+					return "1";}
+		}
+		catch(SQLException e){
+			e.printStackTrace();{System.out.println("2");
+			return "0";}
+		}finally{
+			util.closeConnection(conn);
+		}
 	}
 }

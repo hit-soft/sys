@@ -12,7 +12,7 @@ public class accept {
 	private int number;
 	private String card;
 	private String person;
-	private String per_level;
+	private int per_level;
 	private String remark;
 	public String getName() {
 		return name;
@@ -92,10 +92,10 @@ public class accept {
 	public void setPerson(String person) {
 		this.person = person;
 	}
-	public String getPer_level() {
+	public int getPer_level() {
 		return per_level;
 	}
-	public void setPer_level(String per_level) {
+	public void setPer_level(int per_level) {
 		this.per_level = per_level;
 	}
 }

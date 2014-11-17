@@ -12,6 +12,18 @@
 		<result name="1">/index_jump2.jsp</result>
 	</action>
 	
+	<action name="action3" class="query_" method="query_author">
+		<result name="1">/show_author.jsp</result>
+	</action>
+	
+	<action name="cal_author" class="update" method="cal_author">
+		<result name="1">/cal_author.jsp</result>
+	</action>
+	
+	
+	
+	
+	
 	
 	
 	<action name="funds" class="jump_" method="jump_">

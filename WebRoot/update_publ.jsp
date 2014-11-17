@@ -66,6 +66,20 @@ body {
         <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
+         <td>出版类型：</td>
+      <td><label>
+  <div align="right">
+    <select name="type" id="type">
+      <option value="外文版专著">外文版专著</option>
+      <option value="中文版专著">中文版专著</option>
+      <option value="译著">译著</option>
+    </select>
+  </div>
+      </label></td>
+    </tr>
+    
+    
+    
     <tr>
       <td>&nbsp;</td>
       <td><label>

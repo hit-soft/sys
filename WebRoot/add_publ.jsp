@@ -87,6 +87,20 @@ body {
       </label></td>
     </tr>
     <br>
+    <tr>
+      <td>出版类型：</td>
+      <td><label>
+  <div align="right">
+    <select name="type" id="type">
+      <option value="外文版专著">外文版专著</option>
+      <option value="中文版专著">中文版专著</option>
+      <option value="译著">译著</option>
+    </select>
+  </div>
+      </label></td>
+    </tr>
+    
+    
     <a href="index.jsp">
 	返回系统首页
 	</a>
