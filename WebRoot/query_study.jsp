@@ -34,7 +34,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询国内外进修信息</h1>
+<h1 align="center">查询国内外进修vzxcvvzcvxczv信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_study">	

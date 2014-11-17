@@ -35,7 +35,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查sdffgfgdfgds息</h1>
+<h1 align="center">查sdff息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_funds">	
@@ -53,7 +53,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>项目负责人：</td>
+      <td>项目负责gzfggfagfg人：</td>
       <td><label>
         <input name="leader" type="text" id="leader" />
       </label></td>
