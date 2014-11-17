@@ -50,7 +50,7 @@ body {
 
 <td><s:url id="editURL" action="action3">
 		</s:url>
-		<s:a href="%{editURL}">查询人员信息</s:a></td>
+		<s:a href="%{editURL}">查询人员工作量统计结果</s:a></td>
 <br>
 
 <p align="center">&nbsp;</p>

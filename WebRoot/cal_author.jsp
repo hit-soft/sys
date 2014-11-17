@@ -54,21 +54,90 @@ body {
   
 </table>
 
-
-
-    
-    <br>
-    <a href="show_author.jsp">
-	返回查询其他人员总分
-	</a>
-    
-    
+	<td><s:url id="editURL" action="action3">
+		</s:url>
+		<s:a href="%{editURL}">返回查询其他人员总分</s:a></td>
+	<br>
     <br>
     <a href="index.jsp">
 	返回系统首页
-	</a>
-    
+	</a>    
   </table>
+  
+  
+  <br>  
+  <br>  
+<br>  
+  <td><s:url id="editURL" action="query_funds">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">科研经费到款情况</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_accept">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">科研项目验收情况</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_software">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">软件著作权管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_patent">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">专利管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_priz">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">获奖情况管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_publ">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">出版专著管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_team">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">学术团体兼职情况管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_study">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">国内外进修及学习情况管理</s:a></td>
+<br>
+
+
+<td><s:url id="editURL" action="query_coope">
+		<s:param name="per" value="%{per}"></s:param>
+		<s:param name="flag" value="1"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">国际合作情况管理</s:a></td>
+<br>
   <div align="right"></div>
   <div align="center"></div>
 </form>

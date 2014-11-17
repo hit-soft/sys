@@ -89,6 +89,10 @@ body {
   </tr>
   </s:iterator>
 </table>
+	<td><s:url id="editURL" action="action3">
+		</s:url>
+		<s:a href="%{editURL}">返回查询其他人员总分</s:a></td>
+	<br>
 <br>
     <a href="index.jsp">
 	返回系统首页

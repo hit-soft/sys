@@ -8,6 +8,20 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 public class query_ {
+	private int flag;
+	private String per;
+	public int getFlag() {
+		return flag;
+	}
+	public void setFlag(int flag) {
+		this.flag = flag;
+	}
+	public String getPer() {
+		return per;
+	}
+	public void setPer(String per) {
+		this.per = per;
+	}
 	private List<accept> l1 = new ArrayList();
 	public List<accept> getL1() {
 		return l1;
@@ -82,6 +96,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from accept ";
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -123,6 +139,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from coope";
+		if(flag==1)
+			sql+=" where invi_by = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -160,6 +178,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from funds";
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -199,7 +219,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from patent";
-		
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -234,6 +255,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from priz";
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -266,7 +289,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from publ";
-	
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -299,6 +323,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from software";
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -332,7 +358,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from study";
-
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);
@@ -364,7 +391,8 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from team";
-		
+		if(flag==1)
+			sql+=" where person = " +"'"+per+"'";
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);

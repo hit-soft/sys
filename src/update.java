@@ -219,16 +219,19 @@ public class update {
 		score=0;
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
+		
 		try{
 			String sql="select * from funds ";
 			Statement stmt=conn.createStatement();
 			ResultSet rs=stmt.executeQuery(sql);
 			while(rs.next()){
-				String pe = rs.getString(1);
-				double already=rs.getDouble(7);
+				String pe = rs.getString(10);
+				double alrea=rs.getDouble(7);
 				String type=rs.getString(12);
-				if(pe.equals(per)){
-					score+=(int)already;
+				int leve=rs.getInt(11);
+				if(pe.equals(per)&&leve==1){
+					score+=(int)alrea;
+					System.out.println("score+="+(int)alrea);
 					if(type.equals("国家973项目"))
 						score*=12;
 					else if(type.equals("国家科技重大专项"))
@@ -247,9 +250,11 @@ public class update {
 						score*=1.3;
 					else if(type.equals("国际合作项目"))
 						score*=1/5;
+					System.out.println("after funds score="+(int)score);
 					//else
 				}
 			}
+			
 			sql="select * from software ";
 			rs=stmt.executeQuery(sql);
 			while(rs.next()){
@@ -264,6 +269,7 @@ public class update {
 						score+=1.5;
 					else if(per_l==4)
 						score+=0.5;
+					System.out.println("after software score="+(int)score);
 					//else
 				}
 			}
@@ -272,7 +278,7 @@ public class update {
 			rs=stmt.executeQuery(sql);
 			while(rs.next()){
 				double add=0;
-				String type = rs.getString(2);
+				String type = rs.getString(3);
 				String pe = rs.getString(5);
 				int per_l=rs.getInt(6);
 				if(pe.equals(per)){
@@ -309,6 +315,7 @@ public class update {
 					else
 						add*=30;
 					score+=add;
+					System.out.println("after priz score="+(int)score);
 				}
 			}
 			
@@ -317,10 +324,9 @@ public class update {
 			rs=stmt.executeQuery(sql);
 			while(rs.next()){
 				double add=0;
-				String type = rs.getString(2);
-				String pe = rs.getString(5);
-				int per_l=rs.getInt(6);
-				System.out.println("person:"+pe);
+				String type = rs.getString(6);
+				String pe = rs.getString(4);
+				int per_l=rs.getInt(5);
 				if(pe.equals(per)){
 					if(per_l==1)
 						add+=1;
@@ -337,6 +343,7 @@ public class update {
 					else
 						add*=30;
 					score+=add;
+					System.out.println("after publ score="+(int)score);
 				}
 			}
 			
@@ -349,6 +356,7 @@ public class update {
 				String type = rs.getString(8);
 				String pe = rs.getString(6);
 				int per_l=rs.getInt(7);
+				
 				if(pe.equals(per)){
 					if(per_l==1)
 						add+=1;
@@ -358,13 +366,14 @@ public class update {
 						add+=0.3;
 					else
 						add+=0.1;
-					if(type.equals("外文版专著"))
-						add*=60;
-					else if(type.equals("中文版专著"))
-						add*=50;
-					else
+					if(type.equals("国 际发明专利授权"))
 						add*=30;
+					if(type.equals("国内发明专利授权"))
+						add*=15;
+					else
+						add*=10;
 					score+=add;
+					System.out.println("after patent score="+(int)score);
 				}
 			}
 		
@@ -390,6 +399,7 @@ public class update {
 						score+=20;
 					else
 						score+=10;
+					System.out.println("after team score="+(int)score);
 				}
 			}
 			
@@ -400,10 +410,11 @@ public class update {
 			sql="select * from coope ";
 			rs=stmt.executeQuery(sql);
 			while(rs.next()){
-				String type = rs.getString(6);
-				String pe = rs.getString(5);
+				String type = rs.getString(1);
+				String pe = rs.getString(11);
 				if(pe.equals(per)){
 						score+=10;
+						System.out.println("after coope score="+(int)score);
 				}
 			}
 		}
@@ -744,7 +755,6 @@ public class update {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
-				System.out.println("person:"+person);
 			if(person.equals(rs.getString(1))){
 				fla=1;
 				break;
