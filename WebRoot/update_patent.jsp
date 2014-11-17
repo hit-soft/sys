@@ -78,6 +78,20 @@ body {
         <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
+    
+    <tr>
+      <td>专利类型：</td>
+      <td><label>
+  <div align="right">
+    <select name="type" id="type">
+      <option value="国际发明专利授权">国际发明专利授权</option>
+      <option value="国内发明专利授权">国内发明专利授权</option>
+      <option value="其它专利授权">其它专利授权</option>
+    </select>
+  </div>
+      </label></td>
+    </tr>
+    
     <tr>
       <td>&nbsp;</td>
       <td><label>

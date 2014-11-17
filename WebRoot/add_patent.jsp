@@ -54,7 +54,7 @@ body {
     <tr>
       <td>专利权人：</td>
       <td><label>
-        <input name="owner" type="text" id="owner" />
+        <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
@@ -87,16 +87,28 @@ body {
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
-    <tr>
-      <td>人员4：</td>
+     <tr>
+      <td>专利类型：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+  <div align="right">
+    <select name="type" id="type">
+      <option value="国际发明专利授权">国际发明专利授权</option>
+      <option value="国内发明专利授权">国内发明专利授权</option>
+      <option value="其它专利授权">其它专利授权</option>
+    </select>
+  </div>
       </label></td>
     </tr>
+    
+    
     <br>
     <a href="index.jsp">
 	返回系统首页
 	</a>
+	
+	
+	
+	
     <tr>
       <td>&nbsp;</td>
       <td><label>

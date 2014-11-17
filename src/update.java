@@ -33,6 +33,14 @@ public class update {
 	private String post;
 	private int per_level;
 	private String invi_by;
+	private String per;
+	private double score;
+	public String getPer() {
+		return per;
+	}
+	public void setPer(String per) {
+		this.per = per;
+	}
 	public String getName() {
 		return name;
 	}
@@ -201,8 +209,224 @@ public class update {
 	public void setInvi_by(String invi_by) {
 		this.invi_by = invi_by;
 	}
+	public double getScore() {
+		return score;
+	}
+	public void setScore(double score) {
+		this.score = score;
+	}
+	public String cal_author(){
+		score=0;
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		
+		try{
+			String sql="select * from funds ";
+			Statement stmt=conn.createStatement();
+			ResultSet rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				String pe = rs.getString(10);
+				double alrea=rs.getDouble(7);
+				String type=rs.getString(12);
+				int leve=rs.getInt(11);
+				if(pe.equals(per)&&leve==1){
+					score+=(int)alrea;
+					System.out.println("score+="+(int)alrea);
+					if(type.equals("国家973项目"))
+						score*=12;
+					else if(type.equals("国家科技重大专项"))
+						score*=10;
+					else if(type.equals("国家自然科学基金	重大/重点"))
+						score*=8;
+					else if(type.equals("国家自然科学基金	面上"))
+						score*=5;
+					else if(type.equals("863项目、国家科技支撑项目	重大/重点"))
+						score*=4;
+					else if(type.equals("863项目、国家科技支撑项目	863面上"))
+						score*=2;
+					else if(type.equals("部委重大/重点项目"))
+						score*=1.8;
+					else if(type.equals("国防类及其它部委项目"))
+						score*=1.3;
+					else if(type.equals("国际合作项目"))
+						score*=1/5;
+					System.out.println("after funds score="+(int)score);
+					//else
+				}
+			}
+			
+			sql="select * from software ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				String pe = rs.getString(6);
+				int per_l=rs.getInt(7);
+				if(pe.equals(per)){
+					if(per_l==1)
+						score+=5;
+					else if(per_l==2)
+						score+=3;
+					else if(per_l==3)
+						score+=1.5;
+					else if(per_l==4)
+						score+=0.5;
+					System.out.println("after software score="+(int)score);
+					//else
+				}
+			}
+			
+			sql="select * from priz ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				double add=0;
+				String type = rs.getString(3);
+				String pe = rs.getString(5);
+				int per_l=rs.getInt(6);
+				if(pe.equals(per)){
+					if(per_l==1)
+						add+=1;
+					else if(per_l==2)
+						add+=0.9;
+					else if(per_l==3)
+						add+=0.8;
+					else if(per_l==4)
+						add+=0.7;
+					else if(per_l==5)
+						add+=0.6;
+					else if(per_l==6)
+						add+=0.5;
+					else if(per_l==7)
+						add+=0.4;
+					else if(per_l==8)
+						add+=0.3;
+					else if(per_l==9)
+						add+=0.2;
+					else
+						add+=0.1;
+					if(type.equals("国家级一等奖"))
+						add*=500;
+					else if(type.equals("国家级二等奖"))
+						add*=150;
+					else if(type.equals("省部级一等奖"))
+						add*=80;
+					else if(type.equals("省部级二等奖"))
+						add*=50;
+					else if(type.equals("国际专项奖"))
+						add*=50;
+					else
+						add*=30;
+					score+=add;
+					System.out.println("after priz score="+(int)score);
+				}
+			}
+			
+			
+			sql="select * from publ ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				double add=0;
+				String type = rs.getString(6);
+				String pe = rs.getString(4);
+				int per_l=rs.getInt(5);
+				if(pe.equals(per)){
+					if(per_l==1)
+						add+=1;
+					else if(per_l==2)
+						add+=0.6;
+					else if(per_l==3)
+						add+=0.3;
+					else
+						add+=0.1;
+					if(type.equals("外文版专著"))
+						add*=60;
+					else if(type.equals("中文版专著"))
+						add*=50;
+					else
+						add*=30;
+					score+=add;
+					System.out.println("after publ score="+(int)score);
+				}
+			}
+			
+			
+			
+			sql="select * from patent ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				double add=0;
+				String type = rs.getString(8);
+				String pe = rs.getString(6);
+				int per_l=rs.getInt(7);
+				
+				if(pe.equals(per)){
+					if(per_l==1)
+						add+=1;
+					else if(per_l==2)
+						add+=0.6;
+					else if(per_l==3)
+						add+=0.3;
+					else
+						add+=0.1;
+					if(type.equals("国 际发明专利授权"))
+						add*=30;
+					if(type.equals("国内发明专利授权"))
+						add*=15;
+					else
+						add*=10;
+					score+=add;
+					System.out.println("after patent score="+(int)score);
+				}
+			}
+		
+			
+			
+			sql="select * from team ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				String type = rs.getString(6);
+				String pe = rs.getString(5);
+				if(pe.equals(per)){
+					if(type.equals("国际学术组织理事以上职务"))
+						score+=20;
+					else if(type.equals("全国一级学会常务理事以上职务或专委会主任"))
+						score+=20;
+					else if(type.equals("全国一级学会理事或专委会副主任"))
+						score+=10;
+					else if(type.equals("省学会常务理事以上职务或专委会主任"))
+						score+=5;
+					else if(type.equals("省学会理事或专委会副主任"))
+						score+=3;
+					else if(type.equals("国家863主题专家组专家"))
+						score+=20;
+					else
+						score+=10;
+					System.out.println("after team score="+(int)score);
+				}
+			}
+			
+			
+			
+			
+			
+			sql="select * from coope ";
+			rs=stmt.executeQuery(sql);
+			while(rs.next()){
+				String type = rs.getString(1);
+				String pe = rs.getString(11);
+				if(pe.equals(per)){
+						score+=10;
+						System.out.println("after coope score="+(int)score);
+				}
+			}
+		}
+		catch(SQLException e){
+			e.printStackTrace();
+			System.out.println("error!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		}finally{
+			util.closeConnection(conn);
+		}
+		return "1";
+	}
 	public String update_accept(){
-		System.out.println("here");
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		try {
@@ -359,6 +583,7 @@ public class update {
 			String sql3="update patent set org="+"'"+org+"'"+ "where number="+"'"+number+"'";
 			String sql4="update patent set time="+"'"+time+"'"+ "where number="+"'"+number+"'";
 			String sql5="update patent set per_level="+"'"+per_level+"'"+ "where number="+"'"+number+"'"+" and "+"person="+"'"+person+"'";
+			String sql6="update patent set type="+"'"+type+"'"+ "where number="+"'"+number+"'";
 //			String sql5="update patent set person="+"'"+person+"'"+ "where number="+"'"+number+"'";
 //			System.out.println(sql);
 //			stmt.execute(sql);
@@ -372,6 +597,8 @@ public class update {
 			stmt.execute(sql4);
 			System.out.println(sql5);
 			stmt.execute(sql5);
+			System.out.println(sql6);
+			stmt.execute(sql6);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -420,6 +647,7 @@ public class update {
 			String sql2="update publ set press="+"'"+press+"'"+ "where name="+"'"+name+"'";
 			String sql3="update publ set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
 			String sql4="update publ set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+"person="+"'"+person+"'";
+			String sql5="update publ set type="+"'"+type+"'"+ "where name="+"'"+name+"'";
 //			System.out.println(sql1);
 //			stmt.execute(sql1);
 			System.out.println(sql2);
@@ -428,6 +656,8 @@ public class update {
 			stmt.execute(sql3);
 			System.out.println(sql4);
 			stmt.execute(sql4);
+			System.out.println(sql5);
+			stmt.execute(sql5);
 			return "1";
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -525,7 +755,6 @@ public class update {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
-				System.out.println("person:"+person);
 			if(person.equals(rs.getString(1))){
 				fla=1;
 				break;
