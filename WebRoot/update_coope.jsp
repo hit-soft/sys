@@ -13,32 +13,55 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     
     <title>Book Management System starting page</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-  </head>
-   <style type="text/css">
-<!--
+	<style type="text/css">
 body {
-	background-color: #CCCCCC;
+	background-color: #FFF;
+	margin :0px;
+	padding:0px;
 }
--->
-</style></head>
+
+#banner {
+	
+	margin: 0px auto;
+	padding: 0px;
+	width: 1200px;
+	background-color:#FFF;
+}
+#banner1 {
+	margin: 0px auto;
+	width: 1200px;
+	height:200px;
+	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
+	font-family: "宋体";
+	color: #F00;
+}
+table {
+	margin: 0px auto;
+	width: 1200px;
+	background-color: #390;
+	text-align: center;
+}
+td {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+</style>
+</head>
 
 <body>
-<h1 align="center">更新国际合作情况信息</h1>
-<hr />
-<p align="center">&nbsp;</p>
+
+<div id="banner1">&nbsp;<h1 align="center">更新国际合作情况信息</h1>
+</div>
+<p>&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_coope">	
-  <table width="299" border="0" align="right">
+  <table >
     <tr>
-      <td width="110">类别：</td>
-      <td width="179"><label>
+      <td width="783" rowspan="17">&nbsp;</td>
+      <tr>
+     <tr>
+      <td width="185">类别：</td>
+      <td width="216"><label>
         <input name="type" type="text" id="type" value="${type}"/>
       </label></td>
     </tr>
@@ -93,20 +116,15 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td><a href="index.jsp">
+	返回系统首页
+	</a></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
       </label></td>
     </tr>
   </table>
-  <div align="right"></div>
-  <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要更新的国际合作情况信息，以避免造成不必要的错误。</h2>
 </body>
-<br>
-    <a href="index.jsp">
-	返回系统首页
-	</a>
 </html>

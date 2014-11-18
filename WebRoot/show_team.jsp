@@ -13,30 +13,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     
     <title>My JSP 'show_by_author.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
-  </head>
-  <style type="text/css">
-<!--
-body {
-	background-color: #CCCCCC;
-}
--->
-</style></head>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link href="style3.css" rel="stylesheet" type="text/css" /></head>
 
 <body>
 <h1 align="center">下面表格是您所查询的内容</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<table border="1" align="center">
+<table border="1" align="center" id="table1">
   <tr>
     <td>学术团体名称</td>
     <td>担任职务</td>
@@ -49,12 +33,12 @@ body {
   </tr>
  <s:iterator value="l9"> <!-- l 为action 中 list -->
   <tr>
-    <td><input type=text value="${name}"></td>
-    <td><input type=text value="${post}"></td>
-    <td><input type=text value="${start}"></td>
-    <td><input type=text value="${end}"></td>
-    <td><input type=text value="${person}"></td>
-    <td><input type=text value="${type}"></td>
+    <td><input type=text value="${name}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${post}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${start}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${end}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${person}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${type}" size="10" readonly="readonly"></td>
     <td><s:url id="editURL" action="del_team">
 		<s:param name="name" value="%{name}"></s:param>
 		</s:url>
@@ -73,8 +57,16 @@ body {
 </table>
 <p>&nbsp; </p>
 </body>
-<br>
-    <a href="index.jsp">
+<table border="0" id = "table2"  >
+  <tr>
+    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
+		</s:url>
+		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
+  </tr>
+  <tr>
+    <td align="center"><div id ="banner2"><a href="index.jsp">
 	返回系统首页
-	</a>
+	</a></div></td>
+  </tr>
+</table>
 </html>

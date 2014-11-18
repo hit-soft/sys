@@ -1,0 +1,50 @@
+@charset "utf-8";
+body{
+	background-color:#6FF;
+}
+#banner2 {
+	float: right;
+	height: 40px;
+	width: 200px;
+	background-image: url(qinshimingyue.jpg);
+	margin-top: 0px;
+	float:right ;
+}
+#banner2 a{
+	text-decoration: none;
+	height: 22px;
+	width: 175px;
+	font-family: "宋体";
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 0px;
+}
+#banner2 a:hover{
+	background-color:#F30;
+	color:#FFF;
+}
+#table2 {
+	background-color: #FFF;
+	float:left;
+}
+#table3{
+	background-color: #FF0;
+	float:left;
+}
+#table3 a{
+	text-decoration: none;
+	height: 22px;
+	width: 175px;
+	font-family: "宋体";
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 0px;
+}
+#table3 a:hover{
+	background-color:#F30;
+	color:#FFF;
+}

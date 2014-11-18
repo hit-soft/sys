@@ -14,32 +14,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <title>My JSP 'patent.jsp' starting page</title>
    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
-  </head>
-  
-  <style type="text/css">
-<!--
-body {
-	background-color: #CCCCCC;
-}
--->
-</style></head>
+	<link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
-<h1 align="center">添加国际合作情况信息</h1>
-<hr />
-<p align="center">&nbsp;</p>
+
+<div id="banner1">&nbsp;<h1 align="center">添加国际合作情况信息</h1>
+</div>
 <form id="form1" name="form1" method="post" action="add_coope">	
-  <table width="299" border="0" align="right">
+  <table >
     <tr>
+      <td width="692" rowspan="13">&nbsp;</td>
+      <tr>
+      <tr>
       <td width="110">类别：</td>
       <td width="179"><label>
         <input name="type" type="text" id="type" />
@@ -96,21 +83,16 @@ body {
         <input name="invi_by" type="text" id="invi_by" />
       </label></td>
     </tr>
-    <br>
-    <a href="index.jsp">
-	返回系统首页
-	</a>
     <tr>
-      <td>&nbsp;</td>
+      <td> <a href="index.jsp">
+	返回系统首页
+	</a></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
       </label></td>
     </tr>
   </table>
-  <div align="right"></div>
-  <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要添加的国际合作情况信息，以避免造成不必要的错误。</h2>
 </body>
 </html>

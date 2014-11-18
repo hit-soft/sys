@@ -4,6 +4,7 @@ public class publ {
 	private String time;
 	private String person;
 	private int per_level;
+	private String type;
 	public String getName() {
 		return name;
 	}
@@ -33,5 +34,11 @@ public class publ {
 	}
 	public void setPer_level(int per_level) {
 		this.per_level = per_level;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 }

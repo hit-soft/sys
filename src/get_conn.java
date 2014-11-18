@@ -13,7 +13,7 @@ public class get_conn {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			return DriverManager.getConnection("jdbc:mysql://localhost:3306/project",
-					"root","1234");
+					"root","1101191200aaa");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

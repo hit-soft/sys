@@ -550,7 +550,7 @@ public class add {
 			}
 			if(fla==0)
 			{
-				sql="insert into team_per(person) " +
+				sql="insert into team_per(per) " +
 						"values("+"'"+person[0]+"'"+")";
 				System.out.println(sql);
 				stmt.execute(sql);
@@ -648,8 +648,8 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
-			String sql="insert into publ(name,press,time,person,per_level) " +
-					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+			String sql="insert into publ(name,press,time,person,per_level,type) " +
+					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+")";
 			System.out.println(sql);
 			stmt.execute(sql);
 			
