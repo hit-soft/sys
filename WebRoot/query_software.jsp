@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -33,13 +33,13 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">软件著作权查询界面</h1>
+<h1 align="center">软件著作权查询界xznmzxmhxzv面</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_software">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">著作权名称：</td>
+      <td width="110">著作权称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
@@ -57,7 +57,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>授予单位：</td>
+      <td>授位：</td>
       <td><label>
         <input name="org" type="text" id="org" />
       </label></td>
@@ -87,6 +87,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要查询的软件著作信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的填写您要查询信息，以避免造成不必要的错误。</h2>
 </body>
 </html>

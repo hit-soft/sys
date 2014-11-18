@@ -30,10 +30,10 @@ body {
 </style></head>
   
   <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到图书查询gjhcnvccvvvcbcbcn系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可以查询国际合作信息同时也可以向系统中添加一个国际合作信息</p>
+<p align="center">通过该页面您可以同时也可以向系统中添加一个国际合作信息</p>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="right">请选择您所需要的服务：</p>

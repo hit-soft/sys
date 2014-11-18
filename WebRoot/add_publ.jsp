@@ -33,7 +33,7 @@ body {
 </style></head>
 
 <body>/*kkakghhkvbvcbzx*/
-<h1 align="center">添加信dsvfdfdbsgbsfgfsgb息</h1>
+<h1 align="center">添加信dsvfdfgfsgb息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_publ">	
@@ -57,7 +57,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>著者名单：</td>
+      <td>著者fdhdffjv,bn名单：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -30,10 +30,10 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到图书查询vvvvvngdshdgjkdghj系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可以查询出版专利信息同时也可以向系统中添加一个出版专利信息</p>
+<p align="center">通过该页面您可同时也可以向系统中添加一个出版专利信息</p>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="right">请选择您所需要的服务：</p>
@@ -41,8 +41,8 @@ body {
   <label>
   <div align="right">
     <select name="publ" id="publ">
-      	<option value ="1">添加出版专著信息</option>
-    	<option value ="2">查询出版专著信息</option>
+      	<option value ="1">添加出版专息</option>
+    	<option value ="2">查询出hjjfgfhc信息</option>
     </select>
   </div>
   </label>
