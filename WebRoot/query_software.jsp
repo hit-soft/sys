@@ -33,7 +33,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">软件著作权查询界xznmzxmhxzv面</h1>
+<h1 align="center">软gkjsghfdjghv面</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_software">	
@@ -63,13 +63,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>授予时间：</td>
+      <td>授njdnsdflnhisd予时间：</td>
       <td><label>
         <input name="time" type="text" id="time" />
       </label></td>
     </tr>
     <tr>
-      <td>人员名单：</td>
+      <td>人员vnjsbshf：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

@@ -34,7 +34,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询获奖vzvfvdbbvxvz信息</h1>
+<h1 align="center">查询获奖z信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_priz">	
@@ -46,7 +46,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>获奖fdvvxzgd类型：</td>
+      <td>获奖f型：</td>
       <td><label>
         <input name="type" type="text" id="type" />
       </label></td>
@@ -80,6 +80,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要查询的获奖信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请jkhsfsjfbr要查询的获奖信息，以避免造成不必要的错误。</h2>
 </body>
 </html>

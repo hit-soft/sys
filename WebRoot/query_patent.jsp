@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -34,7 +34,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询专利</h1>
+<h1 align="center">查询专fdjgkdgfbghj利</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_patent">	
@@ -58,7 +58,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>授予单位：</td>
+      <td>授予单sjahffbhafga位：</td>
       <td><label>
         <input name="org" type="text" id="org" />
       </label></td>

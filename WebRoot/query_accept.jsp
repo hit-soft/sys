@@ -33,25 +33,25 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">添加科研项目验收信息</h1>
+<h1 align="center">添fnjgksdglsdgd vfjkfafbana 信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_accept">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">项目名称：</td>
+      <td width="110">项目名sdlaafjnslkfnlaqhw称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
     </tr>
     <tr>
-      <td>项目来源：</td>
+      <td>项dsnfnaf源：</td>
       <td><label>
         <input name="source" type="text" id="source" />
       </label></td>
     </tr>
     <tr>
-      <td>项目负责人：</td>
+      <td>项目负bsdakffdjfdsdf责人：</td>
       <td><label>
         <input name="leader" type="text" id="leader" />
       </label></td>
@@ -69,13 +69,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>合同额：</td>
+      <td>合同dfsajkl额：</td>
       <td><label>
         <input name="contract" type="text" id="contract" />
       </label></td>
     </tr>
     <tr>
-      <td>类型：</td>
+      <td>类dasflfnnlfkrenfj型：</td>
       <td><label>
         <input name="type" type="text" id="type" />
       </label></td>
@@ -87,19 +87,19 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>验收单位：</td>
+      <td>验gnjfdgjg位：</td>
       <td><label>
         <input name="org" type="text" id="org" />
       </label></td>
     </tr>
     <tr>
-      <td>课题合同号：</td>
+      <td>课题合fgnjsdngjsgn：</td>
       <td><label>
         <input name="number" type="text" id="number" />
       </label></td>
     </tr>
     <tr>
-      <td>经费卡号：</td>
+      <td>经费卡号fdgnksdgnsjgnsjgnt：</td>
       <td><label>
         <input name="card" type="text" id="card" />
       </label></td>
@@ -123,6 +123,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要查询的科研项目验收信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的gfhgsrjgnsejgne查询的科研项目验收信息，以避免造成不必要的错误。</h2>
 </body>
 </html>
