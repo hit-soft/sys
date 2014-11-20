@@ -19,7 +19,7 @@ body {
 	padding:0px;
 }
 #banner {
-	background-color:#FFF;
+	background-color:#C00;
 	margin: 0px auto;
 	padding: 0px;
 	width: 1200px;
@@ -110,6 +110,6 @@ body {
 	</a></li>
   </ul>
 </div>
-<div id ="banner">一大片文字</div>
+<div id ="banner">请单击上面的目录选择您需要添加的信息类型。</div>
 </body>
 </html>

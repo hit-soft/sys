@@ -62,69 +62,69 @@ td {
      <tr>
       <td width="110">项目名称：</td>
       <td width="179"><label>
-        <input name="name" type="text" id="name" value="${name}" readonly/>
+        <input name="name" type="text" id="name" value="${name}" readonly size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目来源：</td>
       <td><label>
-        <input name="source" type="text" id="source" value="${source}"/>
+        <input name="source" type="text" id="source" value="${source}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目负责人：</td>
       <td><label>
-        <input name="leader" type="text" id="leader" value="${leader}"/>
+        <input name="leader" type="text" id="leader" value="${leader}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>开始时间：</td>
       <td><label>
-        <input name="start" type="text" id="start" value="${start}"/>
+        <input name="start" type="text" id="start" value="${start}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>结束时间：</td>
       <td><label>
-        <input name="end" type="text" id="end" value="${end}"/>
+        <input name="end" type="text" id="end" value="${end}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>合同额：</td>
       <td><label>
-        <input name="contract" type="text" id="contract" value="${contract}"/>
+        <input name="contract" type="text" id="contract" value="${contract}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>已到款：</td>
       <td><label>
-        <input name="already" type="text" id="already" value="${already}"/>
+        <input name="already" type="text" id="already" value="${already}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>未到款：</td>
       <td><label>
-        <input name="non" type="text" id="non" value="${non}"/>
+        <input name="non" type="text" id="non" value="${non}" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>课题合同号：</td>
       <td><label>
-        <input name="number" type="text" id="number" value="${number}"/>
+        <input name="number" type="text" id="number" value="${number}" size="32"/>
       </label></td>
     </tr>
     
     <tr>
       <td>人员：</td>
       <td><label>
-        <input name="person" type="text" id="person" value="${person}" readonly/>
+        <input name="person" type="text" id="person" value="${person}" readonly size="32"/>
       </label></td>
     </tr>
     
     <tr>
       <td>排名顺序：</td>
       <td><label>
-        <input name="per_level" type="text" id="per_level" value="${per_level}"/>
+        <input name="per_level" type="text" id="per_level" value="${per_level}" size="32"/>
       </label></td>
     </tr>
     
@@ -149,13 +149,13 @@ td {
       </td>
     </tr>
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

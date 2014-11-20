@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <br>
     <a href="index.jsp">
-	您要查询的信息不存在，请返回系统首页
+	该项信息为空，请返回系统首页
 	</a>
 	
   </body>

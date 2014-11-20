@@ -89,26 +89,24 @@ td {
         <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
-         <td>出版类型：</td>
+      <td>出版类型：</td>
       <td><label>
-    <select name="type" size="1" id="type">
+      <select name="type" size="1" id="type" style="width:173px">
       <option value="外文版专著">外文版专著</option>
       <option value="中文版专著">中文版专著</option>
       <option value="译著">译著</option>
     </select>
       </label></td>
-    </tr>
-    
     
     
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

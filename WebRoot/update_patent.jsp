@@ -105,7 +105,7 @@ td {
     <tr>
       <td>专利类型：</td>
       <td><label>
-    <select name="type" id="type">
+    <select name="type" id="type" style="width:173px">
       <option value="国际发明专利授权">国际发明专利授权</option>
       <option value="国内发明专利授权">国内发明专利授权</option>
       <option value="其它专利授权">其它专利授权</option>
@@ -114,13 +114,13 @@ td {
     </tr>
     
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

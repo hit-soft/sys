@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <link href="style1.css" rel="stylesheet" type="text/css" /></head>
 
 <body>
-<div id="banner1">&nbsp;<h1 align="center">添加国际合作情况信息</h1></div>
+<div id="banner1">&nbsp;<h1 align="center">添加出版专著信息</h1></div>
 <form id="form1" name="form1" method="post" action="add_publ">	
   <table >
     <tr>
@@ -68,11 +68,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
-    <br>
     <tr>
       <td>出版类型：</td>
       <td><label>
-        <select name="type" id="type">
+        <select name="type" id="type" style="width:173px">
           <option value="外文版专著">外文版专著</option>
           <option value="中文版专著">中文版专著</option>
           <option value="译著">译著</option>
@@ -80,13 +79,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </label></td>
     </tr>
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

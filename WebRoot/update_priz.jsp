@@ -74,7 +74,7 @@ td {
     <tr>
       <td>获奖等级：</td>
       <td><label>
-    <select name="level" id="level">
+    <select name="level" id="level" style="width:173px">
       <option value="国家级一等奖">国家级一等奖</option>
       <option value="国家级二等奖">国家级二等奖</option>
       <option value="省部级一等奖">省部级一等奖</option>
@@ -103,13 +103,13 @@ td {
       </label></td>
     </tr>
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

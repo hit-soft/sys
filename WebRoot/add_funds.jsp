@@ -22,89 +22,89 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_funds">	
   <table>
   <tr>
-    <td width="624" rowspan="27">一大段文字</td>
+    <td width="624" rowspan="27">请在右侧添加科研项目经费到款情况，请从人员1开始按照先后顺序填写人员名单，最多只能填写5人，若不足5人则不需填写剩余作者栏。</td>
     <td width="200">项目名称：</td>
     <td width="245"><label>
-        <input name="name" type="text" id="name" />
+        <input name="name" type="text" id="name" size="32"/>
       </label></td>
   </tr>
   
   <tr>
     <td>项目来源：</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>项目负责人：</td>
     <td width="245"><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32" />
       </label></td>
   </tr>
   <tr>
     <td>开始时间：</td>
     <td><label>
-        <input name="start" type="text" id="start" />
+        <input name="start" type="text" id="start" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>结束时间：</td>
     <td><label>
-        <input name="end" type="text" id="end" />
+        <input name="end" type="text" id="end" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>合同额：</td>
     <td><label>
-        <input name="contract" type="text" id="contract" />
+        <input name="contract" type="text" id="contract" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>当年已到款：</td>
     <td><label>
-        <input name="already" type="text" id="already" />
+        <input name="already" type="text" id="already" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>未到款：</td>
     <td><label>
-        <input name="non" type="text" id="non" />
+        <input name="non" type="text" id="non" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>课题合同号：</td>
     <td><label>
-        <input name="number" type="text" id="number" />
+        <input name="number" type="text" id="number" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>人员1：</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>人员2：</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>人员3：</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>人员4</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
     <td>人员5：</td>
     <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="32"/>
       </label></td>
   </tr>
   <tr>
@@ -125,13 +125,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </label></td>
   </tr>
   <tr>
-    <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+    <td></td>
     <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
   </tr>
 </table>
 </form>

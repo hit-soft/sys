@@ -32,7 +32,7 @@ body {
 	margin: 0px auto;
 	width: 1200px;
 	height:200px;
-	background-image: url(../image/550c471cb80028a2d51e31ecb9a0f23a.jpg);
+	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
 	font-family: "宋体";
 	color: #F00;
 }
@@ -63,31 +63,31 @@ td {
      <tr>
       <td width="110">学术团体名称：</td>
       <td width="179"><label>
-        <input name="name" type="text" id="name" value="${name}" readonly/>
+        <input name="name" type="text" id="name" value="${name}" readonly size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>担任职务：</td>
       <td><label>
-        <input name="post" type="text" id="post" value="${post}" readonly/>
+        <input name="post" type="text" id="post" value="${post}" readonly size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>任职开始时间：</td>
       <td><label>
-        <input name="start" type="text" id="start" value="${start}"/>
+        <input name="start" type="text" id="start" value="${start}" size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>任职结束时间：</td>
       <td><label>
-        <input name="end" type="text" id="end" value="${end}"/>
+        <input name="end" type="text" id="end" value="${end}" size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>兼职人员姓名：</td>
       <td><label>
-        <input name="person" type="text" id="person" value="${person}"/>
+        <input name="person" type="text" id="person" value="${person}" size="37"/>
       </label></td>
     </tr>
     
@@ -107,13 +107,13 @@ td {
     </tr>
     
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

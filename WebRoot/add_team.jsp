@@ -28,13 +28,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <tr>
       <td width="177">学术团体名称：</td>
       <td width="315"><label>
-        <input name="name" type="text" id="name" />
+        <input name="name" type="text" id="name" size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>担任职务：</td>
       <td><label>
-        <input name="post" type="text" id="post" />
+        <input name="post" type="text" id="post" size="37"/>
       </label></td>
     </tr>
     <tr>
@@ -49,35 +49,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <option value="国家863主题专家组专家">国家863主题专家组专家</option>
           <option value="其他国家专家">其他国家专家</option>
         </select>
-<div align="left"></div>
       </label></td>
     </tr>
     <tr>
       <td>任职开始时间：</td>
       <td><label>
-        <input name="start" type="text" id="start" />
+        <input name="start" type="text" id="start" size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>任职结束时间：</td>
       <td><label>
-        <input name="end" type="text" id="end" />
+        <input name="end" type="text" id="end" size="37"/>
       </label></td>
     </tr>
     <tr>
       <td>兼职人员姓名：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person" size="37"/>
       </label></td>
     </tr>
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label>
+      <p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

@@ -23,40 +23,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_accept">	
   <table >
     <tr>
-      <td width="695" rowspan="18">说明</td>
+      <td width="695" rowspan="18">请在右侧添加科研项目验收信息，请从作者1开始按照先后顺序填写作者名单，最多只能填写5人，若不足5人则不需填写剩余作者栏。</td>
       <td width="198">项目名称：</td>
       <td width="293"><label>
-        <input name="name" type="text" id="name" />
+        <input name="name" type="text" id="name" size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目来源：</td>
       <td><label>
-        <input name="source" type="text" id="source" />
+        <input name="source" type="text" id="source"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目负责人：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>开始时间：</td>
       <td><label>
-        <input name="start" type="text" id="start" />
+        <input name="start" type="text" id="start"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>结束时间：</td>
       <td><label>
-        <input name="end" type="text" id="end" />
+        <input name="end" type="text" id="end"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>合同额：</td>
       <td><label>
-        <input name="contract" type="text" id="contract" />
+        <input name="contract" type="text" id="contract"  size="32"/>
       </label></td>
     </tr>
         <tr>
@@ -81,75 +81,75 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<tr>
 	  <td>验收时间：</td>
       <td><label>
-        <input name="time" type="text" id="time" />
+        <input name="time" type="text" id="time"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>验收单位：</td>
       <td><label>
-        <input name="org" type="text" id="org" />
+        <input name="org" type="text" id="org"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>课题合同号：</td>
       <td><label>
-        <input name="number" type="text" id="number" />
+        <input name="number" type="text" id="number"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>经费卡号：</td>
       <td><label>
-        <input name="card" type="text" id="card" />
+        <input name="card" type="text" id="card"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目人员1：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目人员2：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目人员3：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目人员4：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>项目人员5：</td>
       <td><label>
-        <input name="person" type="text" id="person" />
+        <input name="person" type="text" id="person"  size="32"/>
       </label></td>
     </tr>
     <tr>
       <td>备注：</td>
       <td><label>
-        <input name="remark" type="text" id="remark" />
+        <input name="remark" type="text" id="remark"  size="32"/>
       </label></td>
     </tr>
-    <br>
    
     <tr>
-      <td> <a href="index.jsp">
-      返回系统首页
-    </a></td>
+      <td></td>
       <td><label>
         <input type="submit" name="Submit" value="提交" />
       </label>
         <label>
         <input type="reset" name="Submit2" value="重置" />
-        </label></td>
+        </label>
+         <p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

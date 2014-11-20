@@ -39,8 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <tr>
       <td>获奖等级：</td>
       <td><label>
-  <div align="left">
-    <select name="level" id="level">
+    <select name="level" id="level" style="width:173px"> 
       <option value="国家级一等奖">国家级一等奖</option>
       <option value="国家级二等奖">国家级二等奖</option>
       <option value="省部级一等奖">省部级一等奖</option>
@@ -48,7 +47,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <option value="国际专项奖">国际专项奖</option>
       <option value="国内专项奖">国内专项奖</option>
     </select>
-  </div>
       </label></td>
     </tr>
     <tr>
@@ -64,67 +62,67 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员2(无则不填)：</td>
+      <td>获奖人员2：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员3(无则不填)：</td>
+      <td>获奖人员3：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员4(无则不填)：</td>
+      <td>获奖人员4：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员5(无则不填)：</td>
+      <td>获奖人员5：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员6(无则不填)：</td>
+      <td>获奖人员6：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员7(无则不填)：</td>
+      <td>获奖人员7：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员8(无则不填)：</td>
+      <td>获奖人员8：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员9(无则不填)：</td>
+      <td>获奖人员9：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员10(无则不填)：</td>
+      <td>获奖人员10：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
     </tr>
     <tr>
-      <td><a href="index.jsp">
-	返回系统首页
-	</a></td>
+      <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />
       <input type="reset" name="Submit22" value="重置" />
-      </label></td>
+      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

@@ -8,7 +8,7 @@ body{
 	width: 200px;
 	background-image: url(qinshimingyue.jpg);
 	margin-top: 0px;
-	float:right ;
+	float:left ;
 }
 #banner2 a{
 	text-decoration: none;
@@ -30,8 +30,7 @@ body{
 	float:left;
 }
 #table3{
-	background-color: #FF0;
-	float:left;
+	background-color: #0F0;
 }
 #table3 a{
 	text-decoration: none;
@@ -45,6 +44,28 @@ body{
 	padding-top: 0px;
 }
 #table3 a:hover{
+	background-color:#F30;
+	color:#FFF;
+}
+#banner3 {
+	float: right;
+	height: 40px;
+	width: 200px;
+	margin-top: 0px;
+	float:left ;
+}
+#banner3 a{
+	text-decoration: none;
+	height: 22px;
+	width: 175px;
+	font-family: "宋体";
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 0px;
+}
+#banner3 a:hover{
 	background-color:#F30;
 	color:#FFF;
 }

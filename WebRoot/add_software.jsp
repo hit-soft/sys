@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_software">	
   <table>
     <tr>
-      <td width="696" rowspan="10">&nbsp;</td>
+      <td width="696" rowspan="10">女王EFI圣诞节费所讲的浪费</td>
       <td width="198">著作权名称：</td>
       <td width="292"><label>
         <input name="name" type="text" id="name" />
@@ -82,15 +82,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     
     <tr>
-      <td><a href="index.jsp">
-      返回系统首页
-    </a></td>
+      <td></td>
       <td><label>
         <input type="submit" name="Submit" value="提交" />
       </label>
         <label>
         <input type="reset" name="Submit2" value="重置" />
-        </label></td>
+        </label>
+        <p>&nbsp;</p><a href="index.jsp" style="float: right">
+	返回系统首页
+	</a></td>
     </tr>
   </table>
 </form>

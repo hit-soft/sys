@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </s:iterator>
   
 </table>
-<div id ="banner2"><a href="index.jsp">
+<div id ="banner3"><a href="index.jsp">
 	返回系统首页
 	</a></div>
 </body>
