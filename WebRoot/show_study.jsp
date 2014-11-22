@@ -1,0 +1,70 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%
+request.setCharacterEncoding("UTF-8");
+response.setCharacterEncoding("UTF-8");
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'show_by_author.jsp' starting page</title>
+   <link href="style2.css" rel="stylesheet" type="text/css" />
+   <link href="style3.css" rel="stylesheet" type="text/css" /></head>
+
+<body>
+<h1 align="center">下面表格是您所查询的内容</h1>
+<hr />
+<p align="center">&nbsp;</p>
+<table border="1" align="center"  id="table1">
+  <tr>
+    <td>进修学习单位</td>
+    <td>进修学习内容</td>
+    <td>开始时间</td>
+    <td>结束时间</td>
+    <td>人员姓名</td>
+    <td width="51">操作1</td>
+    <td width="53">操作2</td>
+  </tr>
+ <s:iterator value="l8"> <!-- l 为action 中 list -->
+  <tr>
+    <td><input type=text value="${org}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${substance}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${start}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${end}" size="10" readonly="readonly"></td>
+    <td><input type=text value="${person}" size="10" readonly="readonly"></td>
+    <td><s:url id="editURL" action="del_study">
+		<s:param name="org" value="%{org}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">删除</s:a></td>
+    <td><s:url id="editURL" action="upp_study">
+		<s:param name="org" value="%{org}"></s:param>
+		<s:param name="substance" value="%{substance}"></s:param>
+		<s:param name="start" value="%{start}"></s:param>
+		<s:param name="end" value="%{end}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
+		</s:url>
+		<s:a href="%{editURL}">更新</s:a></td>
+  </tr>
+  </s:iterator>
+</table>
+<p>&nbsp; </p>
+</body>
+<table border="0" id = "table2"  >
+  <tr>
+    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
+		</s:url>
+		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
+  </tr>
+  <tr>
+    <td align="center"><div id ="banner2"><a href="index.jsp">
+	返回系统首页
+	</a></div></td>
+  </tr>
+</table>
+</html>

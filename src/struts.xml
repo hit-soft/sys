@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+	
+	
+	<action name="action1" class="jump_" method="change">
+		<result name="1">/index_jump.jsp</result>
+	</action>
+	
+	<action name="action2" class="jump_" method="change">
+		<result name="1">/index_jump2.jsp</result>
+	</action>
+	
+	<action name="action3" class="query_" method="query_author">
+		<result name="1">/show_author.jsp</result>
+	</action>
+	
+	<action name="cal_author" class="update" method="cal_author">
+		<result name="1">/cal_author.jsp</result>
+	</action>
+	
+	
+	
+	
+	
+	
+	
+	<action name="funds" class="jump_" method="jump_">
+		<result name="1">/add_funds.jsp</result>
+	</action>
+	<action name="add_funds" class="add" method="add_funds">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_funds" class="query_" method="query_funds">
+		<result name="1">/show_funds.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_funds" class="del" method="del_funds">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_funds" class="upp" method="upp">
+		<result name="1">/update_funds.jsp</result>
+	</action>
+	<action name="update_funds" class="update" method="update_funds">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	<action name="accept" class="jump_" method="jump_">
+		<result name="1">/add_accept.jsp</result>
+	</action>
+	<action name="add_accept" class="add" method="add_accept">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_accept" class="query_" method="query_accept">
+		<result name="1">/show_accept.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_accept" class="del" method="del_accept">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_accept" class="upp" method="upp">
+		<result name="1">/update_accept.jsp</result>
+	</action>
+	<action name="update_accept" class="update" method="update_accept">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	
+	<action name="software" class="jump_" method="jump_">
+		<result name="1">/add_software.jsp</result>
+	</action>
+	<action name="add_software" class="add" method="add_software">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_software" class="query_" method="query_software">
+		<result name="1">/show_software.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_software" class="del" method="del_software">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_software" class="upp" method="upp">
+		<result name="1">/update_software.jsp</result>
+	</action>
+	<action name="update_software" class="update" method="update_software">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	
+	
+	
+	<action name="patent" class="jump_" method="jump_">
+		<result name="1">/add_patent.jsp</result>
+	</action>
+	<action name="add_patent" class="add" method="add_patent">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_patent" class="query_" method="query_patent">
+		<result name="1">/show_patent.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_patent" class="del" method="del_patent">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_patent" class="upp" method="upp">
+		<result name="1">/update_patent.jsp</result>
+	</action>
+	<action name="update_patent" class="update" method="update_patent">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	
+	<action name="priz" class="jump_" method="jump_">
+		<result name="1">/add_priz.jsp</result>
+	</action>
+	<action name="add_priz" class="add" method="add_priz">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_priz" class="query_" method="query_priz">
+		<result name="1">/show_priz.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_priz" class="del" method="del_priz">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_priz" class="upp" method="upp">
+		<result name="1">/update_priz.jsp</result>
+	</action>
+	<action name="update_priz" class="update" method="update_priz">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	
+	<action name="publ" class="jump_" method="jump_">
+		<result name="1">/add_publ.jsp</result>
+	</action>
+	<action name="add_publ" class="add" method="add_publ">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_publ" class="query_" method="query_publ">
+		<result name="1">/show_publ.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_publ" class="del" method="del_publ">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_publ" class="upp" method="upp">
+		<result name="1">/update_publ.jsp</result>
+	</action>
+	<action name="update_publ" class="update" method="update_publ">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	<action name="team" class="jump_" method="jump_">
+		<result name="1">/add_team.jsp</result>
+	</action>
+	<action name="add_team" class="add" method="add_team">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_team" class="query_" method="query_team">
+		<result name="1">/show_team.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_team" class="del" method="del_team">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_team" class="upp" method="upp">
+		<result name="1">/update_team.jsp</result>
+	</action>
+	<action name="update_team" class="update" method="update_team">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	<action name="study" class="jump_" method="jump_">
+		<result name="1">/add_study.jsp</result>
+	</action>
+	<action name="add_study" class="add" method="add_study">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_study" class="query_" method="query_study">
+		<result name="1">/show_study.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_study" class="del" method="del_study">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_study" class="upp" method="upp">
+		<result name="1">/update_study.jsp</result>
+	</action>
+	<action name="update_study" class="update" method="update_study">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	
+	
+	
+	<action name="coope" class="jump_" method="jump_">
+		<result name="1">/add_coope.jsp</result>
+	</action>
+	<action name="add_coope" class="add" method="add_coope">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="query_coope" class="query_" method="query_coope">
+		<result name="1">/show_coope.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="del_coope" class="del" method="del_coope">
+		<result name="0">/fail.jsp</result>
+		<result name="1">/index.jsp</result>
+	</action>
+	<action name="upp_coope" class="upp" method="upp">
+		<result name="1">/update_coope.jsp</result>
+	</action>
+	<action name="update_coope" class="update" method="update_coope">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	</package>
+</struts>    
