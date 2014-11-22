@@ -36,13 +36,13 @@ body {
 <p align="center">通过该页面您可以查情况同时也可以向系统中添加一个软件著作权</p>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="right">请选择您所需要的服务：</p>
+<p align="right">请选择ggsshfghfh的服务：</p>
 <form id="form1" name="form1" method="post" action="software">
   <label>
   <div align="right">
     <select name="software" id="software">
-      <option value="1">添加软件著作权</option>
-      <option value="2">查询软件著作权</option>
+      <option value="1">添加软zxvzvzvzx件著作权</option>
+      <option value="2">查询</option>
       </select>
   </div>
   </label>

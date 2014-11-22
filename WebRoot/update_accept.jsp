@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新科研经bbndb,samafa,费信息</h1>
+<h1 align="center">更新信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_accept">	
@@ -55,7 +55,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>开始时间：</td>
+      <td>开始：</td>
       <td><label>
         <input name="start" type="text" id="start" value="${start}"/>
       </label></td>
@@ -121,6 +121,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要更新的科研经费信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的填写fsdaasfsafa您要更新的科研经费信息，以避免造成不必要的错误。</h2>
 </body>
 </html>

@@ -31,19 +31,19 @@ body {
 </style></head>
   
   <body>
-<h1 align="center">欢迎来到图书查询系统</h1>
+<h1 align="center">欢迎来到图书gdfsgdfsgdsg查询系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可以查询国内外进修情况信息同时也可以向系统中添加一个国内外进修情况信息</p>
+<p align="center">通过该页面您可以查询gdfgdsgdgdgdfgd国内外进修情况信息同时也可以向系统中添加一个国内外gsdgsfdgsdf进修情况信息</p>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="right">请选择您所需要的服务：</p>
+<p align="right">请选择您所需要的服fdgfdgds务：</p>
 <form id="form1" name="form1" method="post" action="study">
   <label>
   <div align="right">
     <select name="study" id="study">
-      <option value="1">添加国内外进修情况信息</option>
-      <option value="2">查询国内外进修情况信息</option>
+      <option value="1">添加国内外进修情fdgdsg况信息</option>
+      <option value="2">查询国内外进修dfsgdsfgds情况信息</option>
       </select>
   </div>
   </label>

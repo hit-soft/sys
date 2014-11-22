@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新国际合作情况信息</h1>
+<h1 align="center">更新国际合作asdfasfsafasdfdsa情况信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_coope">	
@@ -101,6 +101,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要更新的国际合作情况信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的填写您况信息，以避免造成不必要的错误。</h2>
 </body>
 </html>
