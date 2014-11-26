@@ -34,25 +34,25 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询获奖z信息</h1>
+<h1 align="center">查询获奖zagfgdsg信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_priz">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">项目名称：</td>
+      <td width="110">项目：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖f型：</td>
+      <td>获型：</td>
       <td><label>
         <input name="type" type="text" id="type" />
       </label></td>
     </tr>
     <tr>
-      <td>获奖登记：</td>
+      <td>获奖：</td>
       <td><label>
         <input name="level" type="text" id="level" />
       </label></td>
@@ -64,7 +64,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>获奖人员名单：</td>
+      <td>获奖人fdgfdgdgd单：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>

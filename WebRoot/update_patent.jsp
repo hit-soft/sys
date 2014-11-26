@@ -31,13 +31,13 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新专利</h1>
+<h1 align="center">更新fgdsgsd</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_patent">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">专利名称：</td>
+      <td width="110">专利名gsfgsfgeg称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}"/>
       </label></td>

@@ -33,7 +33,7 @@ body {
 <h1 align="center">欢迎来到询系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可以查情况同时也可以向系统中添加一个软件著作权</p>
+<p align="center">通过该页面您可以统中添加一个软件著作权</p>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="right">请选择ggsshfghfh的服务：</p>
@@ -41,7 +41,7 @@ body {
   <label>
   <div align="right">
     <select name="software" id="software">
-      <option value="1">添加软zxvzvzvzx件著作权</option>
+      <option value="1">添加软z作权</option>
       <option value="2">查询</option>
       </select>
   </div>

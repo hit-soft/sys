@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新学术团体信息</h1>
+<h1 align="center">更新团体gdsgdgdgd信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_team">	
@@ -61,7 +61,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>兼职人员姓名：</td>
+      <td>兼职人员姓dgfdggf名：</td>
       <td><label>
         <input name="person" type="text" id="person" value="${person}"/>
       </label></td>
@@ -77,6 +77,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要更新的学术团体信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的填写您要gagagggag更新的学术团体信息，以避免造成不必要的错误。</h2>
 </body>
 </html>
