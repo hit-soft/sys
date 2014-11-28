@@ -23,7 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_accept">	
   <table >
     <tr>
-      <td width="695" rowspan="18">请在右侧添加科研项目验收信息，请从作者1开始按照先后顺序填写作者名单，最多只能填写5人，若不足5人则不需填写剩余作者栏。</td>
       <td width="198">项目名称：</td>
       <td width="293"><label>
         <input name="name" type="text" id="name" size="32"/>

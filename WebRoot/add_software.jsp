@@ -24,7 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_software">	
   <table>
     <tr>
-      <td width="696" rowspan="10">女王EFI圣诞节费所讲的浪费</td>
       <td width="198">著作权名称：</td>
       <td width="292"><label>
         <input name="name" type="text" id="name" />

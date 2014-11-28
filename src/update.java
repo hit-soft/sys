@@ -424,6 +424,11 @@ public class update {
 		}finally{
 			util.closeConnection(conn);
 		}
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println(per+score);
 		return "1";
 	}
 	public String update_accept(){
@@ -696,6 +701,7 @@ public class update {
 		}finally{
 			util.closeConnection(conn);
 		}
+		
 	}
 	public String update_study(){
 		get_conn util=new get_conn();

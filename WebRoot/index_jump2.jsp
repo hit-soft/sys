@@ -98,6 +98,5 @@ body {
 	</a></li>
   </ul>
 </div>
-<div id ="banner">请单击上面的目录选择您需要修改的信息类型</div>
 </body>
 </html>

@@ -24,7 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_patent">	
   <table >
     <tr>
-      <td width="704" rowspan="11">请在右侧添加专利信息，专利权人自动默认作为对专利贡献最大的第一作者，在其之后按照顺序添加其他人员姓名 </td>
       <td width="230">著作权名称：</td>
       <td width="250"><label>
         <input name="name" type="text" id="name" />

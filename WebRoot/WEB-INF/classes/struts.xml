@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
+<constant name="struts.i18n.encoding" value="utf-8"/>
 	<package name="default" namespace="/" extends="struts-default">
 	
 	
@@ -14,6 +16,10 @@
 	
 	<action name="action3" class="query_" method="query_author">
 		<result name="1">/show_author.jsp</result>
+	</action>
+	
+	<action name="action4" class="export" method="Export">
+		<result name="1">/index.jsp</result>
 	</action>
 	
 	<action name="cal_author" class="update" method="cal_author">

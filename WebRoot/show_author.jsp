@@ -27,8 +27,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:param name="per" value="%{per}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">${per}</s:a></td>
-    
-  
   </s:iterator>
   
 </table>

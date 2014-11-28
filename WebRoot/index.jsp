@@ -68,7 +68,6 @@ body {
 <p align="center">&nbsp;</p></div>
 <table width="1201" border="0" align="center">
   <tr>
-    <td colspan="2" rowspan="4" bgcolor="#33CC00">请在右侧选择您需要的功能：通过“添加信息”选项添加信息，通过“更新信息”选项修改、删除信息；通过“查询人员工作量统计结果”选项查询系统内所有人员的科研总分以及每个科研成果小项。</td>
     <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action1">
 		</s:url>
 		<s:a href="%{editURL}">添加信息</s:a></div></td>
@@ -84,9 +83,9 @@ body {
 		<s:a href="%{editURL}">查询人员工作量统计结果</s:a></div></td>
   </tr>
   <tr>
-    <td align="center"><div id ="banner2"><s:url id="editURL" action="action3">
+    <td align="center"><div id ="banner2"><s:url id="editURL" action="action4">
 		</s:url>
-		<s:a href="%{editURL}">查询人员工作量统计结果</s:a></div></td>
+		<s:a href="%{editURL}">导出到excel文档</s:a></div></td>
   </tr>
 
 </table>

@@ -154,7 +154,6 @@ body {
 </div>
 <table width="1201" border="0" align="center">
   <tr>
-    <td colspan="2" rowspan="3" bgcolor="#33CC00">我想要一大段文字</td>
     <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
 		</s:url>
 		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>

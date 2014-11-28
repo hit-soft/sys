@@ -20,7 +20,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="add_publ">	
   <table >
     <tr>
-      <td width="665" rowspan="10">&nbsp;</td>
       <td width="224">专著名称：</td>
       <td width="295"><label>
         <input name="name" type="text" id="name" />

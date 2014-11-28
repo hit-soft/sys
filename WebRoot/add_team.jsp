@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 
-<div id="banner1">&nbsp;<h1 align="center">添加学术团体信息</h1>
+<div id="banner1">&nbsp;<h1 align="center">添加学术团体兼职信息</h1>
 </div>
 <form id="form1" name="form1" method="post" action="add_team">	
   <table >
