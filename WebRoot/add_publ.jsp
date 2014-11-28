@@ -33,7 +33,7 @@ body {
 </style></head>
 
 <body>/*kkakghhkvbvcbzx*/
-<h1 align="center">添加信dsvfdfgfsgb息</h1>
+<h1 align="center">添加d</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_publ">	
@@ -57,7 +57,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>著者fdhdffjv,bn名单：</td>
+      <td>著者fdhdffjv,bn名单asfafsafasf：</td>
       <td><label>
         <input name="person" type="text" id="person" />
       </label></td>
@@ -73,6 +73,6 @@ body {
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要添加的出版专著信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确的填写您fafsafasfsafsf要添加的出版专著信息，以避免造成不必要的错误。</h2>
 </body>
 </html>

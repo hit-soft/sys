@@ -34,25 +34,25 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">添加国际合息</h1>
+<h1 align="center">添加国际fsdafa合息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_coope">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">类别：</td>
+      <td width="110">类fafas别：</td>
       <td width="179"><label>
         <input name="type" type="text" id="type" />
       </label></td>
     </tr>
     <tr>
-      <td>出访人员名单：</td>
+      <td>出访人员名fafa单：</td>
       <td><label>
         <input name="out_pe" type="text" id="out_pe" />
       </label></td>
     </tr>
     <tr>
-      <td>来访人员名单：</td>
+      <td>来访人fsfas员名单：</td>
       <td><label>
         <input name="in_pe" type="text" id="in_pe" />
       </label></td>
@@ -64,7 +64,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>结束时间：</td>
+      <td>结束时fsafda间：</td>
       <td><label>
         <input name="end" type="text" id="end" />
       </label></td>
@@ -76,7 +76,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>来访地：</td>
+      <td>来访dsfas地：</td>
       <td><label>
         <input name="in_pl" type="text" id="in_pl" />
       </label></td>
