@@ -1,21 +1,28 @@
-public class publ {
+
+public class priz {
 	private String name;
-	private String press;
+	private String type;
+	private String level;
 	private String time;
 	private String person;
 	private int per_level;
-	private String type;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPress() {
-		return press;
+	public String getType() {
+		return type;
 	}
-	public void setPress(String press) {
-		this.press = press;
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
 	}
 	public String getTime() {
 		return time;
@@ -34,11 +41,5 @@ public class publ {
 	}
 	public void setPer_level(int per_level) {
 		this.per_level = per_level;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
 	}
 }
