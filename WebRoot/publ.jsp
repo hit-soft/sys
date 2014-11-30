@@ -33,7 +33,7 @@ body {
 <h1 align="center">欢迎来到图书查询vvvvvngdshdgjkdghj系统</h1>
 <hr />
 <p align="center">&nbsp;</p>
-<p align="center">通过该页面您可同时也可以向系统中添加一个出版专利信息</p>
+<p align="center">通过该页面您可vafafasffafsa同时也可以向系统中添加一个出版专利信息</p>
 <hr />
 <p align="center">&nbsp;</p>
 <p align="right">请选择您所需要的服务：</p>

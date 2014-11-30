@@ -40,7 +40,7 @@ body {
 <form id="form1" name="form1" method="post" action="query_coope">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">类别：</td>
+      <td width="110">类：</td>
       <td width="179"><label>
         <input name="type" type="text" id="type" />
       </label></td>
@@ -52,7 +52,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>来访人员名单：</td>
+      <td>来：</td>
       <td><label>
         <input name="in_pe" type="text" id="in_pe" />
       </label></td>
@@ -64,13 +64,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>结束时间：</td>
+      <td>结束时间aggggfdgdfg：</td>
       <td><label>
         <input name="end" type="text" id="end" />
       </label></td>
     </tr>
     <tr>
-      <td>出访地：</td>
+      <td>出访地sgsggsgs：</td>
       <td><label>
         <input name="out_pl" type="text" id="out_pl" />
       </label></td>

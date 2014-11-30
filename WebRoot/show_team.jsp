@@ -38,11 +38,11 @@ body {
 <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td>学体名称</td>
-    <td>担任职务</td>
-    <td>任时间</td>
-    <td>任时间</td>
-    <td>兼职人员姓名</td>
+    <td>学体名gsgsg称</td>
+    <td>担任daasfaf职务</td>
+    <td>任时间fgsdgs</td>
+    <td>任时gsgs间</td>
+    <td>兼职人员sgdsg姓名</td>
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
