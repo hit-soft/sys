@@ -30,7 +30,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新科研经费信息</h1>
+<h1 align="center">更新科研经费vcvzzzzcccccccccccccccc              cccccc信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_funds">	

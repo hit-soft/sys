@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
   </head>
   <body>
-<h1 align="center">更新国内息</h1>
+<h1 align="center">更新国内asfsaf息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_study">	
@@ -41,13 +41,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </label></td>
     </tr>
     <tr>
-      <td>开始时间：</td>
+      <td>开始时asfasfas间：</td>
       <td><label>
         <input name="start" type="text" id="start" value="${start}"/>
       </label></td>
     </tr>
     <tr>
-      <td>结束时间：</td>
+      <td>结束时fsdafsfas间：</td>
       <td><label>
         <input name="end" type="text" id="end" value="${end}"/>
       </label></td>
@@ -69,6 +69,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确的填写您要更新的国内外进修信息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确息，以避免造成不必要的错误。</h2>
 </body>
 </html>

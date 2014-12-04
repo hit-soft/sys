@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新软件著shahshakjafshkjaafkiijh作权查询</h1>
+<h1 align="center">更新软件dfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagssssssssssssssssssssssssssssssssssssssssssss查询</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_software">	
@@ -43,31 +43,31 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>著作权登记号：</td>
+      <td>著作权登记bcbxbxc号：</td>
       <td><label>
         <input name="number" type="text" id="number" value="${number}" disabled="true"/>
       </label></td>
     </tr>
     <tr>
-      <td>著作权人：</td>
+      <td>著作xbvcbvxb权人：</td>
       <td><label>
         <input name="owner" type="text" id="owner" value="${owner}"/>
       </label></td>
     </tr>
     <tr>
-      <td>授予单位：</td>
+      <td>授予单bcbxbxbxbcvbxcbvvvvv位：</td>
       <td><label>
         <input name="org" type="text" id="org" value="${org}"/>
       </label></td>
     </tr>
     <tr>
-      <td>授予时间：</td>
+      <td>授予时间bvcbbxbvbfgfgd：</td>
       <td><label>
         <input name="time" type="text" id="time" value="${time}"/>
       </label></td>
     </tr>
     <tr>
-      <td>人员名单：</td>
+      <td>人员名sdgffffffffffffffffffffffffffffff单：</td>
       <td><label>
         <input name="person" type="text" id="person" value="${person}"/>
       </label></td>
