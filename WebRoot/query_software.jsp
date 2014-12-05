@@ -33,7 +33,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">软gkjsghfdjghv面</h1>
+<h1 align="center">软gkjsghfdjghv面ddddddddddddddddddddddddddddddddddddd</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_software">	
@@ -45,7 +45,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>著作权登记号：</td>
+      <td>著作权登记号dddddddddddddddddddddddd：</td>
       <td><label>
         <input name="number" type="text" id="number" />
       </label></td>

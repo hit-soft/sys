@@ -33,18 +33,18 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">下面表格gsgsg内容</h1>
+<h1 align="center">下面表格gsgffffffffffffffffffffffffffffffffsg内容</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td width="91">项目称</td>
-    <td width="91">获奖类</td>
+    <td width="91">项目fffffffffffffffffffffff称</td>
+    <td width="91">获奖fffffffffffffffffffffffffffffffffffffffffffffffff类</td>
     <td width="91">获fgdg等zvvzfzffz级</td>
     <td width="91">获奖间</td>
     <td width="91">获奖人员sgsfgsd名单</td>
     <td width="51">操gsdgfsdg作1</td>
-    <td width="53">操gsdggsd作2</td>
+    <td width="53">操gsdggsdfffffffffffffffffffffffffffff作2</td>
   </tr>
    <s:iterator value="l"> <!-- l 为action 中 list -->
   <tr>

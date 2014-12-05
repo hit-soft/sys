@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -28,11 +28,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <p align="center">&nbsp;</p>
 <table border="1" align="center">
   <tr>
-    <td width="91">项目名称</td>
-    <td width="91">项目来源</td>
-    <td width="91">项目负责人</td>
-    <td width="91">开始时间</td>
-    <td width="91">结束时间</td>
+    <td width="91">项目ddddddddddddddddddddddd名称</td>
+    <td width="91">项目dddddddddddddddddddddddddddd来源</td>
+    <td width="91">项目负责dddddddddddddddddddddddd人</td>
+    <td width="91">开始时ddddddddddddddddddddddd间</td>
+    <td width="91">结束dddddddddddddddddddddddd时间</td>
     <td width="91">合同额</td>
     <td width="91">已到款</td>
     <td width="91">未到款</td>

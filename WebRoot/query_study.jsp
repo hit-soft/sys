@@ -34,31 +34,31 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">查询国内外进修vzxcvvzcvxczv信息</h1>
+<h1 align="center">查询国内外进修vzxcvvzfffffffffffffffffffffffffffffffffffffcvxczv信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="query_study">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">进修学习单位：</td>
+      <td width="110">进修学习单fffffffffffffffffffffffffffffff位：</td>
       <td width="179"><label>
         <input name="org" type="text" id="org" />
       </label></td>
     </tr>
     <tr>
-      <td>进修学习内容：</td>
+      <td>进修学习内容fffffffffffffffffffffffffffffffffffffffffffff：</td>
       <td><label>
         <input name="substance" type="text" id="substance" />
       </label></td>
     </tr>
     <tr>
-      <td>开始时间：</td>
+      <td>开始时fffffffffffffffffffffffffffffffffffff间：</td>
       <td><label>
         <input name="start" type="text" id="start" />
       </label></td>
     </tr>
     <tr>
-      <td>结束时间：</td>
+      <td>结束时间ffffffffffffffffffffff：</td>
       <td><label>
         <input name="end" type="text" id="end" />
       </label></td>
