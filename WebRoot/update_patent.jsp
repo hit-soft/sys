@@ -31,7 +31,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新fgdsgsd</h1>
+<h1 align="center">更新dddddddddddddddddddddddddddddddddfgdsgsd</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_patent">	
@@ -43,7 +43,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>专利编号：</td>
+      <td>专利编ddddddddddddddddddddddddddddddddddd号：</td>
       <td><label>
         <input name="number" type="text" id="number" value="${number}" disabled="true"/>
       </label></td>

@@ -37,7 +37,7 @@ body {
 <form id="form1" name="form1" method="post" action="update_accept">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">项目名称：</td>
+      <td width="110">项目cccccccccccccccccccccccccccccc名称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}" disabled="true"/>
       </label></td>
@@ -79,13 +79,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>验收时间：</td>
+      <td>验收时cccccccccccccccccccccccccc间：</td>
       <td><label>
         <input name="time" type="text" id="time" value="${time}"/>
       </label></td>
     </tr>
     <tr>
-      <td>验收单位：</td>
+      <td>验收单位ssssssssssssssssssssssss：</td>
       <td><label>
         <input name="org" type="text" id="org" value="${org}"/>
       </label></td>
@@ -97,13 +97,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>经费卡号：</td>
+      <td>经费卡dddddddddddddddddddddd号：</td>
       <td><label>
         <input name="card" type="text" id="card" value="${card}"/>
       </label></td>
     </tr>
     <tr>
-      <td>备注：</td>
+      <td>备注dddddddddddddddddddddddddddd：</td>
       <td><label>
         <input name="remark" type="text" id="remark" value="${remark}"/>
       </label></td>
