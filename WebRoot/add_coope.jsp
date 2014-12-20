@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
+<<<<<<< HEAD
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -30,6 +31,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	}
 	</script>
+=======
+
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 <div id="banner1">&nbsp;<h1 align="center">添加国际合作情况信息</h1>
 </div>
 <form id="form1" name="form1" method="post" action="add_coope">	
@@ -94,6 +98,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <input name="invi_by" type="text" id="invi_by" />
       </label></td>
     </tr>
+<<<<<<< HEAD
     
    	 时间：
     <select name="year" onchange="changeDate()">
@@ -108,6 +113,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	</script>
  	
  	
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <tr>
       <td></td>
       <td><label>

@@ -27,7 +27,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td>开始时间</td>
     <td>结束时间</td>
     <td>人员姓名</td>
+<<<<<<< HEAD
     <td>年份</td>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <td width="51">操作1</td>
     <td width="53">操作2</td>
   </tr>
@@ -38,7 +41,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td><input type=text value="${start}" size="10" readonly="readonly"></td>
     <td><input type=text value="${end}" size="10" readonly="readonly"></td>
     <td><input type=text value="${person}" size="10" readonly="readonly"></td>
+<<<<<<< HEAD
     <td><input type=text value="${year}" size="10" readonly="readonly"></td>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <td><s:url id="editURL" action="del_study">
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
@@ -50,7 +56,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:param name="start" value="%{start}"></s:param>
 		<s:param name="end" value="%{end}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

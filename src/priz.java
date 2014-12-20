@@ -6,6 +6,7 @@ public class priz {
 	private String time;
 	private String person;
 	private int per_level;
+<<<<<<< HEAD
 	private int year;
 	public int getYear() {
 		return year;
@@ -13,6 +14,8 @@ public class priz {
 	public void setYear(int year) {
 		this.year = year;
 	}
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 	public String getName() {
 		return name;
 	}

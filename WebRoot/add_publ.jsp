@@ -16,6 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <link href="style1.css" rel="stylesheet" type="text/css" /></head>
 
 <body>
+<<<<<<< HEAD
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -29,6 +30,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	</script>
 
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 <div id="banner1">&nbsp;<h1 align="center">添加出版专著信息</h1></div>
 <form id="form1" name="form1" method="post" action="add_publ">	
   <table >
@@ -90,6 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </select>
       </label></td>
     </tr>
+<<<<<<< HEAD
     
 	时间：
     <select name="year" onchange="changeDate()">
@@ -103,6 +107,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		document.forms[0].date.selectedIndex = now.getDate()-1
  	</script>
     
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <tr>
       <td></td>
       <td><label>

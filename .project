@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>my_wlh</name>
+=======
+	<name>wlh</name>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
 			<arguments>
 			</arguments>
@@ -17,6 +22,9 @@
 		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+=======
+		e.builder</name>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 			<arguments>
 			</arguments>
 		</buildCommand>

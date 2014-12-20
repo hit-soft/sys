@@ -35,6 +35,7 @@ public class update {
 	private String invi_by;
 	private String per;
 	private double score;
+<<<<<<< HEAD
 	private int year;
 	public int getYear() {
 		return year;
@@ -42,6 +43,8 @@ public class update {
 	public void setYear(int year) {
 		this.year = year;
 	}
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 	public String getPer() {
 		return per;
 	}
@@ -226,6 +229,10 @@ public class update {
 		score=0;
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 		try{
 			String sql="select * from funds ";
 			Statement stmt=conn.createStatement();
@@ -426,9 +433,20 @@ public class update {
 		}
 		catch(SQLException e){
 			e.printStackTrace();
+<<<<<<< HEAD
 		}finally{
 			util.closeConnection(conn);
 		}
+=======
+			System.out.println("error!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		}finally{
+			util.closeConnection(conn);
+		}
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+		System.out.println("11111111111111111111111111111111111111");
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 		System.out.println(per+score);
 		return "1";
 	}
@@ -437,6 +455,7 @@ public class update {
 		Connection conn=util.getConnection();
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql2="update accept set source="+"'"+source+"'"+ "where name="+"'"+name+"'"+" and "+"year= "+"'"+"year"+"'";
 			String sql3="update accept set leader="+"'"+leader+"'"+ "where name="+"'"+name+"'"+" and "+"year= "+"'"+"year"+"'";
 			String sql4="update accept set start="+"'"+start+"'"+ "where name="+"'"+name+"'"+" and "+"year= "+"'"+"year"+"'";
@@ -449,6 +468,23 @@ public class update {
 			String sql11="update accept set card="+"'"+card+"'"+ "where name="+"'"+name+"'"+" and "+"year= "+"'"+"year"+"'";
 			String sql12="update accept set remark="+"'"+remark+"'"+ "where name="+"'"+name+"'"+" and "+"year= "+"'"+"year"+"'";
 			String sql13="update accept set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+" person= "+"'"+person+"'"+" and "+"year= "+"'"+"year"+"'";
+=======
+//			String sql1="update accept set name="+"'"+name+"'"+ "where name="+"'"+name+"'";
+			String sql2="update accept set source="+"'"+source+"'"+ "where name="+"'"+name+"'";
+			String sql3="update accept set leader="+"'"+leader+"'"+ "where name="+"'"+name+"'";
+			String sql4="update accept set start="+"'"+start+"'"+ "where name="+"'"+name+"'";
+			String sql5="update accept set end="+"'"+end+"'"+ "where name="+"'"+name+"'";
+			String sql6="update accept set contract="+"'"+contract+"'"+ "where name="+"'"+name+"'";
+			String sql7="update accept set type="+"'"+type+"'"+ "where name="+"'"+name+"'";
+			String sql8="update accept set time="+"'"+time+"'"+ "where name="+"'"+name+"'";
+			String sql9="update accept set org="+"'"+org+"'"+ "where name="+"'"+name+"'";
+			String sql10="update accept set number="+"'"+number+"'"+ "where name="+"'"+name+"'";
+			String sql11="update accept set card="+"'"+card+"'"+ "where name="+"'"+name+"'";
+			String sql12="update accept set remark="+"'"+remark+"'"+ "where name="+"'"+name+"'";
+			String sql13="update accept set per_level="+"'"+per_level+"'"+ "where name="+"'"+name+"'"+" and "+" person= "+"'"+person+"'";
+//			System.out.println(sql1);
+//			stmt.execute(sql1);
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 			System.out.println(sql2);
 			stmt.execute(sql2);
 			System.out.println(sql3);

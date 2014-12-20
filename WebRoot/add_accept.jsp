@@ -17,6 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link href="style1.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<<<<<<< HEAD
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -29,6 +30,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	}
 	</script>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 <div id="banner1"><h1 align="center"><br>添加科研项目验收信息</h1>
 
 <p align="center">&nbsp;</p></div>
@@ -149,6 +152,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <input name="remark" type="text" id="remark"  size="32"/>
       </label></td>
     </tr>
+<<<<<<< HEAD
    	
    	
    	
@@ -167,6 +171,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	
    	
    	
+=======
+   
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <tr>
       <td></td>
       <td><label>

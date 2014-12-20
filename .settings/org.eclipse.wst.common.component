@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="my_wlh">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="my_wlh"/>
         <property name="java-output-path" value="/my_wlh/WebRoot/WEB-INF/classes"/>
+=======
+    <wb-module deploy-name="wlh">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="wlh"/>
+        <property name="java-output-path" value="/wlh/WebRoot/WEB-INF/classes"/>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     </wb-module>
 </project-modules>

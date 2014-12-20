@@ -14,6 +14,7 @@ public class accept {
 	private String person;
 	private int per_level;
 	private String remark;
+<<<<<<< HEAD
 	private int year;
 	public int getYear() {
 		return year;
@@ -21,6 +22,8 @@ public class accept {
 	public void setYear(int year) {
 		this.year = year;
 	}
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 	public String getName() {
 		return name;
 	}

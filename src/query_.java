@@ -10,6 +10,7 @@ import java.util.List;
 public class query_ {
 	private int flag;
 	private String per;
+<<<<<<< HEAD
 	private int year;
 	public int getYear() {
 		return year;
@@ -17,6 +18,8 @@ public class query_ {
 	public void setYear(int year) {
 		this.year = year;
 	}
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 	public int getFlag() {
 		return flag;
 	}
@@ -126,7 +129,10 @@ public class query_ {
 					use.setPerson(rs.getString(13));
 					use.setPer_level(rs.getInt(14));
 					use.setRemark(rs.getString(12));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(13));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l1.add(use);
 		}
@@ -167,7 +173,10 @@ public class query_ {
 					use.setGoal(rs.getString(9));
 					use.setName(rs.getString(10));
 					use.setInvi_by(rs.getString(11));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(12));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l2.add(use);
 		}
@@ -208,7 +217,10 @@ public class query_ {
 					use.setPerson(rs.getString(10));
 					use.setPer_level(rs.getInt(11));
 					use.setType(rs.getString(12));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(13));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l3.add(use);
 		}
@@ -246,7 +258,10 @@ public class query_ {
 					use.setPerson(rs.getString(6));
 					use.setPer_level(rs.getInt(7));
 					use.setType(rs.getString(8));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(9));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l4.add(use);
 		}
@@ -281,7 +296,10 @@ public class query_ {
 					use.setTime(rs.getString(4));
 					use.setPerson(rs.getString(5));
 					use.setPer_level(rs.getInt(6));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(7));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l5.add(use);
 		}
@@ -316,7 +334,10 @@ public class query_ {
 					use.setPerson(rs.getString(4));
 					use.setPer_level(rs.getInt(5));
 					use.setType(rs.getString(6));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(7));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l6.add(use);
 		}
@@ -352,7 +373,10 @@ public class query_ {
 					use.setTime(rs.getString(5));
 					use.setPerson(rs.getString(6));
 					use.setPer_level(rs.getInt(7));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(8));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l7.add(use);
 		}
@@ -386,7 +410,10 @@ public class query_ {
 					use.setStart(rs.getString(3));
 					use.setEnd(rs.getString(4));
 					use.setPerson(rs.getString(5));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(6));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l8.add(use);
 		}
@@ -421,7 +448,10 @@ public class query_ {
 					use.setEnd(rs.getString(4));
 					use.setPerson(rs.getString(5));
 					use.setType(rs.getString(6));
+<<<<<<< HEAD
 					use.setYear(rs.getInt(7));
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 					fla=1;
 					l9.add(use);
 		}
@@ -441,7 +471,10 @@ public class query_ {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		String sql="select * from per";
+<<<<<<< HEAD
 		sql+=" where year= " + "'"+year+ "'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 			try{
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(sql);

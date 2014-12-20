@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
+<<<<<<< HEAD
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -31,6 +32,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	</script>
 
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
 <div id="banner1"><h1 align="center"><br>添加专利信息</h1>
 
 <p align="center">&nbsp;</p></div>
@@ -99,6 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </select>
       </label></td>
     </tr>
+<<<<<<< HEAD
     
 	时间：
     <select name="year" onchange="changeDate()">
@@ -113,6 +117,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	</script>
     
     
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
     <tr>
       <td></td>
       <td><label>
