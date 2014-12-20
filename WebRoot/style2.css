@@ -1,0 +1,33 @@
+@charset "utf-8";
+table td {
+	text-align: center;
+	color: #0F6;
+	height:5px;
+	width: 200px;
+}
+#table1 {
+	background-color: #6C0;
+	text-align: center;
+}
+input {
+	line-height: normal;
+	text-align: center;
+}
+#table1 td a {
+	text-align:center;
+	text-decoration: none;
+	display:block;
+	height: 20px;
+	width: 90px;
+	font-family: "宋体";
+	font-size: 14px;
+	color: #000;
+	background-color: #f7bc5c;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 8px;
+}
+#table1 td a:hover{
+	background-color:#F30;
+	color:#FFF;
+}
