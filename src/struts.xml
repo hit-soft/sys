@@ -4,7 +4,24 @@
 <struts>
 <constant name="struts.i18n.encoding" value="utf-8"/>
 	<package name="default" namespace="/" extends="struts-default">
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+	
+	
+	<action name="action1" class="jump_" method="change">
+		<result name="1">/index_jump.jsp</result>
+	</action>
+	
+	<action name="action2" class="jump_" method="change">
+		<result name="1">/index_jump2.jsp</result>
+	</action>
+	
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="action3" class="query_" method="query_author">
 		<result name="1">/show_author.jsp</result>
 	</action>
@@ -13,6 +30,10 @@
 		<result name="1">/index.jsp</result>
 	</action>
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	
 	<action name="getyear" class="query_" method="query_author">
 		<result name="1">/show_author.jsp</result>
@@ -20,6 +41,11 @@
 	</action>
 	
 		
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="cal_author" class="update" method="cal_author">
 		<result name="1">/cal_author.jsp</result>
 	</action>
@@ -55,6 +81,10 @@
 	
 	
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	
 
 	
@@ -66,6 +96,11 @@
 	
 	
 	
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="accept" class="jump_" method="jump_">
 		<result name="1">/add_accept.jsp</result>
 	</action>

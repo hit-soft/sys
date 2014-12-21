@@ -8,6 +8,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.generic_6.0">
 		<attributes>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
@@ -21,6 +25,11 @@
 	</classpathentry>
 	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
 		<attributes>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			<attribute name="org.eclipse.jst.component.dependency" value="WEB-INF/lib"/>
 			<attribute name="owner.project.facets" value="web.struts2"/>
 		</attributes>

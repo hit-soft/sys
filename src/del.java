@@ -25,7 +25,14 @@ public class del {
 	private double already;
 	private double non;
 	private String owner;
+<<<<<<< HEAD
 	private int year;
+=======
+<<<<<<< HEAD
+	private int year;
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	private String person;
 	private String level;
 	private String press;
@@ -194,12 +201,21 @@ public class del {
 	public void setInvi_by(String invi_by) {
 		this.invi_by = invi_by;
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	public int getYear() {
 		return year;
 	}
 	public void setYear(int year) {
 		this.year = year;
 	}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	public String del_accept(){
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
@@ -209,7 +225,14 @@ public class del {
 			if(name!=null&&!name.equals("")){
 				sql+=" name= "+"'"+name+"'";
 				sql+=" and "+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			stmt.execute(sql);
 			return "1";
@@ -231,7 +254,14 @@ public class del {
 			System.out.println("invi_by:"+invi_by);
 				sql+=" name= "+"'"+name+"'";
 				sql+=" and "+" invi_by= "+"'"+invi_by+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -252,7 +282,14 @@ public class del {
 			if(name!=null&&!name.equals("")){
 				sql+=" name= "+"'"+name+"'";
 				sql+=" and "+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -272,7 +309,14 @@ public class del {
 			Statement stmt=conn.createStatement();
 			String sql="delete from patent where";
 				sql+=" number= "+"'"+number+"'"+" and "+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -292,7 +336,14 @@ public class del {
 			String sql="delete from priz where";
 			if(name!=null&&!name.equals("")){
 				sql+=" name= "+"'"+name+"'"+"and"+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -314,7 +365,14 @@ public class del {
 			if(name!=null&&!name.equals("")){
 				sql+=" name= "+"'"+name+"'";
 				sql+=" and "+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -335,7 +393,14 @@ public class del {
 			String sql="delete from software where";
 			sql+=" number= "+"'"+number+"'"+"and";
 			sql+=" person= "+"'"+person+"'";
+<<<<<<< HEAD
 			sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+			sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";
@@ -356,7 +421,14 @@ public class del {
 			if(org!=null&&!org.equals("")){
 				sql+=" org= "+"'"+org+"'";
 				sql+=" and "+" person= "+"'"+person+"'";
+<<<<<<< HEAD
 				sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+				sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			System.out.println(sql);
 			stmt.execute(sql);
@@ -378,7 +450,14 @@ public class del {
 			if(name!=null&&!name.equals("")){
 				sql+=" name= "+"'"+name+"'";
 			}
+<<<<<<< HEAD
 			sql+=" and "+" year= "+"'"+year+"'";
+=======
+<<<<<<< HEAD
+			sql+=" and "+" year= "+"'"+year+"'";
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			return "1";

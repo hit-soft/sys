@@ -114,6 +114,7 @@ td {
     </tr>
     
     <tr>
+<<<<<<< HEAD
       <td>年份：</td>
       <td><label>
         <input name="year" type="text" id="year" value="${year}"  readonly size="32"/>
@@ -121,6 +122,8 @@ td {
     </tr>
     
     <tr>
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
       <td></td>
       <td><label>
       <input type="submit" name="Submit3" value="提交" />

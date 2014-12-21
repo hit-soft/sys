@@ -115,6 +115,7 @@ td {
         <input name="invi_by" type="text" id="invi_by" value="${invi_by}" readonly/>
       </label></td>
     </tr>
+<<<<<<< HEAD
     
     
     <tr>
@@ -124,6 +125,8 @@ td {
       </label></td>
     </tr>
     
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <tr>
       <td></td>
       <td><label>

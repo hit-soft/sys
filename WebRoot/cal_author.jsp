@@ -85,6 +85,7 @@ body {
 </style>
 	</head>
 
+<<<<<<< HEAD
  <SCRIPT LANGUAGE="JavaScript">
 	function goTo()
 	{
@@ -96,6 +97,8 @@ body {
  </SCRIPT>
 
 
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 <body>
 <div id="banner1"><h1 align="center"><br>个人科研成绩</h1>
 <p align="center">&nbsp;</p>
@@ -164,11 +167,19 @@ body {
   </ul>
 </div>
 <table width="1201" border="0" align="center">
+<<<<<<< HEAD
   
   <tr>
   	<a href="javascript:goTo()">返回查询其他人员总分</a>
   </tr>
   
+=======
+  <tr>
+    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
+		</s:url>
+		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
+  </tr>
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
   <tr>
     <td align="center"><div id ="banner2"><a href="index.jsp">
 	返回系统首页

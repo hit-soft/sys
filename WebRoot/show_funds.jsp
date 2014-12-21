@@ -31,10 +31,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td>人员</td>
     <td>排名顺序</td>
     <td>项目类型</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <td>年份</td>
     <td>操作1</td>
     <td>操作2</td>
     
+<<<<<<< HEAD
+=======
+=======
+    <td>操作1</td>
+    <td>操作2</td>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
   </tr>
   <s:iterator value="l3"> <!-- l 为action 中 list -->
   <tr>
@@ -50,7 +61,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td><input type=text value="${person}" size="10" readonly="readonly"></td>
     <td><input type=text value="${per_level}" size="10" readonly="readonly"></td>
     <td><input type=text value="${type}" size="10" readonly="readonly"></td>
+<<<<<<< HEAD
     <td><input type=text value="${year}" size="10" readonly="readonly"></td>
+=======
+<<<<<<< HEAD
+    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
+=======
+    
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <td><s:url id="editURL" action="del_funds">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
@@ -70,7 +89,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:param name="person" value="%{person}"></s:param>
 		<s:param name="per_level" value="%{per_level}"></s:param>
 		<s:param name="type" value="%{type}"></s:param>
+<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
+=======
+<<<<<<< HEAD
+		<s:param name="year" value="%{year}"></s:param>
+=======
+		
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

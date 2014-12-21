@@ -102,6 +102,7 @@ td {
         <input name="per_level" type="text" id="per_level" value="${per_level}"/>
       </label></td>
     </tr>
+<<<<<<< HEAD
     
     
     <tr>
@@ -111,6 +112,8 @@ td {
       </label></td>
     </tr>
     
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <tr>
       <td></td>
       <td><label>

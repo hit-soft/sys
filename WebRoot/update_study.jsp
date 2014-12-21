@@ -89,6 +89,7 @@ td {
         <input name="person" type="text" id="person" value="${person}" readonly/>
       </label></td>
     </tr>
+<<<<<<< HEAD
     
     
 	<tr>
@@ -97,6 +98,8 @@ td {
         <input name="year" type="text" id="year" value="${year}"  readonly size="32"/>
       </label></td>
     </tr>
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <tr>
       <td></td>
       <td><label>

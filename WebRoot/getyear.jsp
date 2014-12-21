@@ -32,7 +32,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div id="banner1"><h1 align="center"><br>添加科研项目验收信息</h1>
 
 <p align="center">&nbsp;</p></div>
+<<<<<<< HEAD
 <form id="form1" name="form1" method="post" action="getyear">
+=======
+<form id="form1" name="form1" method="post" action="getyear">	
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
   <table >
    	时间：
     <select name="year" onchange="changeDate()">
@@ -46,7 +50,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		document.forms[0].date.selectedIndex = now.getDate()-1
  	</script>
    	
+<<<<<<< HEAD
    	<tr>
+=======
+   	
+   	
+   	
+    <tr>
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
       <td></td>
       <td><label>
         <input type="submit" name="Submit" value="提交" />

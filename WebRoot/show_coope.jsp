@@ -26,10 +26,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td>访问目的</td>
     <td>报告名称</td>
     <td>邀请人</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <td>年份</td>
     <td>操作1</td>
     <td>操作2</td>
     
+<<<<<<< HEAD
+=======
+=======
+    <td>操作1</td>
+    <td>操作2</td>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
   </tr>
   <s:iterator value="l2"> <!-- l 为action 中 list -->
   <tr>
@@ -44,7 +55,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <td><input type=text value="${goal}" size="10" readonly="readonly"></td>
     <td><input type=text value="${name}" size="10" readonly="readonly"></td>
     <td><input type=text value="${invi_by}" size="10" readonly="readonly"></td>
+<<<<<<< HEAD
     <td><input type=text value="${year}" size="10" readonly="readonly"></td>
+=======
+<<<<<<< HEAD
+    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <td><s:url id="editURL" action="del_coope">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="invi_by" value="%{invi_by}"></s:param>
@@ -52,15 +70,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:a href="%{editURL}">删除</s:a></td>
     <td><s:url id="editURL" action="upp_coope">
 		<s:param name="type" value="%{type}"></s:param>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		<s:param name="in_pe" value="%{in_pe}"></s:param>
 		<s:param name="num" value="%{num}"></s:param>
 		<s:param name="start" value="%{start}"></s:param>
 		<s:param name="end" value="%{end}"></s:param>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		<s:param name="in_pl" value="%{in_pl}"></s:param>
 		<s:param name="goal" value="%{goal}"></s:param>
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="invi_by" value="%{invi_by}"></s:param>
+<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
+=======
+<<<<<<< HEAD
+		<s:param name="year" value="%{year}"></s:param>
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
   </tr>

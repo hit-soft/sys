@@ -17,6 +17,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link href="style1.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -29,6 +33,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	}
 	</script>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 <div id="banner1"><h1 align="center"><br>添加科研项目验收信息</h1>
 
 <p align="center">&nbsp;</p></div>
@@ -149,6 +158,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <input name="remark" type="text" id="remark"  size="32"/>
       </label></td>
     </tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
    	
    	
    	
@@ -167,6 +180,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	
    	
    	
+<<<<<<< HEAD
+=======
+=======
+   
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <tr>
       <td></td>
       <td><label>

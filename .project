@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>mygod</name>
+=======
+<<<<<<< HEAD
+	<name>my_wlh</name>
+=======
+	<name>wlh</name>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 		<buildCommand>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
 			<arguments>
 			</arguments>
@@ -17,6 +29,12 @@
 		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+<<<<<<< HEAD
+=======
+=======
+		e.builder</name>
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			<arguments>
 			</arguments>
 		</buildCommand>

@@ -18,6 +18,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<script>
 	now = new Date()
 	function writeYears(obj, date)
@@ -31,11 +35,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	</script>
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 <div id="banner1"><h1 align="center"><br>添加专利信息</h1>
 
 <p align="center">&nbsp;</p></div>
 <form id="form1" name="form1" method="post" action="add_patent">	
   <table >
+<<<<<<< HEAD
+=======
+    <tr>
+      <td width="230">著作权名称：</td>
+      <td width="250"><label>
+        <input name="name" type="text" id="name" />
+      </label></td>
+    <tr>
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
       <td width="230">专利名称：</td>
       <td width="250"><label>
         <input name="name" type="text" id="name" />
@@ -93,6 +111,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </select>
       </label></td>
     </tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     
 	时间：
     <select name="year" onchange="changeDate()">
@@ -107,6 +129,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	</script>
     
     
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
     <tr>
       <td></td>
       <td><label>

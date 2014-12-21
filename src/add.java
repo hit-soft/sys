@@ -32,6 +32,10 @@ public class add {
 	private String substance;
 	private String post;
 	private String invi_by;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	private int year;
 	public int getYear() {
 		return year;
@@ -39,6 +43,11 @@ public class add {
 	public void setYear(int year) {
 		this.year = year;
 	}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	public String getName() {
 		return name;
 	}
@@ -211,8 +220,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into software(name,number,owner,org,time,person,per_level,year) " +
 					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+person[0]+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into software(name,number,owner,org,time,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+person[0]+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into software(name,number,owner,org,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+person[0]+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -228,15 +247,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -262,8 +295,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into coope(type,out_pe,in_pe,num,start,end,out_pl,in_pl,goal,name,invi_by,year) " +
 					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+num+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+","+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into coope(type,out_pe,in_pe,num,start,end,out_pl,in_pl,goal,name,invi_by,year) " +
+					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+num+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+","+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into coope(type,out_pe,in_pe,num,start,end,out_pl,in_pl,goal,name,invi_by) " +
+					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+num+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+","+"'"+invi_by+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -279,15 +322,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(invi_by.equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(invi_by.equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+invi_by+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -313,12 +370,26 @@ public class add {
 		get_conn util=new get_conn();
 		Connection conn=util.getConnection();
 		System.out.println("conn="+conn);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		System.out.println("year="+year);
 		try {
 			Statement stmt=conn.createStatement();
 			String sql="insert into accept(name,source,leader,start,end,contract,type,time,org,number,card,remark,person,per_level,year) " +
 					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+
 					","+"'"+type+"'"+","+"'"+time+"'"+","+"'"+org+"'"+","+"'"+number+"'"+","+"'"+card+"'"+","+"'"+remark+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+<<<<<<< HEAD
+=======
+=======
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into accept(name,source,leader,start,end,contract,type,time,org,number,card,remark,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+
+					","+"'"+type+"'"+","+"'"+time+"'"+","+"'"+org+"'"+","+"'"+number+"'"+","+"'"+card+"'"+","+"'"+remark+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -333,15 +404,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -367,8 +452,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number,person,per_level,type,year) " +
 					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number,person,per_level,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number,person,per_level,type) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+person[0]+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -381,15 +476,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -416,8 +525,18 @@ public class add {
 		
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into patent(name,number,owner,org,time,person,per_level,type,year) " +
 					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+person[0]+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into patent(name,number,owner,org,time,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into patent(name,number,owner,org,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);	
 			
@@ -432,18 +551,44 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
+<<<<<<< HEAD
+=======
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			}
 			catch(SQLException e){
 				e.printStackTrace();
@@ -463,8 +608,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into study(org,substance,start,end,person,year) " +
 					"values("+"'"+org+"'"+","+"'"+substance+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into study(org,substance,start,end,person,year) " +
+					"values("+"'"+org+"'"+","+"'"+substance+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into study(org,substance,start,end,person) " +
+					"values("+"'"+org+"'"+","+"'"+substance+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -494,15 +649,29 @@ public class add {
 			fla=0;
 			while(rs.next()){
 				System.out.println("person:"+person[0]);
+<<<<<<< HEAD
 			if(person[0].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[0].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[0]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -527,8 +696,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into team(name,post,start,end,person,type,year) " +
 					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into team(name,post,start,end,person,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into team(name,post,start,end,person,type) " +
+					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person[0]+"'"+","+"'"+type+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -563,15 +742,29 @@ public class add {
 			fla=0;
 			while(rs.next()){
 				System.out.println("person:"+person[0]);
+<<<<<<< HEAD
 			if(person[0].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[0].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[0]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[0]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -598,8 +791,18 @@ public class add {
 			System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into priz(name,type,level,time,person,per_level,year) " +
 					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into priz(name,type,level,time,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into priz(name,type,level,time,person,per_level) " +
+					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -613,15 +816,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}
@@ -648,8 +865,18 @@ public class add {
 		System.out.println("conn="+conn);
 		try {
 			Statement stmt=conn.createStatement();
+<<<<<<< HEAD
 			String sql="insert into publ(name,press,time,person,per_level,type,year) " +
 					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+			String sql="insert into publ(name,press,time,person,per_level,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+=======
+			String sql="insert into publ(name,press,time,person,per_level,type) " +
+					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person[i]+"'"+","+"'"+(i+1)+"'"+","+"'"+type+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			System.out.println(sql);
 			stmt.execute(sql);
 			
@@ -665,15 +892,29 @@ public class add {
 			System.out.println(sql);
 			int fla=0;
 			while(rs.next()){
+<<<<<<< HEAD
 			if(person[i].equals(rs.getString(1))&&year==rs.getInt(2)){
+=======
+			if(person[i].equals(rs.getString(1))){
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				fla=1;
 				break;
 				}
 			}
 			if(fla==0)
 			{
+<<<<<<< HEAD
 				sql="insert into per(name,year) "+
 						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+<<<<<<< HEAD
+				sql="insert into per(name,year) "+
+						"values("+"'"+person[i]+"'"+","+"'"+year+"'"+")";
+=======
+				sql="insert into per(name) "+
+						"values("+"'"+person[i]+"'"+")";
+>>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 				System.out.println(sql);
 			stmt.execute(sql);
 			}

@@ -27,14 +27,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:param name="per" value="%{per}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">${per}</s:a></td>
+<<<<<<< HEAD
+=======
+		<s:a href="%{editURL}">${year}</s:a></td>
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
   </s:iterator>
   
 </table>
 <div id ="banner3"><a href="index.jsp">
 	返回系统首页
+<<<<<<< HEAD
 	<tr></tr>
 	<a href="getyear.jsp">
 	返回修改查询年份
+=======
+>>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	</a></div>
 </body>
 </html>
