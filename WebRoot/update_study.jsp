@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form id="form1" name="form1" method="post" action="update_study">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">进修位：</td>
+      <td width="110">进修ddddddddddddddddddddd位：</td>
       <td width="179"><label>
         <input name="org" type="text" id="org" value="${org}" disabled="true"/>
       </label></td>

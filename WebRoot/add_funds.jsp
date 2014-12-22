@@ -34,7 +34,7 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">添加科研经费fhasjkljfabafbhajnfdhuee信息</h1>
+<h1 align="center">添加科研dddddddddddddddddddddddddddd经费fhasjkljfabafbhajnfdhuee信息</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="add_funds">	

@@ -58,7 +58,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>开始时间：</td>
+      <td>开始时ddddddddddddddddddddddddddddddddddddddddddddddddddddddd间：</td>
       <td><label>
         <input name="start" type="text" id="start" />
       </label></td>

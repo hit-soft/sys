@@ -39,12 +39,12 @@ body {
 <table border="1" align="center">
   <tr>
     <td width="91">著作权名称</td>
-    <td width="91">著作权登记号</td>/*hsnssanndndncdn*/
-    <td width="91">著作权daggfhgg人</td>
+    <td width="91">著作权登dddddddddddddddddddd记号</td>/*hsnssanndndncddddddddddddddn*/
+    <td width="91">著作权daggdddddddddddddddddfhgg人</td>
     <td width="91">授sggyahuauhf予单位</td>
-    <td width="91">授予时间</td>
-    <td width="91">人员名单</td>
-    <td width="51">操作1</td>
+    <td width="91">授ddddddddddddd予时间</td>
+    <td width="91">人dddddddddd员名单</td>
+    <td width="51">操ddddddddddddddd作1</td>
     <td width="53">操作2</td>
   </tr>
   <s:iterator value="l"> <!-- l 为action 中 list -->
