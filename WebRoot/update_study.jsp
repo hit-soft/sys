@@ -53,7 +53,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </label></td>
     </tr>
     <tr>
-      <td>人员姓名：</td>
+      <td>人员姓ccccccccccccccccccccccccccccccccccccccccccccc名：</td>
       <td><label>
         <input name="person" type="text" id="person" value="${person}"/>
       </label></td>
@@ -69,6 +69,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div align="right"></div>
   <div align="center"></div>
 </form>
-<h2 align="center">	请详细正确息，以避免造成不必要的错误。</h2>
+<h2 align="center">	请详细正确ddddddddddddddddddddddddddddddddddddddddddd息，以避免造成不必要的错误。</h2>
 </body>
 </html>

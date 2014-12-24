@@ -37,7 +37,7 @@ body {
 <form id="form1" name="form1" method="post" action="update_patent">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">专利名gsfgsfgeg称：</td>
+      <td width="110">专利名gsfgsfddddddddddddddddddddddddddddddddddddddddgeg称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}"/>
       </label></td>
@@ -67,7 +67,7 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>人员名单：</td>
+      <td>人员名ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc单：</td>
       <td><label>
         <input name="person" type="text" id="person" value="${person}"/>
       </label></td>

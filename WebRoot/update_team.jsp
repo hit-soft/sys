@@ -37,7 +37,7 @@ body {
 <form id="form1" name="form1" method="post" action="update_team">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">学术团体名称：</td>
+      <td width="110">学术团体名称dddddddddddddddddddddddddddd：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}" disabled="true"/>
       </label></td>
@@ -49,13 +49,13 @@ body {
       </label></td>
     </tr>
     <tr>
-      <td>任职开始时间：</td>
+      <td>任职开始时ddddddddddddddddddddddddddd间：</td>
       <td><label>
         <input name="start" type="text" id="start" value="${start}"/>
       </label></td>
     </tr>
     <tr>
-      <td>任职结束时间：</td>
+      <td>任职结束时dddddddddddddddddddd间：</td>
       <td><label>
         <input name="end" type="text" id="end" value="${end}"/>
       </label></td>

@@ -31,19 +31,19 @@ body {
 </style></head>
 
 <body>
-<h1 align="center">更新软件dfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagssssssssssssssssssssssssssssssssssssssssssss查询</h1>
+<h1 align="center">更新软件dfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaass查询</h1>
 <hr />
 <p align="center">&nbsp;</p>
 <form id="form1" name="form1" method="post" action="update_software">	
   <table width="299" border="0" align="right">
     <tr>
-      <td width="110">著作权名称：</td>
+      <td width="110">著作权名sssssssssssssssssssssssssss称：</td>
       <td width="179"><label>
         <input name="name" type="text" id="name" value="${name}"/>
       </label></td>
     </tr>
     <tr>
-      <td>著作权登记bcbxbxc号：</td>
+      <td>著作权登记bcbxbxssssssssssssssssssssssc号：</td>
       <td><label>
         <input name="number" type="text" id="number" value="${number}" disabled="true"/>
       </label></td>
