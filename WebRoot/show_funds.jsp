@@ -11,72 +11,80 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
     <title>My JSP 'show_by_author.jsp' starting page</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
     
-	<link href="style2.css" rel="stylesheet" type="text/css" />
-	<link href="style3.css" rel="stylesheet" type="text/css" /></head>
- <p align="center">&nbsp;</p>
-<table border="1" align="center" id="table1">
+	</head>
+<SCRIPT LANGUAGE="JavaScript">
+	function goTo()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-2)
+		}
+	}
+	
+	function goTo1()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-1)
+		}
+	}
+	
+ </SCRIPT>
+
+<body>
+<table width="1049" height="620" border="0" align="center" cellpadding="5" cellspacing="5" id = table1>
   <tr>
-    <td>项目名称</td>
-    <td>项目来源</td>
-    <td>项目负责人</td>
-    <td>开始时间</td>
-    <td>结束时间</td>
-    <td>合同额</td>
-    <td>已到款</td>
-    <td>未到款</td>
-    <td>课题合同号</td>
-    <td>人员</td>
-    <td>排名顺序</td>
-    <td>项目类型</td>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td>年份</td>
-    <td>操作1</td>
-    <td>操作2</td>
-    
-<<<<<<< HEAD
-=======
-=======
-    <td>操作1</td>
-    <td>操作2</td>
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
+    <td height="38" colspan="3">&nbsp;</td>
   </tr>
-  <s:iterator value="l3"> <!-- l 为action 中 list -->
   <tr>
-    <td><input type=text value="${name}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${source}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${leader}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${start}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${end}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${contract}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${already}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${non}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${number}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${person}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${per_level}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${type}" size="10" readonly="readonly"></td>
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
-    
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td><s:url id="editURL" action="del_funds">
+    <td width="51" height="477" nowrap="nowrap">&nbsp;</td>
+    <td width="939" nowrap="nowrap"><table width="1545" border="1" align="center">
+      <tr id =tr1>
+        <td colspan="18">经费情况</td>
+        </tr>
+      <tr id =tr2 >
+        <td width="104" nowrap="nowrap">项目名称</td>
+        <td width="113" nowrap="nowrap">项目来源</td>
+        <td width="97" nowrap="nowrap">项目负责人</td>
+        <td width="96" nowrap="nowrap">开始时间</td>
+        <td width="90" nowrap="nowrap">结束时间</td>
+        <td width="55" nowrap="nowrap">合同额</td>
+        <td width="37" nowrap="nowrap">已到款</td>
+        <td width="73" nowrap="nowrap">未到款</td>
+        <td width="17" nowrap="nowrap">课题合同号</td>
+        <td width="16" nowrap="nowrap">人员</td>
+        <td width="73" nowrap="nowrap">排名顺序</td>
+        <td width="17" nowrap="nowrap">项目类型</td>
+        <td width="16" nowrap="nowrap">年份</td>
+        <td width="22" nowrap="nowrap">操作1</td>
+        <td width="22" nowrap="nowrap">操作2</td>
+        <td width="22" nowrap="nowrap">操作3</td>
+        </tr>
+<s:iterator value="l3"> <!-- l 为action 中 list -->
+      <tr id =tr3>
+        <td nowrap="nowrap">${name}</td>
+        <td nowrap="nowrap">${source}</td>
+        <td nowrap="nowrap">${leader}</td>
+        <td nowrap="nowrap">${start}</td>
+        <td nowrap="nowrap">${end}</td>
+        <td nowrap="nowrap">${contract}</td>
+        <td nowrap="nowrap">${already}</td>
+        <td nowrap="nowrap">${non}</td>
+        <td nowrap="nowrap">${number}</td>
+        <td nowrap="nowrap">${person}</td>
+        <td nowrap="nowrap">${per_level}</td>
+        <td nowrap="nowrap">${type}</td>
+        <td nowrap="nowrap">${year}</td>
+        <td nowrap="nowrap"><s:url id="editURL" action="del_funds">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="year" value="%{year}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
-		
-    <td><s:url id="editURL" action="upp_funds">
+        <td nowrap="nowrap"><s:url id="editURL" action="upp_funds">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="source" value="%{source}"></s:param>
 		<s:param name="leader" value="%{leader}"></s:param>
@@ -89,31 +97,38 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:param name="person" value="%{person}"></s:param>
 		<s:param name="per_level" value="%{per_level}"></s:param>
 		<s:param name="type" value="%{type}"></s:param>
-<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
-=======
-<<<<<<< HEAD
-		<s:param name="year" value="%{year}"></s:param>
-=======
-		
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
-  </tr>
-  </s:iterator>
-</table>
-<p>&nbsp; </p>
-<table border="0" id = "table2"  >
-  <tr>
-    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
+        <td nowrap="nowrap"><s:url id="editURL" action="alone_funds">
+		<s:param name="name" value="%{name}"></s:param>
+		<s:param name="source" value="%{source}"></s:param>
+		<s:param name="leader" value="%{leader}"></s:param>
+		<s:param name="start" value="%{start}"></s:param>
+		<s:param name="end" value="%{end}"></s:param>
+		<s:param name="contract" value="%{contract}"></s:param>
+		<s:param name="already" value="%{already}"></s:param>
+		<s:param name="non" value="%{non}"></s:param>
+		<s:param name="number" value="%{number}"></s:param>
+		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="per_level" value="%{per_level}"></s:param>
+		<s:param name="type" value="%{type}"></s:param>
+		<s:param name="year" value="%{year}"></s:param>
 		</s:url>
-		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
+		<s:a href="%{editURL}">添加成员</s:a></td>
+        </tr>
+</s:iterator>
+    </table></td>
+    <td width="9" nowrap="nowrap">&nbsp;</td>
   </tr>
   <tr>
-    <td align="center"><div id ="banner2"><a href="index.jsp">
-	返回系统首页
-	</a></div></td>
+    <td height="50" colspan="3" align="center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="javascript:goTo1()">
+  	返回查询其他${person}项目工作</a>|<a href="javascript:goTo()">返回查询其他人员总分</a>|<a href="index.jsp" >返回系统首页
+    </a></h4></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="3">&nbsp;</td>
   </tr>
 </table>
+</body>
 </html>

@@ -9,135 +9,95 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+<head>
+<head>
     <base href="<%=basePath%>">
-    
-    <title>Book Management System starting page</title>
-	<style type="text/css">
-body {
-	background-color: #FFF;
-	margin :0px;
-	padding:0px;
-}
-
-#banner {
-	
-	margin: 0px auto;
-	padding: 0px;
-	width: 1200px;
-	background-color:#FFF;
-}
-#banner1 {
-	margin: 0px auto;
-	width: 1200px;
-	height:200px;
-	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
-	font-family: "宋体";
-	color: #F00;
-}
-table {
-	margin: 0px auto;
-	width: 1200px;
-	background-color: #390;
-	text-align: center;
-}
-td {
-	text-align: left;
-	margin: 0px;
-	padding: 0px;
-}
-</style>
+	<link href="style3.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+<script>
+	now = new Date()
+	function writeYears(obj, date)
+	{
+	var years = date.getYear()+10
+	for (var i=2000; i<3000; i++){
+		var opt = document.createElement("option")
+		opt.text = opt.value = i
+		obj.add(opt)
+	}
+	}
+	</script>
+<table width="1049" height="586" border="0" align="center" cellpadding="5" cellspacing="5" id = table1>
+  <tr>
+    <td height="38" colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="74" height="443">&nbsp;</td>
+    <td width="913"><form id="form1" name="form1" method="post" action="update_coope">
+      <table width="937" height="399" border="0" 
 
-<div id="banner1">&nbsp;<h1 align="center">更新国际合作情况信息</h1>
-</div>
-<p>&nbsp;</p>
-<form id="form1" name="form1" method="post" action="update_coope">	
-  <table >
-    <tr>
-      <td width="783" rowspan="17">&nbsp;</td>
+align="center" cellpadding="2" cellspacing="0" id="table2" >
       <tr>
-     <tr>
-      <td width="185">类别：</td>
-      <td width="216"><label>
-        <input name="type" type="text" id="type" value="${type}"/>
-      </label></td>
-    </tr>
-   
-    <tr>
-      <td>来访人员名单：</td>
-      <td><label>
-        <input name="in_pe" type="text" id="in_pe" value="${in_pe}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>人数：</td>
-      <td><label>
-        <input name="num" type="text" id="num" value="${num}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>开始时间：</td>
-      <td><label>
-        <input name="start" type="text" id="start" value="${num}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>结束时间：</td>
-      <td><label>
-        <input name="end" type="text" id="end" value="${start}"/>
-      </label></td>
-    </tr>
-    
-    <tr>
-      <td>来访地：</td>
-      <td><label>
-        <input name="in_pl" type="text" id="in_pl" value="${in_pl}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>访问目的：</td>
-      <td><label>
-        <input name="goal" type="text" id="goal" value="${goal}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>报告名称：</td>
-      <td><label>
-        <input name="name" type="text" id="name" value="${name}" readonly/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>邀请人：</td>
-      <td><label>
-        <input name="invi_by" type="text" id="invi_by" value="${invi_by}" readonly/>
-      </label></td>
-    </tr>
-<<<<<<< HEAD
-    
-    
-    <tr>
-      <td>年份：</td>
-      <td><label>
-        <input name="year" type="text" id="year" value="${year}"  readonly size="32"/>
-      </label></td>
-    </tr>
-    
-=======
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <tr>
-      <td></td>
-      <td><label>
-      <input type="submit" name="Submit3" value="提交" />
-      <input type="reset" name="Submit22" value="重置" />
-      </label>
-      <p>&nbsp;</p><a href="index.jsp" style="float: right">
-	返回系统首页
-	</a></td>
-    </tr>
-  </table>
-</form>
+        <td height="40" colspan="3" align="left" id ="td1"><h2>欢迎来到国际合作管理界面</h2></td>
+        </tr>
+      <tr>
+        <td width="159" height="42"> 类别：</td>
+        <td width="301" height="42"><input name="type" type="text" id="textfield1" size = "32" value="${type}"/></td>
+        <td width="465" rowspan="9"><label for="end"><img src="add1.jpg" width="450" height="378" /></label></td>
+        </tr>
+      <tr>
+        <td height="42">来访人员名单：</td>
+        <td height="42"><input name="in_pe" type="text" id="textfield1" size="32" value="${in_pe}"/></td>
+        </tr>
+      <tr>
+        <td height="42">人数：</td>
+        <td height="42"><input name="num" type="text" id="textfield1" size="32" value="${num}"/></td>
+        </tr>
+      <tr>
+        <td height="42">开始时间：</td>
+        <td height="42"><input name="start" type="text" id="textfield1" size="32" value="${start}"/></td>
+        </tr>
+      <tr>
+        <td height="42">结束时间：</td>
+        <td height="42"><input name="end" type="text" id="textfield1" size="32" value="${end}"/></td>
+        </tr>
+      <tr>
+        <td height="42">来访地：</td>
+        <td height="42"><input name="in_pl" type="text" id="textfield1"  size="32" value="${in_pl}"/></td>
+        </tr>
+      <tr>
+        <td height="42">访问目的：</td>
+        <td height="42"><input name="goal"  type="text" id="textfield1" size="32" value="${goal}"/></td>
+        </tr>
+      <tr>
+        <td height="42">报告名称：</td>
+        <td height="42"><input name="name" type="text" id="textfield1"  size="32" value="${name}" readonly/></td>
+        </tr>
+      <tr>
+        <td height="42">邀请人：</td>
+         <td height="42"><input name="invi_by"  type="text" id="textfield1"  size="32" value="${invi_by}" readonly/></td>
+        </tr>
+      
+      <tr>
+        <td height="42">年份：</td>
+        <td height="42"><input name="year"  type="text" id="textfield1"  size="32" value="${year}"  readonly/></td>
+        </tr>
+      <tr>
+        <td height="42">&nbsp;</td>
+        <td height="42"><input type="submit" name="button3" id="button1" value="提交" />          <input type="reset" name="button2" id="button1" value="重置" /></td>
+      </tr>
+      </table>
+    </form></td>
+    <td width="12">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50" colspan="3" align="center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="index.jsp" >返回系统首页
+    </a></h4></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="3">&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>

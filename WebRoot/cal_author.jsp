@@ -15,7 +15,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>My JSP 'patent.jsp' starting page</title>
     <style type="text/css">
 body {
-	background-color: #6FF;
+	background-color: #CCC;
 	margin :0px;
 	padding:0px;
 }
@@ -57,7 +57,7 @@ body {
 	padding: 0px;
 	width: 1200px;
 	height:200px;
-	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
+	background-image: url(cal_author.jpg);
 }
 #banner2 a{
 	text-decoration: none;
@@ -79,13 +79,12 @@ body {
 	float: right;
 	height: 40px;
 	width: 200px;
-	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
+	
 	margin-top: 0px;
 }
 </style>
 	</head>
 
-<<<<<<< HEAD
  <SCRIPT LANGUAGE="JavaScript">
 	function goTo()
 	{
@@ -96,14 +95,19 @@ body {
 	}
  </SCRIPT>
 
-
-=======
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 <body>
-<div id="banner1"><h1 align="center"><br>个人科研成绩</h1>
+<table width="1217" border="0" align="center">
+  <tr>
+    <td width="129">&nbsp;</td>
+    <td width="911">&nbsp;</td>
+    <td width="155">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="188">&nbsp;</td>
+    <td bgcolor="#FFFFFF"><div id="banner1"><h1 align="center"><br>个人科研成绩</h1>
 <p align="center">&nbsp;</p>
 </div>
-<table border="1" align="center" width="1200">
+<table border="1" align="center" width="1200" >
   <tr>
     <td width="91" nowrap="nowrap">人员姓名</td>
     <td width="91" nowrap="nowrap">科研总分</td>
@@ -164,26 +168,15 @@ body {
     <li> <a href="index.jsp">
 	返回系统首页
 	</a></li>
+	
   </ul>
-</div>
-<table width="1201" border="0" align="center">
-<<<<<<< HEAD
-  
-  <tr>
-  	<a href="javascript:goTo()">返回查询其他人员总分</a>
+</div></td>
+    <td>&nbsp;</td>
   </tr>
-  
-=======
   <tr>
-    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
-		</s:url>
-		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
-  </tr>
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-  <tr>
-    <td align="center"><div id ="banner2"><a href="index.jsp">
-	返回系统首页
-	</a></div></td>
+    <td height="172">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align = "center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="javascript:goTo()">返回查询其他人员总分</a></h4></td>
+    <td>&nbsp;</td>
   </tr>
 </table>
 </body>

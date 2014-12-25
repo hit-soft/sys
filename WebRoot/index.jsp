@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 request.setCharacterEncoding("UTF-8");
@@ -7,31 +7,106 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'failure.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
-  </head>
-  
-  <body>
-
+    <title>My JSP 'patent.jsp' starting page</title>
+    <style type="text/css">
+body {
+	background-color: #CCC;
+	margin :0px;
+	padding:0px;
+}
+#banner {
+	background-color:#FFF;
+	margin: 0px auto;
+	padding: 0px;
+	width: 1200px;
+}
+#banner li {
+	list-style:none;
+	float:left;
+	padding:0;
+	margin:0;
+}
+#nav li a {
+	text-decoration: none;
+	display:block;
+	height: 27px;
+	width: 118px;
+	font-family: "宋体";
+	font-size: 14px;
+	color: #000;
+	background-color: #f7bc5c;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 8px;
+}
+#nav li a:hover{
+	background-color:#F30;
+	color:#FFF;
+}
+#banner ul{
+	padding:0px;
+	margin:0px;
+}
+#banner1 {
+	margin: 0px auto;
+	padding: 0px;
+	width: 1200px;
+	height:200px;
+	background-image: url(cal_author.jpg);
+}
+#banner2 a{
+	text-decoration: none;
+	height: 22px;
+	width: 175px;
+	font-family: "宋体";
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	margin-right: 2px;
+	padding-top: 8px;
+}
+#banner2 a:hover{
+	background-color:#F30;
+	color:#FFF;
+	}
+#banner2 {
+	background-color: #0F6;
+	float: right;
+	height: 40px;
+	width: 200px;
 	
+	margin-top: 0px;
+}
+</style>
+	</head>
+
+ <SCRIPT LANGUAGE="JavaScript">
+	function goTo()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-1)
+		}
+	}
+ </SCRIPT>
+
+<body>
+<table width="1217" border="0" align="center">
+  <tr>
+    <td width="129">&nbsp;</td>
+    <td width="911">&nbsp;</td>
+    <td width="155">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="188">&nbsp;</td>
+    <td bgcolor="#FFFFFF"><div id="banner1"><h1 align="center"><br>科研成果管理系统</h1>
+<p align="center">&nbsp;</p>
+</div>
 <script language="JavaScript">
 var mmenus = new Array();
 var misShow = new Boolean(); 
@@ -535,189 +610,63 @@ document.write("<div align='center' id='JsMenuCSS'>"+stringx+"</div>");
 
 
 mpmenu1=new mMenu('科研经费管理','/','self','','','','');
-<<<<<<< HEAD
-mpmenu1.addItem(new mMenuItem(' 添加科研经费信息','http://hua-pc:8080/mygod/add_funds.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu1.addItem(new mMenuItem(' 更新科研经费信息','http://hua-pc:8080/mygod/query_funds.action','self',false,'用户登录',null,'','','',''));
+mpmenu1.addItem(new mMenuItem(' 添加科研经费信息','http://1.wlhproject.sinaapp.com/add_funds.jsp','self',false,'用户注册',null,'','','',''));
+mpmenu1.addItem(new mMenuItem(' 更新科研经费信息','http://1.wlhproject.sinaapp.com/query_funds.action','self',false,'用户登录',null,'','','',''));
 
 mpmenu2=new mMenu('科研项目验收管理','/','self','','','','');
-mpmenu2.addItem(new mMenuItem(' 添加科研项目验收信息','http://hua-pc:8080/mygod/add_accept.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu2.addItem(new mMenuItem(' 更新科研项目验收信息','http://hua-pc:8080/mygod/query_accept.action','self',false,'用户登录',null,'','','',''));
+mpmenu2.addItem(new mMenuItem(' 添加科研项目验收信息','http://1.wlhproject.sinaapp.com/add_accept.jsp','self',false,'用户注册',null,'','','',''));
+mpmenu2.addItem(new mMenuItem(' 更新科研项目验收信息','http://1.wlhproject.sinaapp.com/query_accept.action','self',false,'用户登录',null,'','','',''));
 
 
 mpmenu3=new mMenu('软件著作权管理','/SoftSchool/','self','','','','');
-mpmenu3.addItem(new mMenuItem(' 添加软件著作权','http://hua-pc:8080/mygod/add_software.jsp','self',false,'软件瞭望',null,'','','',''));
-mpmenu3.addItem(new mMenuItem(' 更新软件著作权','http://hua-pc:8080/mygod/query_software.action','self',false,'精文荟萃',null,'','','',''));
+mpmenu3.addItem(new mMenuItem(' 添加软件著作权','http://1.wlhproject.sinaapp.com/add_software.jsp','self',false,'软件瞭望',null,'','','',''));
+mpmenu3.addItem(new mMenuItem(' 更新软件著作权','http://1.wlhproject.sinaapp.com/query_software.action','self',false,'精文荟萃',null,'','','',''));
 
 mpmenu4=new mMenu(' 专利管理','/Develop/','self','','','','');
-mpmenu4.addItem(new mMenuItem(' 添加专利','http://hua-pc:8080/mygod/add_patent.jsp','self',false,'网页设计',null,'','','',''));
-mpmenu4.addItem(new mMenuItem(' 更新专利','http://hua-pc:8080/mygod/query_patent.action','self',false,'.Net专栏',null,'','','',''));
+mpmenu4.addItem(new mMenuItem(' 添加专利','http://1.wlhproject.sinaapp.com/add_patent.jsp','self',false,'网页设计',null,'','','',''));
+mpmenu4.addItem(new mMenuItem(' 更新专利','http://1.wlhproject.sinaapp.com/query_patent.action','self',false,'.Net专栏',null,'','','',''));
 
 mpmenu5=new mMenu('获奖情况管理','/Lunwen/','self','','','','');
-mpmenu5.addItem(new mMenuItem(' 增加获奖情况','http://hua-pc:8080/mygod/add_priz.jsp','self',false,'学科教学',null,'','','',''));
-mpmenu5.addItem(new mMenuItem(' 更新获奖情况','http://hua-pc:8080/mygod/query_priz.action','self',false,'教学管理',null,'','','',''));
+mpmenu5.addItem(new mMenuItem(' 增加获奖情况','http://1.wlhproject.sinaapp.com/add_priz.jsp','self',false,'学科教学',null,'','','',''));
+mpmenu5.addItem(new mMenuItem(' 更新获奖情况','http://1.wlhproject.sinaapp.com/query_priz.action','self',false,'教学管理',null,'','','',''));
 
 
 mpmenu6=new mMenu('出版专著管理','/bbs/','self','','','','');
-mpmenu6.addItem(new mMenuItem(' 增加出版专著','http://hua-pc:8080/mygod/add_publ.jsp','self',false,'用户短消息',null,'','','',''));
-mpmenu6.addItem(new mMenuItem(' 修改出版专著','http://hua-pc:8080/mygod/query_publ.action','self',false,'',null,'','','',''));
+mpmenu6.addItem(new mMenuItem(' 增加出版专著','http://1.wlhproject.sinaapp.com/add_publ.jsp','self',false,'用户短消息',null,'','','',''));
+mpmenu6.addItem(new mMenuItem(' 修改出版专著','http://1.wlhproject.sinaapp.com/query_publ.action','self',false,'',null,'','','',''));
 
 
 mpmenu7=new mMenu('学术团体兼职情况管理','','self','','','','');
-mpmenu7.addItem(new mMenuItem(' 增加学术团体兼职情况','http://hua-pc:8080/mygod/add_team.jsp','self',false,'e 时代银行',null,'','','',''));
-mpmenu7.addItem(new mMenuItem(' 修改学术团体兼职情况','http://hua-pc:8080/mygod/query_team.action','self',false,'赛马',null,'','','',''));
+mpmenu7.addItem(new mMenuItem(' 增加学术团体兼职情况','http://1.wlhproject.sinaapp.com/add_team.jsp','self',false,'e 时代银行',null,'','','',''));
+mpmenu7.addItem(new mMenuItem(' 修改学术团体兼职情况','http://1.wlhproject.sinaapp.com/query_team.action','self',false,'赛马',null,'','','',''));
 
 mpmenu8=new mMenu('国内外进修及学习管理','/iimy/','self','','','','');
-mpmenu8.addItem(new mMenuItem(' 增加国内外进修及学习信息','http://hua-pc:8080/mygod/add_study.jsp','self',false,'历史知识',null,'','','',''));
-mpmenu8.addItem(new mMenuItem(' 修改国内外进修及学习信息','http://hua-pc:8080/mygod/query_study.action','self',false,'电脑知识',null,'','','',''));
+mpmenu8.addItem(new mMenuItem(' 增加国内外进修及学习信息','http://1.wlhproject.sinaapp.com/add_study.jsp','self',false,'历史知识',null,'','','',''));
+mpmenu8.addItem(new mMenuItem(' 修改国内外进修及学习信息','http://1.wlhproject.sinaapp.com/query_study.action','self',false,'电脑知识',null,'','','',''));
 
 mpmenu9=new mMenu('国际合作情况管理','','self','','','','');
-mpmenu9.addItem(new mMenuItem(' 增加国际合作情况信息','http://hua-pc:8080/mygod/add_coope.jsp','self',false,'',null,'','','',''));
-mpmenu9.addItem(new mMenuItem(' 修改国际合作情况信息','http://hua-pc:8080/mygod/query_coope.action','self',false,'',null,'','','',''));
+mpmenu9.addItem(new mMenuItem(' 增加国际合作情况信息','http://1.wlhproject.sinaapp.com/add_coope.jsp','self',false,'',null,'','','',''));
+mpmenu9.addItem(new mMenuItem(' 修改国际合作情况信息','http://1.wlhproject.sinaapp.com/query_coope.action','self',false,'',null,'','','',''));
 
 mpmenu10=new mMenu('其他系统功能','','self','','','','');
-mpmenu10.addItem(new mMenuItem(' 工作量综合分析','http://hua-pc:8080/mygod/getyear.jsp','self',false,'互联网工具',null,'','','',''));
-mpmenu10.addItem(new mMenuItem(' 导出到excel','http://hua-pc:8080/mygod/action4.action','self',false,'常用工具',null,'','','',''));
-=======
-mpmenu1.addItem(new mMenuItem(' 添加科研经费信息','http://hua-pc:8080/my_wlh/add_funds.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu1.addItem(new mMenuItem(' 更新科研经费信息','http://hua-pc:8080/my_wlh/query_funds.action','self',false,'用户登录',null,'','','',''));
-
-mpmenu2=new mMenu('科研项目验收管理','/','self','','','','');
-mpmenu2.addItem(new mMenuItem(' 添加科研项目验收信息','http://hua-pc:8080/my_wlh/add_accept.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu2.addItem(new mMenuItem(' 更新科研项目验收信息','http://hua-pc:8080/my_wlh/query_accept.action','self',false,'用户登录',null,'','','',''));
-
-
-mpmenu3=new mMenu('软件著作权管理','/SoftSchool/','self','','','','');
-mpmenu3.addItem(new mMenuItem(' 添加软件著作权','http://hua-pc:8080/my_wlh/add_software.jsp','self',false,'软件瞭望',null,'','','',''));
-mpmenu3.addItem(new mMenuItem(' 更新软件著作权','http://hua-pc:8080/my_wlh/query_software.action','self',false,'精文荟萃',null,'','','',''));
-
-mpmenu4=new mMenu(' 专利管理','/Develop/','self','','','','');
-mpmenu4.addItem(new mMenuItem(' 添加专利','http://hua-pc:8080/my_wlh/add_patent.jsp','self',false,'网页设计',null,'','','',''));
-mpmenu4.addItem(new mMenuItem(' 更新专利','http://hua-pc:8080/my_wlh/query_patent.action','self',false,'.Net专栏',null,'','','',''));
-
-mpmenu5=new mMenu('获奖情况管理','/Lunwen/','self','','','','');
-mpmenu5.addItem(new mMenuItem(' 增加获奖情况','http://hua-pc:8080/my_wlh/add_priz.jsp','self',false,'学科教学',null,'','','',''));
-mpmenu5.addItem(new mMenuItem(' 更新获奖情况','http://hua-pc:8080/my_wlh/query_priz.action','self',false,'教学管理',null,'','','',''));
-
-
-mpmenu6=new mMenu('出版专著管理','/bbs/','self','','','','');
-mpmenu6.addItem(new mMenuItem(' 增加出版专著','http://hua-pc:8080/my_wlh/add_publ.jsp','self',false,'用户短消息',null,'','','',''));
-mpmenu6.addItem(new mMenuItem(' 修改出版专著','http://hua-pc:8080/my_wlh/query_publ.action','self',false,'',null,'','','',''));
-
-
-mpmenu7=new mMenu('学术团体兼职情况管理','','self','','','','');
-mpmenu7.addItem(new mMenuItem(' 增加学术团体兼职情况','http://hua-pc:8080/my_wlh/add_team.jsp','self',false,'e 时代银行',null,'','','',''));
-mpmenu7.addItem(new mMenuItem(' 修改学术团体兼职情况','http://hua-pc:8080/my_wlh/query_team.action','self',false,'赛马',null,'','','',''));
-
-mpmenu8=new mMenu('国内外进修及学习管理','/iimy/','self','','','','');
-mpmenu8.addItem(new mMenuItem(' 增加国内外进修及学习信息','http://hua-pc:8080/my_wlh/add_study.jsp','self',false,'历史知识',null,'','','',''));
-mpmenu8.addItem(new mMenuItem(' 修改国内外进修及学习信息','http://hua-pc:8080/my_wlh/query_study.action','self',false,'电脑知识',null,'','','',''));
-
-mpmenu9=new mMenu('国际合作情况管理','','self','','','','');
-mpmenu9.addItem(new mMenuItem(' 增加国际合作情况信息','http://hua-pc:8080/my_wlh/add_coope.jsp','self',false,'',null,'','','',''));
-mpmenu9.addItem(new mMenuItem(' 修改国际合作情况信息','http://hua-pc:8080/my_wlh/query_coope.action','self',false,'',null,'','','',''));
-
-mpmenu10=new mMenu('其他系统功能','','self','','','','');
-mpmenu10.addItem(new mMenuItem(' 工作量综合分析','http://hua-pc:8080/my_wlh/getyear.jsp','self',false,'互联网工具',null,'','','',''));
-mpmenu10.addItem(new mMenuItem(' 导出到excel','http://hua-pc:8080/my_wlh/action4.action','self',false,'常用工具',null,'','','',''));
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
+mpmenu10.addItem(new mMenuItem(' 工作量综合分析','http://1.wlhproject.sinaapp.com/getyear.jsp','self',false,'互联网工具',null,'','','',''));
+mpmenu10.addItem(new mMenuItem(' 导出到excel','http://1.wlhproject.sinaapp.com/action4.action','self',false,'常用工具',null,'','','',''));
 
 
 
 mwritetodocument();
 </script>
-
-
-
-
-
-  </body>
-</html>
-<<<<<<< HEAD
-=======
-=======
-<!DOCTYPE HTML PUBLIC "-//W3//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    <base href="<%=basePath%>">
-    <title>Book Management System starting page</title>
-	<style type="text/css">
-body {
-	background-color: #6FF;
-	margin :0px;
-	padding:0px;
-}
-#banner {
-	background-color:#FFF;
-	margin: 0px auto;
-	padding: 0px;
-	width: 1200px;
-}
-#banner2 a{
-	text-decoration: none;
-	height: 22px;
-	width: 175px;
-	font-family: "宋体";
-	font-size: 14px;
-	color: #000;
-	text-align: center;
-	margin-right: 2px;
-	padding-top: 8px;
-}
-#banner2 a:hover{
-	background-color:#F30;
-	color:#FFF;
-}
-#banner1 {
-	margin: 0px auto;
-	padding: 0px;
-	width: 1200px;
-	height:200px;
-	background-image: url(u=3014138032,1836098031&fm=21&gp=0.jpg);
-	font-family: "宋体";
-	color: #F00;
-}
-#banner2 {
-	background-color: #0F6;
-	float: right;
-	height: 40px;
-	width: 200px;
-	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
-	margin-top: 0px;
-}
-</style>
-
-</head>
-<body>
-
-<div id="banner1"><h1 align="center">
-  <p>&nbsp;</p>
-  欢迎来到科研成果管理系统</h1>
-
-<p align="center">&nbsp;</p></div>
-<table width="1201" border="0" align="center">
-  <tr>
-    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action1">
-		</s:url>
-		<s:a href="%{editURL}">添加信息</s:a></div></td>
+<s:iterator value="fileName">
+${fileName}
+</s:iterator>
+</td>
+    <td>&nbsp;</td>
   </tr>
   <tr>
-    <td align="center"><div id ="banner2"><s:url id="editURL" action="action2">
-		</s:url>
-		<s:a href="%{editURL}">更新信息</s:a></div></td>
+    <td height="172">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align = "center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="javascript:goTo()">返回查询其他人员总分</a></h4></td>
+    <td>&nbsp;</td>
   </tr>
-  <tr>
-    <td align="center"><div id ="banner2"><s:url id="editURL" action="action3">
-		</s:url>
-		<s:a href="%{editURL}">查询人员工作量统计结果</s:a></div></td>
-  </tr>
-  <tr>
-    <td align="center"><div id ="banner2"><s:url id="editURL" action="action4">
-		</s:url>
-		<s:a href="%{editURL}">导出到excel文档</s:a></div></td>
-  </tr>
-
 </table>
 </body>
 </html>
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378

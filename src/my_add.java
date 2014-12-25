@@ -1,0 +1,623 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class my_add {
+	private String name;
+	private String source;
+	private String leader;
+	private String start;
+	private String end;
+	private double contract;
+	private String type;
+	private String time;
+	private String org;
+	private int number;
+	private String card;
+	private String remark;
+	private String out_pe;
+	private String in_pe;
+	private int num;
+	private String out_pl;
+	private String in_pl;
+	private String goal;
+	private double already;
+	private double non;
+	private String owner;
+	private String person;
+	private String level;
+	private String press;
+	private String substance;
+	private String post;
+	private String invi_by;
+	private int year;
+	private String per_level;
+	public String getPer_level() {
+		return per_level;
+	}
+	public void setPer_level(String per_level) {
+		this.per_level = per_level;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public String getLeader() {
+		return leader;
+	}
+	public void setLeader(String leader) {
+		this.leader = leader;
+	}
+	public String getStart() {
+		return start;
+	}
+	public void setStart(String start) {
+		this.start = start;
+	}
+	public String getEnd() {
+		return end;
+	}
+	public void setEnd(String end) {
+		this.end = end;
+	}
+	public double getContract() {
+		return contract;
+	}
+	public void setContract(double contract) {
+		this.contract = contract;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public String getOrg() {
+		return org;
+	}
+	public void setOrg(String org) {
+		this.org = org;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	public String getCard() {
+		return card;
+	}
+	public void setCard(String card) {
+		this.card = card;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getOut_pe() {
+		return out_pe;
+	}
+	public void setOut_pe(String out_pe) {
+		this.out_pe = out_pe;
+	}
+	public String getIn_pe() {
+		return in_pe;
+	}
+	public void setIn_pe(String in_pe) {
+		this.in_pe = in_pe;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getOut_pl() {
+		return out_pl;
+	}
+	public void setOut_pl(String out_pl) {
+		this.out_pl = out_pl;
+	}
+	public String getIn_pl() {
+		return in_pl;
+	}
+	public void setIn_pl(String in_pl) {
+		this.in_pl = in_pl;
+	}
+	public String getGoal() {
+		return goal;
+	}
+	public void setGoal(String goal) {
+		this.goal = goal;
+	}
+	public double getAlready() {
+		return already;
+	}
+	public void setAlready(double already) {
+		this.already = already;
+	}
+	public double getNon() {
+		return non;
+	}
+	public void setNon(double non) {
+		this.non = non;
+	}
+	public String getOwner() {
+		return owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+	public String getPerson() {
+		return person;
+	}
+	public void setPerson(String person) {
+		this.person = person;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	public String getPress() {
+		return press;
+	}
+	public void setPress(String press) {
+		this.press = press;
+	}
+	public String getSubstance() {
+		return substance;
+	}
+	public void setSubstance(String substance) {
+		this.substance = substance;
+	}
+	public String getPost() {
+		return post;
+	}
+	public void setPost(String post) {
+		this.post = post;
+	}
+	public String getInvi_by() {
+		return invi_by;
+	}
+	public void setInvi_by(String invi_by) {
+		this.invi_by = invi_by;
+	}
+	
+	public String add_software(){
+		int flag=1;
+		
+			if(person!=null&&!person.equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into software(name,number,owner,org,time,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+			}
+			
+			
+		
+		if(flag==1) return "1";
+		else 		return "0";
+	}	
+	public String add_coope(){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into coope(type,out_pe,in_pe,num,start,end,out_pl,in_pl,goal,name,invi_by,year) " +
+					"values("+"'"+type+"'"+","+"'"+out_pe+"'"+","+"'"+in_pe+"'"+","+"'"+num+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+out_pl+"'"+","+"'"+in_pl+"'"+","+"'"+goal+"'"+","+"'"+name+"'"+","+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(invi_by.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+invi_by+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			return "1";
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				return "0";
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	
+	public String add_accept(){
+		int flag=1;
+		
+			if(person!=null&&!person.equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		System.out.println("year="+year);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into accept(name,source,leader,start,end,contract,type,time,org,number,card,remark,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+leader+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+
+					","+"'"+type+"'"+","+"'"+time+"'"+","+"'"+org+"'"+","+"'"+number+"'"+","+"'"+card+"'"+","+"'"+remark+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	
+		if(flag==1) return "1";
+		else 		return "0";
+	}
+	public String add_funds(){
+		int flag=1;
+		
+			if(person!=null&&!person.equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into funds(name,source,leader,start,end,contract,already,non,number,person,per_level,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+source+"'"+","+"'"+leader+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+contract+"'"+","+"'"+already+"'"+","+"'"+non+"'"+","+"'"+number+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+			}
+		
+		if(flag==1) return "1";
+		else 		return "0";
+	}
+	public String add_patent(){
+		int flag=1;
+		
+		if(person!=null&&!person.equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into patent(name,number,owner,org,time,person,per_level,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+number+"'"+","+"'"+owner+"'"+","+"'"+org+"'"+","+"'"+time+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);	
+			
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+			}
+		
+			if(flag==1) return "1";
+			else 		return "0";
+	}
+	public String add_study(){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into study(org,substance,start,end,person,year) " +
+					"values("+"'"+org+"'"+","+"'"+substance+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person);
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			return "1";
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				return "0";
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	public String add_team(){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into team(name,post,start,end,person,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+post+"'"+","+"'"+start+"'"+","+"'"+end+"'"+","+"'"+person+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+				System.out.println("person:"+person);
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			return "1";
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				return "0";
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+	public String add_priz(){
+		int flag=1;
+		
+			if(person!=null&&!person.equals("")){
+			get_conn util=new get_conn();
+			Connection conn=util.getConnection();
+			System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into priz(name,type,level,time,person,per_level,year) " +
+					"values("+"'"+name+"'"+","+"'"+type+"'"+","+"'"+level+"'"+","+"'"+time+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				flag=0;
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+		}
+		
+		if(flag==1) return "1";
+		else 		return "0";
+	}
+	
+	public String add_publ(){
+		int flag=1;
+			if(person!=null&&!person.equals("")){
+		get_conn util=new get_conn();
+		Connection conn=util.getConnection();
+		System.out.println("conn="+conn);
+		try {
+			Statement stmt=conn.createStatement();
+			String sql="insert into publ(name,press,time,person,per_level,type,year) " +
+					"values("+"'"+name+"'"+","+"'"+press+"'"+","+"'"+time+"'"+","+"'"+person+"'"+","+"'"+Integer.parseInt(per_level)+"'"+","+"'"+type+"'"+","+"'"+year+"'"+")";
+			System.out.println(sql);
+			stmt.execute(sql);
+			
+			
+			sql="select * from per ";
+			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(sql);
+			int fla=0;
+			while(rs.next()){
+			if(person.equals(rs.getString(1))&&year==rs.getInt(2)){
+				fla=1;
+				break;
+				}
+			}
+			if(fla==0)
+			{
+				sql="insert into per(name,year) "+
+						"values("+"'"+person+"'"+","+"'"+year+"'"+")";
+				System.out.println(sql);
+			stmt.execute(sql);
+			}
+			
+			}
+			catch(SQLException e){
+				e.printStackTrace();
+				return "0";
+			}
+		finally{
+			util.closeConnection(conn);
+		}
+	}
+		
+		if(flag==1) return "1";
+		else 		return "0";
+	}
+}

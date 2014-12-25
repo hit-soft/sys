@@ -11,84 +11,86 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
     <title>My JSP 'show_by_author.jsp' starting page</title>
-   <link href="style2.css" rel="stylesheet" type="text/css" />
-   <link href="style3.css" rel="stylesheet" type="text/css" /></head>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    
+	</head>
+<SCRIPT LANGUAGE="JavaScript">
+	function goTo()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-2)
+		}
+	}
+	
+	function goTo1()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-1)
+		}
+	}
+	
+ </SCRIPT>
 
 <body>
-<h1 align="center">下面表格是您所查询的内容</h1>
-<hr />
-<p align="center">&nbsp;</p>
-<table border="1" align="center"  id="table1">
+<table width="1049" height="620" border="0" align="center" cellpadding="5" cellspacing="5" id = table1>
   <tr>
-    <td>进修学习单位</td>
-    <td>进修学习内容</td>
-    <td>开始时间</td>
-    <td>结束时间</td>
-    <td>人员姓名</td>
-<<<<<<< HEAD
-    <td>年份</td>
-=======
-<<<<<<< HEAD
-    <td>年份</td>
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td width="51">操作1</td>
-    <td width="53">操作2</td>
+    <td height="38" colspan="3">&nbsp;</td>
   </tr>
- <s:iterator value="l8"> <!-- l 为action 中 list -->
   <tr>
-    <td><input type=text value="${org}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${substance}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${start}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${end}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${person}" size="10" readonly="readonly"></td>
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td><s:url id="editURL" action="del_study">
+    <td width="51" height="477" nowrap="nowrap">&nbsp;</td>
+    <td width="939" nowrap="nowrap"><table width="1545" border="1" align="center">
+      <tr id =tr1>
+        <td colspan="18">学习信息</td>
+        </tr>
+      <tr id =tr2 >
+        <td width="104" nowrap="nowrap">进修学习单位</td>
+        <td width="113" nowrap="nowrap">进修学习内容</td>
+        <td width="97" nowrap="nowrap">开始时间</td>
+        <td width="96" nowrap="nowrap">结束时间</td>
+        <td width="90" nowrap="nowrap">人员姓名</td>
+        <td width="16" nowrap="nowrap">年份</td>
+        <td width="22" nowrap="nowrap">操作1</td>
+        <td width="22" nowrap="nowrap">操作2</td>
+        </tr>
+<s:iterator value="l8"> <!-- l 为action 中 list -->
+      <tr id =tr3>
+        <td nowrap="nowrap">${org}</td>
+        <td nowrap="nowrap">${substance}</td>
+        <td nowrap="nowrap">${start}</td>
+        <td nowrap="nowrap">${end}</td>
+        <td nowrap="nowrap">${person}</td>
+        <td nowrap="nowrap">${year}</td>
+        <td nowrap="nowrap"><s:url id="editURL" action="del_study">
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
+		<s:param name="year" value="%{year}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
-    <td><s:url id="editURL" action="upp_study">
+        <td nowrap="nowrap"><s:url id="editURL" action="upp_study">
 		<s:param name="org" value="%{org}"></s:param>
 		<s:param name="substance" value="%{substance}"></s:param>
 		<s:param name="start" value="%{start}"></s:param>
 		<s:param name="end" value="%{end}"></s:param>
 		<s:param name="person" value="%{person}"></s:param>
-<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
-=======
-<<<<<<< HEAD
-		<s:param name="year" value="%{year}"></s:param>
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
+        </tr>
+</s:iterator>
+    </table></td>
+    <td width="9" nowrap="nowrap">&nbsp;</td>
   </tr>
-  </s:iterator>
+  <tr>
+    <td height="50" colspan="3" align="center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="javascript:goTo1()">
+  	返回查询${person}其他项目工作</a>|<a href="javascript:goTo()">返回查询其他人员总分</a>|<a href="index.jsp" >返回系统首页
+    </a></h4></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="3">&nbsp;</td>
+  </tr>
 </table>
-<p>&nbsp; </p>
 </body>
-<table border="0" id = "table2"  >
-  <tr>
-    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
-		</s:url>
-		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
-  </tr>
-  <tr>
-    <td align="center"><div id ="banner2"><a href="index.jsp">
-	返回系统首页
-	</a></div></td>
-  </tr>
-</table>
 </html>

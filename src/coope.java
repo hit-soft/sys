@@ -10,10 +10,6 @@ public class coope {
 	public String goal;
 	public String name;
 	public String invi_by;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	private int year;
 	public int getYear() {
 		return year;
@@ -21,11 +17,6 @@ public class coope {
 	public void setYear(int year) {
 		this.year = year;
 	}
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	public String getType() {
 		return type;
 	}

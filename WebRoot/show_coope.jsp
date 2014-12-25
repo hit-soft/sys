@@ -11,111 +11,99 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
     <title>My JSP 'show_by_author.jsp' starting page</title>
-<link href="style2.css" rel="stylesheet" type="text/css" />
-<link href="style3.css" rel="stylesheet" type="text/css" /></head>
-<table border="1" align="center" id="table1">
-  <tr>
-    <td>类别</td>
-    <td>来访人员名单</td>
-   	<td>人数</td> 
-    <td>开始时间</td>
-    <td>结束时间</td>
-    <td>来访地</td>
-    <td>访问目的</td>
-    <td>报告名称</td>
-    <td>邀请人</td>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td>年份</td>
-    <td>操作1</td>
-    <td>操作2</td>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
     
-<<<<<<< HEAD
-=======
-=======
-    <td>操作1</td>
-    <td>操作2</td>
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
+	</head>
+<SCRIPT LANGUAGE="JavaScript">
+	function goTo()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-2)
+		}
+	}
+	
+	function goTo1()
+	{
+		if(confirm("确认要跳转么?"))
+		{
+			history.go(-1)
+		}
+	}
+	
+ </SCRIPT>
+
+<body>
+<table width="1049" height="620" border="0" align="center" cellpadding="5" cellspacing="5" id = table1>
+  <tr>
+    <td height="38" colspan="3">&nbsp;</td>
   </tr>
-  <s:iterator value="l2"> <!-- l 为action 中 list -->
   <tr>
-    <td><input type=text value="${type}" size="10" readonly="readonly"></td>
-    
-    <td><input type=text value="${in_pe}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${num}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${start}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${end}" size="10" readonly="readonly"></td>
-    
-    <td><input type=text value="${in_pl}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${goal}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${name}" size="10" readonly="readonly"></td>
-    <td><input type=text value="${invi_by}" size="10" readonly="readonly"></td>
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
-<<<<<<< HEAD
-    <td><input type=text value="${year}" size="10" readonly="readonly"></td>
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <td><s:url id="editURL" action="del_coope">
+    <td width="51" height="477" nowrap="nowrap">&nbsp;</td>
+    <td width="939" nowrap="nowrap"><table width="1545" border="1" align="center">
+      <tr id =tr1>
+        <td colspan="18">国际合作情况</td>
+        </tr>
+      <tr id =tr2 >
+        <td width="104" nowrap="nowrap">类别</td>
+        <td width="113" nowrap="nowrap">来访人员名单</td>
+        <td width="97" nowrap="nowrap">人数</td>
+        <td width="96" nowrap="nowrap">开始时间</td>
+        <td width="90" nowrap="nowrap">结束时间</td>
+        <td width="55" nowrap="nowrap">来访地</td>
+        <td width="37" nowrap="nowrap">访问目的</td>
+        <td width="73" nowrap="nowrap">报告名称</td>
+        <td width="17" nowrap="nowrap">邀请人</td>
+        <td width="16" nowrap="nowrap">年份</td>
+        <td width="22" nowrap="nowrap">操作1</td>
+        <td width="22" nowrap="nowrap">操作2</td>
+        </tr>
+<s:iterator value="l2"> <!-- l 为action 中 list -->
+      <tr id =tr3>
+        <td nowrap="nowrap">${type}</td>
+        <td nowrap="nowrap">${in_pe}</td>
+        <td nowrap="nowrap">${num}</td>
+        <td nowrap="nowrap">${start}</td>
+        <td nowrap="nowrap">${end}</td>
+        <td nowrap="nowrap">${in_pl}</td>
+        <td nowrap="nowrap">${goal}</td>
+        <td nowrap="nowrap">${name}</td>
+        <td nowrap="nowrap">${invi_by}</td>
+        <td nowrap="nowrap">${year}</td>
+        <td nowrap="nowrap"><s:url id="editURL" action="del_coope">
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="invi_by" value="%{invi_by}"></s:param>
+		<s:param name="year" value="%{year}"></s:param>
 		</s:url>
 		<s:a href="%{editURL}">删除</s:a></td>
-    <td><s:url id="editURL" action="upp_coope">
-		<s:param name="type" value="%{type}"></s:param>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 		
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
+        <td><s:url id="editURL" action="upp_coope">
+		<s:param name="type" value="%{type}"></s:param>
 		<s:param name="in_pe" value="%{in_pe}"></s:param>
 		<s:param name="num" value="%{num}"></s:param>
 		<s:param name="start" value="%{start}"></s:param>
 		<s:param name="end" value="%{end}"></s:param>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-		
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		<s:param name="in_pl" value="%{in_pl}"></s:param>
 		<s:param name="goal" value="%{goal}"></s:param>
 		<s:param name="name" value="%{name}"></s:param>
 		<s:param name="invi_by" value="%{invi_by}"></s:param>
-<<<<<<< HEAD
 		<s:param name="year" value="%{year}"></s:param>
-=======
-<<<<<<< HEAD
-		<s:param name="year" value="%{year}"></s:param>
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 		</s:url>
 		<s:a href="%{editURL}">更新</s:a></td>
-  </tr>
-  </s:iterator>
-</table>
-<p>&nbsp; </p>
-<table border="0" id = "table2"  >
-  <tr>
-    <td width="200" align="center"><div id ="banner2"><s:url id="editURL" action="action3">
-		</s:url>
-		<s:a href="%{editURL}">返回查询其他人员总分</s:a></div></td>
+       
+</s:iterator>
+    </table></td>
+    <td width="9" nowrap="nowrap">&nbsp;</td>
   </tr>
   <tr>
-    <td align="center"><div id ="banner2"><a href="index.jsp">
-	返回系统首页
-	</a></div></td>
+    <td height="50" colspan="3" align="center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="javascript:goTo1()">
+  	返回查询其他${in_by}项目工作</a>|<a href="javascript:goTo()">返回查询其他人员总分</a>|<a href="index.jsp" >返回系统首页
+    </a></h4></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="3">&nbsp;</td>
   </tr>
 </table>
+</body>
 </html>

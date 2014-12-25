@@ -4,19 +4,9 @@
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">
 		<attributes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 			<attribute name="hide" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.baseBrowserLibrary/StandardBrowser/html5"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
-<<<<<<< HEAD
-=======
-=======
-			<attribute 
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378

@@ -4,36 +4,15 @@
 <struts>
 <constant name="struts.i18n.encoding" value="utf-8"/>
 	<package name="default" namespace="/" extends="struts-default">
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-	
-	
-	<action name="action1" class="jump_" method="change">
-		<result name="1">/index_jump.jsp</result>
-	</action>
-	
-	<action name="action2" class="jump_" method="change">
-		<result name="1">/index_jump2.jsp</result>
-	</action>
-	
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="action3" class="query_" method="query_author">
 		<result name="1">/show_author.jsp</result>
 	</action>
 	
-	<action name="action4" class="export" method="Export">
+	<action name="action4" class="GetExcel" method="toexcel">
 		<result name="1">/index.jsp</result>
 	</action>
 	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	
 	<action name="getyear" class="query_" method="query_author">
 		<result name="1">/show_author.jsp</result>
@@ -41,21 +20,13 @@
 	</action>
 	
 		
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="cal_author" class="update" method="cal_author">
 		<result name="1">/cal_author.jsp</result>
 	</action>
 	
-	
-	
-	
-	
-	
-	
+
+
+
 	<action name="funds" class="jump_" method="jump_">
 		<result name="1">/add_funds.jsp</result>
 	</action>
@@ -78,29 +49,18 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	
-	
-	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-	
-
-	
-	
+	<action name="alone_funds" class="upp" method="upp">
+		<result name="1">/alone_funds.jsp</result>
+	</action>
+	<action name="myadd_funds" class="my_add" method="add_funds">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
 	
 	
 	
 	
 	
-	
-	
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	<action name="accept" class="jump_" method="jump_">
 		<result name="1">/add_accept.jsp</result>
 	</action>
@@ -123,7 +83,13 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	
+	<action name="alone_accept" class="upp" method="upp">
+		<result name="1">/alone_accept.jsp</result>
+	</action>
+	<action name="myadd_accept" class="my_add" method="add_accept">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
 	
 	
 	
@@ -146,6 +112,13 @@
 		<result name="1">/update_software.jsp</result>
 	</action>
 	<action name="update_software" class="update" method="update_software">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
+	<action name="alone_software" class="upp" method="upp">
+		<result name="1">/alone_software.jsp</result>
+	</action>
+	<action name="myadd_software" class="my_add" method="add_software">
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
@@ -177,7 +150,13 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	
+	<action name="alone_patent" class="upp" method="upp">
+		<result name="1">/alone_patent.jsp</result>
+	</action>
+	<action name="myadd_patent" class="my_add" method="add_patent">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
 	
 	
 	
@@ -203,7 +182,13 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	
+	<action name="alone_priz" class="upp" method="upp">
+		<result name="1">/alone_priz.jsp</result>
+	</action>
+	<action name="myadd_priz" class="my_add" method="add_priz">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
 	
 	
 	
@@ -229,7 +214,13 @@
 		<result name="1">/index.jsp</result>
 		<result name="0">/fail.jsp</result>
 	</action>
-	
+	<action name="alone_publ" class="upp" method="upp">
+		<result name="1">/alone_publ.jsp</result>
+	</action>
+	<action name="myadd_publ" class="my_add" method="add_publ">
+		<result name="1">/index.jsp</result>
+		<result name="0">/fail.jsp</result>
+	</action>
 	
 	
 	<action name="team" class="jump_" method="jump_">

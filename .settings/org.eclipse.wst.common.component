@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-<<<<<<< HEAD
-    <wb-module deploy-name="mygod">
+    <wb-module deploy-name="mygodd">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="mygod"/>
-        <property name="java-output-path" value="/mygod/WebRoot/WEB-INF/classes"/>
-=======
-<<<<<<< HEAD
-    <wb-module deploy-name="my_wlh">
-        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="my_wlh"/>
-        <property name="java-output-path" value="/my_wlh/WebRoot/WEB-INF/classes"/>
-=======
-    <wb-module deploy-name="wlh">
-        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="wlh"/>
-        <property name="java-output-path" value="/wlh/WebRoot/WEB-INF/classes"/>
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
+        <property name="context-root" value="mygodd"/>
+        <property name="java-output-path" value="/mygodd/WebRoot/WEB-INF/classes"/>
     </wb-module>
 </project-modules>

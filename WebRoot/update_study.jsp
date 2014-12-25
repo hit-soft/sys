@@ -11,105 +11,76 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
-    <title>Book Management System starting page</title>
-	<style type="text/css">
-body {
-	background-color: #FFF;
-	margin :0px;
-	padding:0px;
-}
-
-#banner {
-	
-	margin: 0px auto;
-	padding: 0px;
-	width: 1200px;
-	background-color:#FFF;
-}
-#banner1 {
-	margin: 0px auto;
-	width: 1200px;
-	height:200px;
-	background-image: url(550c471cb80028a2d51e31ecb9a0f23a.jpg);
-	font-family: "宋体";
-	color: #F00;
-}
-table {
-	margin: 0px auto;
-	width: 1200px;
-	background-color: #390;
-	text-align: center;
-}
-td {
-	text-align: left;
-	margin: 0px;
-	padding: 0px;
-}
-</style>
+<title>无标题文档</title>
+<link href="style3.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+<script>
+	now = new Date()
+	function writeYears(obj, date)
+	{
+	var years = date.getYear()+10
+	for (var i=2000; i<3000; i++){
+		var opt = document.createElement("option")
+		opt.text = opt.value = i
+		obj.add(opt)
+	}
+	}
+	</script>
+<table width="1049" height="586" border="0" align="center" cellpadding="5" cellspacing="5" id = table1>
+  <tr>
+    <td height="38" colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="74" height="443">&nbsp;</td>
+    <td width="913"><form id="form1" name="form1" method="post" action="update_study">
+      <table width="937" height="399" border="0" 
 
-<div id="banner1">&nbsp;<h1 align="center">更新国内外进修信息</h1>
-</div>
-<p>&nbsp;</p>
-<form id="form1" name="form1" method="post" action="update_study">	
-  <table >
-    <tr>
-      <td width="692" rowspan="17">&nbsp;</td>
+align="center" cellpadding="2" cellspacing="0" id="table2" >
       <tr>
-     <tr>
-      <td width="110">进修学习单位：</td>
-      <td width="179"><label>
-        <input name="org" type="text" id="org" value="${org}" readonly/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>进修学习内容：</td>
-      <td><label>
-        <input name="substance" type="text" id="substance" value="${substance}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>开始时间：</td>
-      <td><label>
-        <input name="start" type="text" id="start" value="${start}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>结束时间：</td>
-      <td><label>
-        <input name="end" type="text" id="end" value="${end}"/>
-      </label></td>
-    </tr>
-    <tr>
-      <td>人员姓名：</td>
-      <td><label>
-        <input name="person" type="text" id="person" value="${person}" readonly/>
-      </label></td>
-    </tr>
-<<<<<<< HEAD
-    
-    
-	<tr>
-      <td>年份：</td>
-      <td><label>
-        <input name="year" type="text" id="year" value="${year}"  readonly size="32"/>
-      </label></td>
-    </tr>
-=======
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-    <tr>
-      <td></td>
-      <td><label>
-      <input type="submit" name="Submit3" value="提交" />
-      <input type="reset" name="Submit22" value="重置" />
-      </label><p>&nbsp;</p><a href="index.jsp" style="float: right">
-	返回系统首页
-	</a></td>
-    </tr>
-  </table>
-</form>
+        <td height="40" colspan="3" align="left" id ="td1"><h2>欢迎来到国内外进修信息管理界面</h2></td>
+        </tr>
+      <tr>
+        <td width="159" height="42">进修学习单位：</td>
+        <td width="301" height="42"><input name="org" type="text" id="textfield1" size = "32" value="${org}" readonly/></td>
+        <td width="465" rowspan="9"><label for="end"><img src="add1.jpg" width="450" height="378" /></label></td>
+        </tr>
+      <tr>
+        <td height="42">进修学习内容：</td>
+        <td height="42"><input name="substance" type="text" id="textfield1" size="32" value="${substance}"/></td>
+        </tr>
+      <tr>
+        <td height="42">开始时间：</td>
+        <td height="42"><input name="start" type="text" id="textfield1" size="32" value="${start}"/></td>
+        </tr>
+      <tr>
+        <td height="42">结束时间：</td>
+        <td height="42"><input name="end" type="text" id="textfield1"  size="32" value="${end}"/></td>
+        </tr>
+      <tr>
+        <td height="42">人员姓名：</td>
+         <td height="42"><input name="person" type="text" id="textfield1"  size="32" value="${person}" readonly/></td>
+        </tr>
+      <tr>
+        <td height="42">年份：</td>
+         <td height="42"><input name="year" type="text" id="textfield1"  size="32" value="${year}"  readonly/></td>
+        </tr>
+      <tr>
+        <td height="42">&nbsp;</td>
+        <td height="42"><input type="submit" name="button3" id="button1" value="提交" />          <input type="reset" name="button2" id="button1" value="重置" /></td>
+      </tr>
+      </table>
+    </form></td>
+    <td width="12">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50" colspan="3" align="center"><h4><a href ="add_induct.jsp">填写规则</a>|<a href ="concract.jsp">联系我们</a>|<a href="index.jsp" >返回系统首页
+    </a></h4></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="3">&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>

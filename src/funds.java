@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 
 public class funds {
 	private String name;
@@ -40,46 +36,6 @@ public class funds {
 	}
 	public void setLeader(String leader) {
 		this.leader = leader;
-<<<<<<< HEAD
-=======
-=======
-public class coope {
-	public String type;
-	public String out_pe;
-	public String in_pe;
-	public int num;
-	public String start;
-	public String end;
-	public String out_pl;
-	public String in_pl;
-	public String goal;
-	public String name;
-	public String invi_by;
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
-	public String getOut_pe() {
-		return out_pe;
-	}
-	public void setOut_pe(String out_pe) {
-		this.out_pe = out_pe;
-	}
-	public String getIn_pe() {
-		return in_pe;
-	}
-	public void setIn_pe(String in_pe) {
-		this.in_pe = in_pe;
-	}
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num = num;
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	}
 	public String getStart() {
 		return start;
@@ -93,10 +49,6 @@ public class coope {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	public double getContract() {
 		return contract;
 	}
@@ -138,39 +90,5 @@ public class coope {
 	}
 	public void setType(String type) {
 		this.type = type;
-<<<<<<< HEAD
-=======
-=======
-	public String getOut_pl() {
-		return out_pl;
-	}
-	public void setOut_pl(String out_pl) {
-		this.out_pl = out_pl;
-	}
-	public String getIn_pl() {
-		return in_pl;
-	}
-	public void setIn_pl(String in_pl) {
-		this.in_pl = in_pl;
-	}
-	public String getGoal() {
-		return goal;
-	}
-	public void setGoal(String goal) {
-		this.goal = goal;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getInvi_by() {
-		return invi_by;
-	}
-	public void setInvi_by(String invi_by) {
-		this.invi_by = invi_by;
->>>>>>> 5995d5dce10e02545e1585ab4da3133cde9cb8be
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
 	}
 }

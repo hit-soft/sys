@@ -14,10 +14,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <title>My JSP 'patent.jsp' starting page</title>
    
-	<link href="style1.css" rel="stylesheet" type="text/css" />
+	
 </head>
+
 <body>
-	<script>
+<script>
 	now = new Date()
 	function writeYears(obj, date)
 	{
@@ -29,17 +30,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	}
 	</script>
-<div id="banner1"><h1 align="center"><br>添加科研项目验收信息</h1>
-
-<p align="center">&nbsp;</p></div>
-<<<<<<< HEAD
-<form id="form1" name="form1" method="post" action="getyear">
-=======
-<form id="form1" name="form1" method="post" action="getyear">	
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-  <table >
-   	时间：
-    <select name="year" onchange="changeDate()">
+<table width="571" border="0" align="center">
+  <tr>
+    <td width="159" height="82">&nbsp;</td>
+    <td width="252">&nbsp;</td>
+    <td width="159">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="314">&nbsp;</td>
+    <td><form id="form1" name="form1" method="post" action="getyear">
+      <table width="254" height="80" border="1" align="center">
+        <tr align="center" >
+          <td width="120">时间</td>
+          <td width="116"><select name="year" onchange="changeDate()">
     </select>
               年 
        </nobr></td>
@@ -48,28 +51,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		document.forms[0].year.selectedIndex = 0
 		writeDate(document.forms[0].date, now.getYear(), now.getMonth()+1)
 		document.forms[0].date.selectedIndex = now.getDate()-1
- 	</script>
-   	
-<<<<<<< HEAD
-   	<tr>
-=======
-   	
-   	
-   	
-    <tr>
->>>>>>> a45f2dc9aa1fdb9dee81d45388fc1bba9677a378
-      <td></td>
-      <td><label>
-        <input type="submit" name="Submit" value="提交" />
-      </label>
-        <label>
-        <input type="reset" name="Submit2" value="重置" />
-        </label>
-         <p>&nbsp;</p><a href="index.jsp" style="float: right">
-	返回系统首页
-	</a></td>
-    </tr>
-  </table>
-</form>
+ 	</script></td>
+        </tr>
+        <tr >
+          <td align="center" valign="middle"><input type="submit" name="Submit" value="提交" /></td>
+          <td align="center"><input type="reset" name="Submit2" value="重置" /></td>
+        </tr>
+      </table>
+    </form></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="97">&nbsp;</td>
+    <td height="50" align="center"><h4><a href ="concract.jsp">联系我们</a>        <a href="index.jsp" >返回系统首页
+    </a></h4></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>
