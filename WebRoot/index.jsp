@@ -610,47 +610,47 @@ document.write("<div align='center' id='JsMenuCSS'>"+stringx+"</div>");
 
 
 mpmenu1=new mMenu('科研经费管理','/','self','','','','');
-mpmenu1.addItem(new mMenuItem(' 添加科研经费信息','http://1.wlhproject.sinaapp.com/add_funds.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu1.addItem(new mMenuItem(' 更新科研经费信息','http://1.wlhproject.sinaapp.com/query_funds.action','self',false,'用户登录',null,'','','',''));
+mpmenu1.addItem(new mMenuItem(' 添加科研经费信息','http://hua-pc:8080/mygodd/add_funds.jsp','self',false,'用户注册',null,'','','',''));
+mpmenu1.addItem(new mMenuItem(' 更新科研经费信息','http://hua-pc:8080/mygodd/query_funds.action','self',false,'用户登录',null,'','','',''));
 
 mpmenu2=new mMenu('科研项目验收管理','/','self','','','','');
-mpmenu2.addItem(new mMenuItem(' 添加科研项目验收信息','http://1.wlhproject.sinaapp.com/add_accept.jsp','self',false,'用户注册',null,'','','',''));
-mpmenu2.addItem(new mMenuItem(' 更新科研项目验收信息','http://1.wlhproject.sinaapp.com/query_accept.action','self',false,'用户登录',null,'','','',''));
+mpmenu2.addItem(new mMenuItem(' 添加科研项目验收信息','http://hua-pc:8080/mygodd/add_accept.jsp','self',false,'用户注册',null,'','','',''));
+mpmenu2.addItem(new mMenuItem(' 更新科研项目验收信息','http://hua-pc:8080/mygodd/query_accept.action','self',false,'用户登录',null,'','','',''));
 
 
 mpmenu3=new mMenu('软件著作权管理','/SoftSchool/','self','','','','');
-mpmenu3.addItem(new mMenuItem(' 添加软件著作权','http://1.wlhproject.sinaapp.com/add_software.jsp','self',false,'软件瞭望',null,'','','',''));
-mpmenu3.addItem(new mMenuItem(' 更新软件著作权','http://1.wlhproject.sinaapp.com/query_software.action','self',false,'精文荟萃',null,'','','',''));
+mpmenu3.addItem(new mMenuItem(' 添加软件著作权','http://hua-pc:8080/mygodd/add_software.jsp','self',false,'软件瞭望',null,'','','',''));
+mpmenu3.addItem(new mMenuItem(' 更新软件著作权','http://hua-pc:8080/mygodd/query_software.action','self',false,'精文荟萃',null,'','','',''));
 
 mpmenu4=new mMenu(' 专利管理','/Develop/','self','','','','');
-mpmenu4.addItem(new mMenuItem(' 添加专利','http://1.wlhproject.sinaapp.com/add_patent.jsp','self',false,'网页设计',null,'','','',''));
-mpmenu4.addItem(new mMenuItem(' 更新专利','http://1.wlhproject.sinaapp.com/query_patent.action','self',false,'.Net专栏',null,'','','',''));
+mpmenu4.addItem(new mMenuItem(' 添加专利','http://hua-pc:8080/mygodd/add_patent.jsp','self',false,'网页设计',null,'','','',''));
+mpmenu4.addItem(new mMenuItem(' 更新专利','http://hua-pc:8080/mygodd/query_patent.action','self',false,'.Net专栏',null,'','','',''));
 
 mpmenu5=new mMenu('获奖情况管理','/Lunwen/','self','','','','');
-mpmenu5.addItem(new mMenuItem(' 增加获奖情况','http://1.wlhproject.sinaapp.com/add_priz.jsp','self',false,'学科教学',null,'','','',''));
-mpmenu5.addItem(new mMenuItem(' 更新获奖情况','http://1.wlhproject.sinaapp.com/query_priz.action','self',false,'教学管理',null,'','','',''));
+mpmenu5.addItem(new mMenuItem(' 增加获奖情况','http://hua-pc:8080/mygodd/add_priz.jsp','self',false,'学科教学',null,'','','',''));
+mpmenu5.addItem(new mMenuItem(' 更新获奖情况','http://hua-pc:8080/mygodd/query_priz.action','self',false,'教学管理',null,'','','',''));
 
 
 mpmenu6=new mMenu('出版专著管理','/bbs/','self','','','','');
-mpmenu6.addItem(new mMenuItem(' 增加出版专著','http://1.wlhproject.sinaapp.com/add_publ.jsp','self',false,'用户短消息',null,'','','',''));
-mpmenu6.addItem(new mMenuItem(' 修改出版专著','http://1.wlhproject.sinaapp.com/query_publ.action','self',false,'',null,'','','',''));
+mpmenu6.addItem(new mMenuItem(' 增加出版专著','http://hua-pc:8080/mygodd/add_publ.jsp','self',false,'用户短消息',null,'','','',''));
+mpmenu6.addItem(new mMenuItem(' 修改出版专著','http://hua-pc:8080/mygodd/query_publ.action','self',false,'',null,'','','',''));
 
 
 mpmenu7=new mMenu('学术团体兼职情况管理','','self','','','','');
-mpmenu7.addItem(new mMenuItem(' 增加学术团体兼职情况','http://1.wlhproject.sinaapp.com/add_team.jsp','self',false,'e 时代银行',null,'','','',''));
-mpmenu7.addItem(new mMenuItem(' 修改学术团体兼职情况','http://1.wlhproject.sinaapp.com/query_team.action','self',false,'赛马',null,'','','',''));
+mpmenu7.addItem(new mMenuItem(' 增加学术团体兼职情况','http://hua-pc:8080/mygodd/add_team.jsp','self',false,'e 时代银行',null,'','','',''));
+mpmenu7.addItem(new mMenuItem(' 修改学术团体兼职情况','http://hua-pc:8080/mygodd/query_team.action','self',false,'赛马',null,'','','',''));
 
 mpmenu8=new mMenu('国内外进修及学习管理','/iimy/','self','','','','');
-mpmenu8.addItem(new mMenuItem(' 增加国内外进修及学习信息','http://1.wlhproject.sinaapp.com/add_study.jsp','self',false,'历史知识',null,'','','',''));
-mpmenu8.addItem(new mMenuItem(' 修改国内外进修及学习信息','http://1.wlhproject.sinaapp.com/query_study.action','self',false,'电脑知识',null,'','','',''));
+mpmenu8.addItem(new mMenuItem(' 增加国内外进修及学习信息','http://hua-pc:8080/mygodd/add_study.jsp','self',false,'历史知识',null,'','','',''));
+mpmenu8.addItem(new mMenuItem(' 修改国内外进修及学习信息','http://hua-pc:8080/mygodd/query_study.action','self',false,'电脑知识',null,'','','',''));
 
 mpmenu9=new mMenu('国际合作情况管理','','self','','','','');
-mpmenu9.addItem(new mMenuItem(' 增加国际合作情况信息','http://1.wlhproject.sinaapp.com/add_coope.jsp','self',false,'',null,'','','',''));
-mpmenu9.addItem(new mMenuItem(' 修改国际合作情况信息','http://1.wlhproject.sinaapp.com/query_coope.action','self',false,'',null,'','','',''));
+mpmenu9.addItem(new mMenuItem(' 增加国际合作情况信息','http://hua-pc:8080/mygodd/add_coope.jsp','self',false,'',null,'','','',''));
+mpmenu9.addItem(new mMenuItem(' 修改国际合作情况信息','http://hua-pc:8080/mygodd/query_coope.action','self',false,'',null,'','','',''));
 
 mpmenu10=new mMenu('其他系统功能','','self','','','','');
-mpmenu10.addItem(new mMenuItem(' 工作量综合分析','http://1.wlhproject.sinaapp.com/getyear.jsp','self',false,'互联网工具',null,'','','',''));
-mpmenu10.addItem(new mMenuItem(' 导出到excel','http://1.wlhproject.sinaapp.com/action4.action','self',false,'常用工具',null,'','','',''));
+mpmenu10.addItem(new mMenuItem(' 工作量综合分析','http://hua-pc:8080/mygodd/getyear.jsp','self',false,'互联网工具',null,'','','',''));
+mpmenu10.addItem(new mMenuItem(' 导出到excel','http://hua-pc:8080/mygodd/action4.action','self',false,'常用工具',null,'','','',''));
 
 
 

@@ -12,8 +12,8 @@ public class get_conn {
 	public Connection getConnection(){
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			return DriverManager.getConnection("w.rdc.sae.sina.com.cn:3307/app_wlhproject",
-					"n1xxz2oj21","lx21m3h03zj5i51kjj4wlyix2xmzmjxx1xm50x2x");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/project",
+					"root","1234");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
